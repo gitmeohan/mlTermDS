@@ -1,1 +1,3 @@
 # mlTermDS
+
+pip install Pillow
