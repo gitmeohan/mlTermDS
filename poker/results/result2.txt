@@ -1,0 +1,4184 @@
+=== Run information ===
+
+Scheme:       weka.classifiers.functions.SMO -C 1.0 -L 0.001 -P 1.0E-12 -N 0 -V -1 -W 1 -K "weka.classifiers.functions.supportVector.PolyKernel -E 1.0 -C 250007" -calibrator "weka.classifiers.functions.SMO -C 1.0 -L 0.001 -P 1.0E-12 -N 0 -V -1 -W 1 -K \"weka.classifiers.functions.supportVector.PolyKernel -E 1.0 -C 250007\" -calibrator \"weka.classifiers.functions.Logistic -R 1.0E-8 -M -1 -num-decimal-places 4\""
+Relation:     POKER_HAND
+Instances:    25010
+Attributes:   11
+              S1
+              C1
+              S2
+              C2
+              S3
+              C3
+              S4
+              C4
+              S5
+              C5
+              CLASS
+Test mode:    split 80.0% train, remainder test
+
+=== Classifier model (full training set) ===
+
+SMO
+
+Kernel used:
+  Linear Kernel: K(x,y) = <x,y>
+
+Classifier for classes: 0, 1
+
+BinarySMO
+
+Machine linear: showing attribute weights, not support vectors.
+
+         0.0285 * (normalized) S1=1
+ +      -0.0859 * (normalized) S1=2
+ +       0.1453 * (normalized) S1=3
+ +      -0.088  * (normalized) S1=4
+ +      -0.1935 * (normalized) C1=1
+ +       0.1671 * (normalized) C1=2
+ +      -0.1163 * (normalized) C1=3
+ +       0.0502 * (normalized) C1=4
+ +      -0.0039 * (normalized) C1=5
+ +      -0.096  * (normalized) C1=6
+ +       0.054  * (normalized) C1=7
+ +       0.1438 * (normalized) C1=8
+ +      -0.1938 * (normalized) C1=9
+ +       0.1477 * (normalized) C1=10
+ +       0.0227 * (normalized) C1=11
+ +       0.0128 * (normalized) C1=12
+ +       0.0053 * (normalized) C1=13
+ +      -0.342  * (normalized) S2=1
+ +       0.0446 * (normalized) S2=2
+ +       0.1617 * (normalized) S2=3
+ +       0.1357 * (normalized) S2=4
+ +      -0.0413 * (normalized) C2=1
+ +       0.4725 * (normalized) C2=2
+ +      -0.0039 * (normalized) C2=3
+ +       0.0074 * (normalized) C2=4
+ +       0.0455 * (normalized) C2=5
+ +      -0.0872 * (normalized) C2=6
+ +      -0.0728 * (normalized) C2=7
+ +      -0.0011 * (normalized) C2=8
+ +      -0.2249 * (normalized) C2=9
+ +       0.0767 * (normalized) C2=10
+ +       0.0474 * (normalized) C2=11
+ +      -0.2724 * (normalized) C2=12
+ +       0.0542 * (normalized) C2=13
+ +       0.1268 * (normalized) S3=1
+ +      -0.0376 * (normalized) S3=2
+ +       0.022  * (normalized) S3=3
+ +      -0.1112 * (normalized) S3=4
+ +       0.0838 * (normalized) C3=1
+ +       0.064  * (normalized) C3=2
+ +       0.1633 * (normalized) C3=3
+ +      -0.1457 * (normalized) C3=4
+ +       0.0586 * (normalized) C3=5
+ +       0.0613 * (normalized) C3=6
+ +      -0.1594 * (normalized) C3=7
+ +      -0.0016 * (normalized) C3=8
+ +      -0.0163 * (normalized) C3=9
+ +       0.1348 * (normalized) C3=10
+ +      -0.0601 * (normalized) C3=11
+ +      -0.091  * (normalized) C3=12
+ +      -0.0918 * (normalized) C3=13
+ +      -0.0632 * (normalized) S4=1
+ +       0.2202 * (normalized) S4=2
+ +      -0.1943 * (normalized) S4=3
+ +       0.0373 * (normalized) S4=4
+ +      -0.2774 * (normalized) C4=1
+ +      -0.16   * (normalized) C4=2
+ +       0.2941 * (normalized) C4=3
+ +      -0.1998 * (normalized) C4=4
+ +       0.0644 * (normalized) C4=5
+ +       0.1889 * (normalized) C4=6
+ +      -0.1212 * (normalized) C4=7
+ +      -0.0045 * (normalized) C4=8
+ +       0.1282 * (normalized) C4=9
+ +       0.106  * (normalized) C4=10
+ +      -0.0785 * (normalized) C4=11
+ +       0.037  * (normalized) C4=12
+ +       0.0228 * (normalized) C4=13
+ +      -0.0282 * (normalized) S5=1
+ +      -0.0233 * (normalized) S5=2
+ +      -0.0579 * (normalized) S5=3
+ +       0.1093 * (normalized) S5=4
+ +      -0.166  * (normalized) C5=1
+ +       0.2579 * (normalized) C5=2
+ +      -0.0914 * (normalized) C5=3
+ +      -0.0185 * (normalized) C5=4
+ +      -0.1283 * (normalized) C5=5
+ +      -0.0235 * (normalized) C5=6
+ +       0.0162 * (normalized) C5=7
+ +      -0.0096 * (normalized) C5=8
+ +      -0.017  * (normalized) C5=9
+ +       0.0012 * (normalized) C5=10
+ +      -0.0069 * (normalized) C5=11
+ +       0.0719 * (normalized) C5=12
+ +       0.1139 * (normalized) C5=13
+ +       0.0325
+
+Number of kernel evaluations: 1095950518 (1.012% cached)
+
+Classifier for classes: 0, 2
+
+BinarySMO
+
+Machine linear: showing attribute weights, not support vectors.
+
+         0.0001 * (normalized) S1=1
+ +      -0      * (normalized) S1=2
+ +      -0      * (normalized) S1=3
+ +      -0      * (normalized) S1=4
+ +       0.0002 * (normalized) C1=1
+ +       0.0003 * (normalized) C1=2
+ +       0.0001 * (normalized) C1=3
+ +      -0.0002 * (normalized) C1=4
+ +      -0.0001 * (normalized) C1=5
+ +      -0.0002 * (normalized) C1=6
+ +      -0.0001 * (normalized) C1=7
+ +      -0.0001 * (normalized) C1=8
+ +      -0      * (normalized) C1=9
+ +      -0.0001 * (normalized) C1=10
+ +      -0.0001 * (normalized) C1=11
+ +       0.0001 * (normalized) C1=12
+ +       0.0002 * (normalized) C1=13
+ +      -0      * (normalized) S2=1
+ +      -0      * (normalized) S2=2
+ +      -0      * (normalized) S2=3
+ +       0.0001 * (normalized) S2=4
+ +       0.0002 * (normalized) C2=1
+ +       0.0002 * (normalized) C2=2
+ +       0.0001 * (normalized) C2=3
+ +      -0      * (normalized) C2=4
+ +      -0.0002 * (normalized) C2=5
+ +       0      * (normalized) C2=6
+ +      -0.0001 * (normalized) C2=7
+ +       0      * (normalized) C2=8
+ +      -0      * (normalized) C2=9
+ +      -0      * (normalized) C2=10
+ +      -0      * (normalized) C2=11
+ +      -0.0001 * (normalized) C2=12
+ +       0      * (normalized) C2=13
+ +      -0.0001 * (normalized) S3=1
+ +       0.0001 * (normalized) S3=2
+ +       0      * (normalized) S3=3
+ +      -0      * (normalized) S3=4
+ +       0.0002 * (normalized) C3=1
+ +       0      * (normalized) C3=2
+ +      -0.0001 * (normalized) C3=3
+ +       0.0001 * (normalized) C3=4
+ +      -0.0001 * (normalized) C3=5
+ +       0.0001 * (normalized) C3=6
+ +      -0.0001 * (normalized) C3=7
+ +      -0      * (normalized) C3=8
+ +       0.0002 * (normalized) C3=9
+ +      -0.0001 * (normalized) C3=10
+ +       0      * (normalized) C3=11
+ +      -0.0001 * (normalized) C3=12
+ +       0      * (normalized) C3=13
+ +       0      * (normalized) S4=1
+ +      -0.0001 * (normalized) S4=2
+ +       0      * (normalized) S4=3
+ +       0      * (normalized) S4=4
+ +       0.0002 * (normalized) C4=1
+ +       0.0002 * (normalized) C4=2
+ +       0.0001 * (normalized) C4=3
+ +      -0.0001 * (normalized) C4=4
+ +      -0.0001 * (normalized) C4=5
+ +      -0.0002 * (normalized) C4=6
+ +       0.0001 * (normalized) C4=7
+ +       0.0001 * (normalized) C4=8
+ +      -0.0001 * (normalized) C4=9
+ +      -0      * (normalized) C4=10
+ +      -0.0001 * (normalized) C4=11
+ +      -0.0001 * (normalized) C4=12
+ +       0.0003 * (normalized) C4=13
+ +      -0      * (normalized) S5=1
+ +       0      * (normalized) S5=2
+ +       0      * (normalized) S5=3
+ +      -0      * (normalized) S5=4
+ +       0.0001 * (normalized) C5=1
+ +       0.0001 * (normalized) C5=2
+ +      -0.0001 * (normalized) C5=3
+ +       0      * (normalized) C5=4
+ +      -0      * (normalized) C5=5
+ +      -0.0001 * (normalized) C5=6
+ +       0      * (normalized) C5=7
+ +      -0.0002 * (normalized) C5=8
+ +       0      * (normalized) C5=9
+ +      -0.0001 * (normalized) C5=10
+ +       0      * (normalized) C5=11
+ +       0      * (normalized) C5=12
+ +       0.0002 * (normalized) C5=13
+ -       1     
+
+Number of kernel evaluations: 112336364 (13.389% cached)
+
+Classifier for classes: 0, 3
+
+BinarySMO
+
+Machine linear: showing attribute weights, not support vectors.
+
+        -0      * (normalized) S1=1
+ +      -0      * (normalized) S1=2
+ +      -0      * (normalized) S1=3
+ +       0      * (normalized) S1=4
+ +      -0      * (normalized) C1=1
+ +      -0.0001 * (normalized) C1=2
+ +       0.0006 * (normalized) C1=3
+ +      -0.0001 * (normalized) C1=4
+ +      -0.0001 * (normalized) C1=5
+ +      -0.0001 * (normalized) C1=6
+ +      -0.0001 * (normalized) C1=7
+ +      -0      * (normalized) C1=8
+ +      -0.0001 * (normalized) C1=9
+ +      -0      * (normalized) C1=10
+ +      -0      * (normalized) C1=11
+ +      -0      * (normalized) C1=12
+ +      -0      * (normalized) C1=13
+ +       0      * (normalized) S2=1
+ +      -0      * (normalized) S2=2
+ +       0.0001 * (normalized) S2=3
+ +      -0.0001 * (normalized) S2=4
+ +      -0      * (normalized) C2=1
+ +      -0      * (normalized) C2=2
+ +       0.0006 * (normalized) C2=3
+ +      -0.0001 * (normalized) C2=4
+ +      -0.0002 * (normalized) C2=5
+ +      -0.0001 * (normalized) C2=6
+ +      -0      * (normalized) C2=7
+ +      -0.0002 * (normalized) C2=8
+ +      -0.0001 * (normalized) C2=9
+ +      -0      * (normalized) C2=10
+ +      -0      * (normalized) C2=11
+ +       0      * (normalized) C2=12
+ +       0      * (normalized) C2=13
+ +       0      * (normalized) S3=1
+ +       0.0001 * (normalized) S3=2
+ +      -0.0001 * (normalized) S3=3
+ +       0      * (normalized) S3=4
+ +       0      * (normalized) C3=1
+ +      -0.0001 * (normalized) C3=2
+ +       0.0007 * (normalized) C3=3
+ +      -0.0002 * (normalized) C3=4
+ +      -0.0001 * (normalized) C3=5
+ +      -0      * (normalized) C3=6
+ +      -0      * (normalized) C3=7
+ +      -0.0002 * (normalized) C3=8
+ +      -0.0001 * (normalized) C3=9
+ +       0      * (normalized) C3=10
+ +      -0      * (normalized) C3=11
+ +       0      * (normalized) C3=12
+ +      -0.0001 * (normalized) C3=13
+ +      -0      * (normalized) S4=1
+ +       0.0001 * (normalized) S4=2
+ +       0.0001 * (normalized) S4=3
+ +      -0.0001 * (normalized) S4=4
+ +      -0.0001 * (normalized) C4=1
+ +      -0.0001 * (normalized) C4=2
+ +       0.0007 * (normalized) C4=3
+ +      -0.0001 * (normalized) C4=4
+ +       0      * (normalized) C4=5
+ +      -0.0001 * (normalized) C4=6
+ +      -0      * (normalized) C4=7
+ +       0.0001 * (normalized) C4=8
+ +      -0      * (normalized) C4=9
+ +      -0.0001 * (normalized) C4=10
+ +       0      * (normalized) C4=11
+ +      -0.0002 * (normalized) C4=12
+ +      -0      * (normalized) C4=13
+ +       0.0001 * (normalized) S5=1
+ +      -0      * (normalized) S5=2
+ +      -0      * (normalized) S5=3
+ +      -0      * (normalized) S5=4
+ +       0.0001 * (normalized) C5=1
+ +      -0      * (normalized) C5=2
+ +       0.0006 * (normalized) C5=3
+ +      -0.0001 * (normalized) C5=4
+ +      -0.0001 * (normalized) C5=5
+ +      -0.0001 * (normalized) C5=6
+ +      -0.0001 * (normalized) C5=7
+ +      -0.0001 * (normalized) C5=8
+ +      -0.0001 * (normalized) C5=9
+ +       0      * (normalized) C5=10
+ +      -0.0001 * (normalized) C5=11
+ +      -0.0001 * (normalized) C5=12
+ +       0      * (normalized) C5=13
+ -       1.0001
+
+Number of kernel evaluations: 67184850 (22.045% cached)
+
+Classifier for classes: 0, 4
+
+BinarySMO
+
+Machine linear: showing attribute weights, not support vectors.
+
+         0.0001 * (normalized) S1=1
+ +       0      * (normalized) S1=2
+ +       0      * (normalized) S1=3
+ +      -0.0002 * (normalized) S1=4
+ +       0.0001 * (normalized) C1=1
+ +      -0.0001 * (normalized) C1=2
+ +       0.0001 * (normalized) C1=3
+ +       0.0001 * (normalized) C1=4
+ +       0      * (normalized) C1=5
+ +       0.0002 * (normalized) C1=6
+ +      -0.0001 * (normalized) C1=7
+ +       0      * (normalized) C1=8
+ +      -0.0001 * (normalized) C1=9
+ +      -0      * (normalized) C1=10
+ +      -0      * (normalized) C1=11
+ +      -0.0001 * (normalized) C1=12
+ +      -0.0001 * (normalized) C1=13
+ +      -0.0001 * (normalized) S2=1
+ +       0.0001 * (normalized) S2=2
+ +      -0      * (normalized) S2=3
+ +       0      * (normalized) S2=4
+ +       0.0002 * (normalized) C2=1
+ +      -0.0001 * (normalized) C2=2
+ +      -0.0001 * (normalized) C2=3
+ +       0      * (normalized) C2=4
+ +       0      * (normalized) C2=5
+ +       0.0001 * (normalized) C2=6
+ +      -0.0001 * (normalized) C2=7
+ +      -0.0001 * (normalized) C2=8
+ +       0.0002 * (normalized) C2=9
+ +       0      * (normalized) C2=10
+ +      -0      * (normalized) C2=11
+ +      -0.0001 * (normalized) C2=12
+ +      -0      * (normalized) C2=13
+ +      -0      * (normalized) S3=1
+ +       0      * (normalized) S3=2
+ +      -0      * (normalized) S3=3
+ +       0      * (normalized) S3=4
+ +       0.0002 * (normalized) C3=1
+ +      -0.0017 * (normalized) C3=2
+ +       0.0003 * (normalized) C3=3
+ +       0.0003 * (normalized) C3=4
+ +       0.0002 * (normalized) C3=5
+ +       0.0003 * (normalized) C3=6
+ +       0.0001 * (normalized) C3=7
+ +      -0      * (normalized) C3=8
+ +      -0.0001 * (normalized) C3=9
+ +       0.0001 * (normalized) C3=10
+ +      -0      * (normalized) C3=11
+ +       0.0001 * (normalized) C3=12
+ +       0.0002 * (normalized) C3=13
+ +       0.0001 * (normalized) S4=1
+ +      -0.0001 * (normalized) S4=2
+ +       0      * (normalized) S4=3
+ +       0      * (normalized) S4=4
+ +       0.0002 * (normalized) C4=1
+ +      -0.0015 * (normalized) C4=2
+ +       0.0003 * (normalized) C4=3
+ +       0.0001 * (normalized) C4=4
+ +       0.0001 * (normalized) C4=5
+ +       0.0002 * (normalized) C4=6
+ +       0      * (normalized) C4=7
+ +       0.0001 * (normalized) C4=8
+ +       0.0002 * (normalized) C4=9
+ +       0.0001 * (normalized) C4=10
+ +       0.0001 * (normalized) C4=11
+ +      -0      * (normalized) C4=12
+ +       0.0001 * (normalized) C4=13
+ +      -0      * (normalized) S5=1
+ +       0.0001 * (normalized) S5=2
+ +      -0      * (normalized) S5=3
+ +      -0      * (normalized) S5=4
+ +      -0.0001 * (normalized) C5=1
+ +      -0.0001 * (normalized) C5=2
+ +       0.0001 * (normalized) C5=3
+ +       0      * (normalized) C5=4
+ +      -0      * (normalized) C5=5
+ +      -0.0001 * (normalized) C5=6
+ +      -0.0001 * (normalized) C5=7
+ +      -0      * (normalized) C5=8
+ +      -0.0002 * (normalized) C5=9
+ +      -0.0001 * (normalized) C5=10
+ +       0.0002 * (normalized) C5=11
+ +       0      * (normalized) C5=12
+ +       0.0003 * (normalized) C5=13
+ -       1.0003
+
+Number of kernel evaluations: 23093857 (31.426% cached)
+
+Classifier for classes: 0, 5
+
+BinarySMO
+
+Machine linear: showing attribute weights, not support vectors.
+
+         0.0001 * (normalized) S1=1
+ +      -0.0001 * (normalized) S1=2
+ +       0      * (normalized) S1=3
+ +      -0      * (normalized) S1=4
+ +       0.0001 * (normalized) C1=1
+ +       0.0001 * (normalized) C1=2
+ +      -0.0018 * (normalized) C1=3
+ +       0.0002 * (normalized) C1=4
+ +       0.0001 * (normalized) C1=5
+ +       0.0002 * (normalized) C1=6
+ +       0.0002 * (normalized) C1=7
+ +       0.0001 * (normalized) C1=8
+ +       0.0002 * (normalized) C1=9
+ +       0      * (normalized) C1=10
+ +       0.0002 * (normalized) C1=11
+ +       0.0002 * (normalized) C1=12
+ +       0.0001 * (normalized) C1=13
+ +      -0.0001 * (normalized) S2=1
+ +       0.0001 * (normalized) S2=2
+ +      -0      * (normalized) S2=3
+ +       0      * (normalized) S2=4
+ +       0      * (normalized) C2=1
+ +      -0.0001 * (normalized) C2=2
+ +       0      * (normalized) C2=3
+ +       0.0003 * (normalized) C2=4
+ +       0.0001 * (normalized) C2=5
+ +      -0      * (normalized) C2=6
+ +      -0.0002 * (normalized) C2=7
+ +      -0.0001 * (normalized) C2=8
+ +      -0.0001 * (normalized) C2=9
+ +      -0.0001 * (normalized) C2=10
+ +      -0      * (normalized) C2=11
+ +       0      * (normalized) C2=12
+ +       0.0001 * (normalized) C2=13
+ +       0.0001 * (normalized) S3=1
+ +      -0.0001 * (normalized) S3=2
+ +      -0      * (normalized) S3=3
+ +      -0      * (normalized) S3=4
+ +      -0.0003 * (normalized) C3=1
+ +       0      * (normalized) C3=2
+ +       0.0002 * (normalized) C3=3
+ +       0.0002 * (normalized) C3=4
+ +       0.0001 * (normalized) C3=5
+ +      -0.0001 * (normalized) C3=6
+ +       0      * (normalized) C3=7
+ +       0.0001 * (normalized) C3=8
+ +       0      * (normalized) C3=9
+ +      -0.0004 * (normalized) C3=10
+ +       0.0001 * (normalized) C3=11
+ +       0      * (normalized) C3=12
+ +       0.0001 * (normalized) C3=13
+ +      -0      * (normalized) S4=1
+ +       0.0001 * (normalized) S4=2
+ +       0      * (normalized) S4=3
+ +      -0.0001 * (normalized) S4=4
+ +      -0.0001 * (normalized) C4=1
+ +      -0.0001 * (normalized) C4=2
+ +       0      * (normalized) C4=3
+ +       0.0001 * (normalized) C4=4
+ +       0.0002 * (normalized) C4=5
+ +      -0.0002 * (normalized) C4=6
+ +       0.0001 * (normalized) C4=7
+ +      -0      * (normalized) C4=8
+ +       0.0002 * (normalized) C4=9
+ +      -0.0002 * (normalized) C4=10
+ +       0      * (normalized) C4=11
+ +       0.0001 * (normalized) C4=12
+ +       0      * (normalized) C4=13
+ +       0      * (normalized) S5=1
+ +      -0      * (normalized) S5=2
+ +      -0.0002 * (normalized) S5=3
+ +       0.0002 * (normalized) S5=4
+ +      -0.0001 * (normalized) C5=1
+ +      -0.0002 * (normalized) C5=2
+ +      -0.0001 * (normalized) C5=3
+ +      -0      * (normalized) C5=4
+ +       0.0001 * (normalized) C5=5
+ +      -0.0001 * (normalized) C5=6
+ +       0.0001 * (normalized) C5=7
+ +       0      * (normalized) C5=8
+ +      -0.0001 * (normalized) C5=9
+ +      -0.0001 * (normalized) C5=10
+ +      -0      * (normalized) C5=11
+ +       0.0002 * (normalized) C5=12
+ +       0.0002 * (normalized) C5=13
+ -       1.0002
+
+Number of kernel evaluations: 18211167 (32.161% cached)
+
+Classifier for classes: 0, 6
+
+BinarySMO
+
+Machine linear: showing attribute weights, not support vectors.
+
+        -0      * (normalized) S1=1
+ +       0.0001 * (normalized) S1=2
+ +       0      * (normalized) S1=3
+ +      -0.0001 * (normalized) S1=4
+ +       0.0001 * (normalized) C1=1
+ +      -0      * (normalized) C1=2
+ +       0      * (normalized) C1=3
+ +       0.0002 * (normalized) C1=4
+ +       0.0004 * (normalized) C1=5
+ +       0.0001 * (normalized) C1=6
+ +       0.0001 * (normalized) C1=7
+ +       0.0001 * (normalized) C1=8
+ +       0.0001 * (normalized) C1=9
+ +       0.0001 * (normalized) C1=10
+ +       0.0002 * (normalized) C1=11
+ +      -0.0015 * (normalized) C1=12
+ +       0.0001 * (normalized) C1=13
+ +       0.0002 * (normalized) S2=1
+ +       0      * (normalized) S2=2
+ +      -0.0001 * (normalized) S2=3
+ +      -0.0002 * (normalized) S2=4
+ +       0      * (normalized) C2=1
+ +       0.0002 * (normalized) C2=2
+ +       0.0001 * (normalized) C2=3
+ +      -0      * (normalized) C2=4
+ +       0.0001 * (normalized) C2=5
+ +       0.0001 * (normalized) C2=6
+ +      -0.0001 * (normalized) C2=7
+ +       0.0004 * (normalized) C2=8
+ +       0      * (normalized) C2=9
+ +       0.0003 * (normalized) C2=10
+ +       0.0001 * (normalized) C2=11
+ +      -0.0013 * (normalized) C2=12
+ +      -0      * (normalized) C2=13
+ +      -0      * (normalized) S3=1
+ +      -0      * (normalized) S3=2
+ +      -0      * (normalized) S3=3
+ +       0.0001 * (normalized) S3=4
+ +      -0.0001 * (normalized) C3=1
+ +       0.0002 * (normalized) C3=2
+ +       0      * (normalized) C3=3
+ +       0.0001 * (normalized) C3=4
+ +       0      * (normalized) C3=5
+ +       0.0003 * (normalized) C3=6
+ +       0      * (normalized) C3=7
+ +       0.0002 * (normalized) C3=8
+ +      -0      * (normalized) C3=9
+ +       0.0002 * (normalized) C3=10
+ +       0.0003 * (normalized) C3=11
+ +       0      * (normalized) C3=12
+ +      -0.0013 * (normalized) C3=13
+ +      -0      * (normalized) S4=1
+ +       0.0001 * (normalized) S4=2
+ +       0.0002 * (normalized) S4=3
+ +      -0.0002 * (normalized) S4=4
+ +       0.0001 * (normalized) C4=1
+ +      -0.0008 * (normalized) C4=2
+ +       0.0001 * (normalized) C4=3
+ +       0.0004 * (normalized) C4=4
+ +       0.0001 * (normalized) C4=5
+ +       0.0003 * (normalized) C4=6
+ +       0.0002 * (normalized) C4=7
+ +       0.0004 * (normalized) C4=8
+ +       0      * (normalized) C4=9
+ +       0.0001 * (normalized) C4=10
+ +       0.0003 * (normalized) C4=11
+ +      -0.0012 * (normalized) C4=12
+ +       0.0001 * (normalized) C4=13
+ +       0      * (normalized) S5=1
+ +      -0      * (normalized) S5=2
+ +      -0.0001 * (normalized) S5=3
+ +       0.0001 * (normalized) S5=4
+ +      -0      * (normalized) C5=1
+ +      -0.0001 * (normalized) C5=2
+ +      -0.0002 * (normalized) C5=3
+ +       0.0003 * (normalized) C5=4
+ +       0.0002 * (normalized) C5=5
+ +       0.0002 * (normalized) C5=6
+ +      -0.0013 * (normalized) C5=7
+ +       0.0004 * (normalized) C5=8
+ +       0.0001 * (normalized) C5=9
+ +       0.0001 * (normalized) C5=10
+ +      -0      * (normalized) C5=11
+ +       0.0001 * (normalized) C5=12
+ +       0.0002 * (normalized) C5=13
+ -       1.0008
+
+Number of kernel evaluations: 10883710 (42.67% cached)
+
+Classifier for classes: 0, 7
+
+BinarySMO
+
+Machine linear: showing attribute weights, not support vectors.
+
+        -0.1997 * (normalized) S1=1
+ +       0.0066 * (normalized) S1=2
+ +       0.1338 * (normalized) S1=3
+ +       0.0594 * (normalized) S1=4
+ +      -0.117  * (normalized) C1=1
+ +       0.0479 * (normalized) C1=2
+ +       0.1561 * (normalized) C1=3
+ +      -0.1016 * (normalized) C1=4
+ +      -0.1713 * (normalized) C1=5
+ +      -0.1073 * (normalized) C1=6
+ +      -0      * (normalized) C1=7
+ +       0.7577 * (normalized) C1=8
+ +      -0.2593 * (normalized) C1=9
+ +      -0.0847 * (normalized) C1=10
+ +       0.1911 * (normalized) C1=11
+ +      -0.2277 * (normalized) C1=12
+ +      -0.0838 * (normalized) C1=13
+ +      -0.4222 * (normalized) S2=1
+ +       0.2286 * (normalized) S2=2
+ +       0.0452 * (normalized) S2=3
+ +       0.1484 * (normalized) S2=4
+ +      -0.0783 * (normalized) C2=1
+ +       0.1784 * (normalized) C2=2
+ +       0.1601 * (normalized) C2=3
+ +      -0.1455 * (normalized) C2=4
+ +      -0.1073 * (normalized) C2=5
+ +      -0.2086 * (normalized) C2=6
+ +       0.0737 * (normalized) C2=7
+ +       0.5853 * (normalized) C2=8
+ +      -0.1609 * (normalized) C2=9
+ +      -0.1061 * (normalized) C2=10
+ +       0.0411 * (normalized) C2=11
+ +      -0.1161 * (normalized) C2=12
+ +      -0.1158 * (normalized) C2=13
+ +       0.0273 * (normalized) S3=1
+ +      -0.0961 * (normalized) S3=2
+ +       0.1152 * (normalized) S3=3
+ +      -0.0463 * (normalized) S3=4
+ +      -0.1155 * (normalized) C3=1
+ +       0.0122 * (normalized) C3=2
+ +       0.1142 * (normalized) C3=3
+ +      -0.1366 * (normalized) C3=4
+ +      -0.2829 * (normalized) C3=5
+ +      -0.223  * (normalized) C3=6
+ +       0.2079 * (normalized) C3=7
+ +       0.5123 * (normalized) C3=8
+ +      -0.0388 * (normalized) C3=9
+ +      -0.1012 * (normalized) C3=10
+ +       0.2388 * (normalized) C3=11
+ +      -0.0943 * (normalized) C3=12
+ +      -0.093  * (normalized) C3=13
+ +       0.3036 * (normalized) S4=1
+ +      -0.2196 * (normalized) S4=2
+ +       0.059  * (normalized) S4=3
+ +      -0.143  * (normalized) S4=4
+ +      -0.0599 * (normalized) C4=1
+ +       0.093  * (normalized) C4=2
+ +      -0.0962 * (normalized) C4=3
+ +      -0.0105 * (normalized) C4=4
+ +      -0.2593 * (normalized) C4=5
+ +      -0.0217 * (normalized) C4=6
+ +       0.1632 * (normalized) C4=7
+ +       0.5433 * (normalized) C4=8
+ +      -0.1975 * (normalized) C4=9
+ +      -0.1657 * (normalized) C4=10
+ +       0.1341 * (normalized) C4=11
+ +       0.1096 * (normalized) C4=12
+ +      -0.2323 * (normalized) C4=13
+ +      -0.1482 * (normalized) S5=1
+ +       0.1093 * (normalized) S5=2
+ +      -0.16   * (normalized) S5=3
+ +       0.1989 * (normalized) S5=4
+ +      -0.042  * (normalized) C5=1
+ +      -0.1777 * (normalized) C5=2
+ +      -0.0708 * (normalized) C5=3
+ +      -0.1104 * (normalized) C5=4
+ +       0.0424 * (normalized) C5=5
+ +      -0.2432 * (normalized) C5=6
+ +       0.234  * (normalized) C5=7
+ +       0.6014 * (normalized) C5=8
+ +      -0.3539 * (normalized) C5=9
+ +       0.1195 * (normalized) C5=10
+ +       0      * (normalized) C5=11
+ +      -0.1854 * (normalized) C5=12
+ +       0.1861 * (normalized) C5=13
+ -       2.439 
+
+Number of kernel evaluations: 470778 (65.52% cached)
+
+Classifier for classes: 0, 8
+
+BinarySMO
+
+Machine linear: showing attribute weights, not support vectors.
+
+         0.0654 * (normalized) S1=1
+ +       0.0022 * (normalized) S1=2
+ +      -0.0296 * (normalized) S1=3
+ +      -0.0381 * (normalized) S1=4
+ +       0.1101 * (normalized) C1=1
+ +       0.0988 * (normalized) C1=2
+ +      -0.0716 * (normalized) C1=3
+ +      -0.0371 * (normalized) C1=4
+ +       0.1078 * (normalized) C1=5
+ +      -0.0277 * (normalized) C1=6
+ +      -0.0429 * (normalized) C1=7
+ +      -0.1303 * (normalized) C1=8
+ +       0.0689 * (normalized) C1=9
+ +      -0.0274 * (normalized) C1=10
+ +      -0.0157 * (normalized) C1=11
+ +      -0.0211 * (normalized) C1=12
+ +      -0.0117 * (normalized) C1=13
+ +       0.0385 * (normalized) S2=1
+ +       0.021  * (normalized) S2=2
+ +      -0.0563 * (normalized) S2=3
+ +      -0.0033 * (normalized) S2=4
+ +      -0.059  * (normalized) C2=1
+ +       0.1166 * (normalized) C2=2
+ +       0      * (normalized) C2=3
+ +       0.0981 * (normalized) C2=4
+ +      -0.018  * (normalized) C2=5
+ +       0.0604 * (normalized) C2=6
+ +      -0.0809 * (normalized) C2=7
+ +      -0.0843 * (normalized) C2=8
+ +      -0.0306 * (normalized) C2=9
+ +      -0.0147 * (normalized) C2=10
+ +      -0.0383 * (normalized) C2=11
+ +       0.0764 * (normalized) C2=12
+ +      -0.0256 * (normalized) C2=13
+ +       0.0311 * (normalized) S3=1
+ +      -0.0228 * (normalized) S3=2
+ +       0.0089 * (normalized) S3=3
+ +      -0.0171 * (normalized) S3=4
+ +      -0.0356 * (normalized) C3=1
+ +       0.1039 * (normalized) C3=2
+ +       0.1094 * (normalized) C3=3
+ +      -0.0604 * (normalized) C3=4
+ +       0.0641 * (normalized) C3=5
+ +      -0.0117 * (normalized) C3=6
+ +      -0.0279 * (normalized) C3=7
+ +      -0.0421 * (normalized) C3=8
+ +       0.0777 * (normalized) C3=9
+ +       0.0398 * (normalized) C3=10
+ +      -0.1355 * (normalized) C3=11
+ +      -0.0496 * (normalized) C3=12
+ +      -0.0321 * (normalized) C3=13
+ +      -0.0011 * (normalized) S4=1
+ +      -0.0005 * (normalized) S4=2
+ +       0.0049 * (normalized) S4=3
+ +      -0.0033 * (normalized) S4=4
+ +      -0.0318 * (normalized) C4=1
+ +      -0.0769 * (normalized) C4=2
+ +       0.127  * (normalized) C4=3
+ +       0.1022 * (normalized) C4=4
+ +      -0.0179 * (normalized) C4=5
+ +      -0.0143 * (normalized) C4=6
+ +       0.026  * (normalized) C4=7
+ +      -0.0694 * (normalized) C4=8
+ +      -0.0587 * (normalized) C4=9
+ +      -0.0492 * (normalized) C4=10
+ +       0.1024 * (normalized) C4=11
+ +      -0.0235 * (normalized) C4=12
+ +      -0.0157 * (normalized) C4=13
+ +       0.0356 * (normalized) S5=1
+ +       0.0252 * (normalized) S5=2
+ +      -0.0145 * (normalized) S5=3
+ +      -0.0463 * (normalized) S5=4
+ +      -0.0349 * (normalized) C5=1
+ +      -0.0184 * (normalized) C5=2
+ +      -0.0281 * (normalized) C5=3
+ +      -0.0004 * (normalized) C5=4
+ +       0.166  * (normalized) C5=5
+ +       0.0644 * (normalized) C5=6
+ +      -0.0413 * (normalized) C5=7
+ +       0.0435 * (normalized) C5=8
+ +      -0.0359 * (normalized) C5=9
+ +      -0.0839 * (normalized) C5=10
+ +      -0.0426 * (normalized) C5=11
+ +       0      * (normalized) C5=12
+ +       0.0114 * (normalized) C5=13
+ -       1.428 
+
+Number of kernel evaluations: 844970 (69.547% cached)
+
+Classifier for classes: 0, 9
+
+BinarySMO
+
+Machine linear: showing attribute weights, not support vectors.
+
+        -0.0334 * (normalized) S1=1
+ +      -0.0194 * (normalized) S1=2
+ +      -0.0156 * (normalized) S1=3
+ +       0.0684 * (normalized) S1=4
+ +       0.194  * (normalized) C1=1
+ +      -0.1057 * (normalized) C1=2
+ +      -0.014  * (normalized) C1=3
+ +      -0.3908 * (normalized) C1=4
+ +      -0.1078 * (normalized) C1=5
+ +      -0.2217 * (normalized) C1=6
+ +      -0.273  * (normalized) C1=7
+ +      -0.0724 * (normalized) C1=8
+ +      -0.1272 * (normalized) C1=9
+ +       0.4211 * (normalized) C1=10
+ +       0.3047 * (normalized) C1=11
+ +       0.4172 * (normalized) C1=12
+ +      -0.0245 * (normalized) C1=13
+ +      -0.1536 * (normalized) S2=1
+ +       0.062  * (normalized) S2=2
+ +       0.0757 * (normalized) S2=3
+ +       0.0159 * (normalized) S2=4
+ +      -0      * (normalized) C2=1
+ +      -0.1071 * (normalized) C2=2
+ +      -0.0919 * (normalized) C2=3
+ +      -0.0496 * (normalized) C2=4
+ +      -0.1028 * (normalized) C2=5
+ +      -0.0934 * (normalized) C2=6
+ +      -0.1347 * (normalized) C2=7
+ +      -0.2245 * (normalized) C2=8
+ +      -0.088  * (normalized) C2=9
+ +      -0.0018 * (normalized) C2=10
+ +       0.4937 * (normalized) C2=11
+ +      -0      * (normalized) C2=12
+ +       0.4001 * (normalized) C2=13
+ +       0.0372 * (normalized) S3=1
+ +      -0.0037 * (normalized) S3=2
+ +      -0.0907 * (normalized) S3=3
+ +       0.0572 * (normalized) S3=4
+ +       0.2125 * (normalized) C3=1
+ +      -0.022  * (normalized) C3=2
+ +      -0.3085 * (normalized) C3=3
+ +      -0.174  * (normalized) C3=4
+ +      -0.0669 * (normalized) C3=5
+ +      -0.1519 * (normalized) C3=6
+ +      -0.0753 * (normalized) C3=7
+ +      -0.0665 * (normalized) C3=8
+ +      -0.1312 * (normalized) C3=9
+ +       0.2567 * (normalized) C3=10
+ +      -0      * (normalized) C3=11
+ +       0.2046 * (normalized) C3=12
+ +       0.3226 * (normalized) C3=13
+ +      -0.0823 * (normalized) S4=1
+ +       0.0281 * (normalized) S4=2
+ +      -0.0102 * (normalized) S4=3
+ +       0.0644 * (normalized) S4=4
+ +      -0      * (normalized) C4=1
+ +      -0.014  * (normalized) C4=2
+ +      -0.0969 * (normalized) C4=3
+ +      -0.1655 * (normalized) C4=4
+ +      -0.3171 * (normalized) C4=5
+ +      -0.1451 * (normalized) C4=6
+ +      -0.0888 * (normalized) C4=7
+ +      -0.3393 * (normalized) C4=8
+ +      -0.1016 * (normalized) C4=9
+ +       0.3118 * (normalized) C4=10
+ +       0.2824 * (normalized) C4=11
+ +       0.4075 * (normalized) C4=12
+ +       0.2667 * (normalized) C4=13
+ +      -0.0175 * (normalized) S5=1
+ +      -0.0105 * (normalized) S5=2
+ +      -0.0603 * (normalized) S5=3
+ +       0.0882 * (normalized) S5=4
+ +       0.4307 * (normalized) C5=1
+ +      -0.1272 * (normalized) C5=2
+ +      -0.1533 * (normalized) C5=3
+ +      -0.1288 * (normalized) C5=4
+ +      -0.2234 * (normalized) C5=5
+ +      -0.0018 * (normalized) C5=6
+ +      -0.2595 * (normalized) C5=7
+ +      -0.1375 * (normalized) C5=8
+ +      -0.0226 * (normalized) C5=9
+ +       0.3386 * (normalized) C5=10
+ +      -0      * (normalized) C5=11
+ +       0.3102 * (normalized) C5=12
+ +      -0.0255 * (normalized) C5=13
+ -       2.2267
+
+Number of kernel evaluations: 453460 (67.968% cached)
+
+Classifier for classes: 1, 2
+
+BinarySMO
+
+Machine linear: showing attribute weights, not support vectors.
+
+         0      * (normalized) S1=1
+ +       0      * (normalized) S1=2
+ +      -0      * (normalized) S1=3
+ +      -0      * (normalized) S1=4
+ +       0.0001 * (normalized) C1=1
+ +       0      * (normalized) C1=2
+ +      -0.0001 * (normalized) C1=3
+ +       0.0001 * (normalized) C1=4
+ +      -0.0001 * (normalized) C1=5
+ +      -0.0001 * (normalized) C1=6
+ +      -0      * (normalized) C1=7
+ +       0.0002 * (normalized) C1=8
+ +      -0.0001 * (normalized) C1=9
+ +      -0      * (normalized) C1=10
+ +       0      * (normalized) C1=11
+ +      -0      * (normalized) C1=12
+ +      -0      * (normalized) C1=13
+ +      -0.0001 * (normalized) S2=1
+ +       0.0001 * (normalized) S2=2
+ +      -0      * (normalized) S2=3
+ +       0      * (normalized) S2=4
+ +       0.0001 * (normalized) C2=1
+ +      -0      * (normalized) C2=2
+ +       0      * (normalized) C2=3
+ +       0      * (normalized) C2=4
+ +       0.0002 * (normalized) C2=5
+ +      -0.0001 * (normalized) C2=6
+ +       0.0001 * (normalized) C2=7
+ +      -0.0002 * (normalized) C2=8
+ +      -0      * (normalized) C2=9
+ +       0      * (normalized) C2=10
+ +      -0.0001 * (normalized) C2=11
+ +       0      * (normalized) C2=12
+ +      -0.0001 * (normalized) C2=13
+ +       0.0001 * (normalized) S3=1
+ +      -0      * (normalized) S3=2
+ +      -0      * (normalized) S3=3
+ +       0      * (normalized) S3=4
+ +       0.0004 * (normalized) C3=1
+ +       0.0002 * (normalized) C3=2
+ +      -0.0003 * (normalized) C3=3
+ +       0.0004 * (normalized) C3=4
+ +      -0.0002 * (normalized) C3=5
+ +       0.0003 * (normalized) C3=6
+ +      -0.0003 * (normalized) C3=7
+ +      -0.0001 * (normalized) C3=8
+ +      -0.0003 * (normalized) C3=9
+ +      -0      * (normalized) C3=10
+ +       0.0001 * (normalized) C3=11
+ +      -0.0001 * (normalized) C3=12
+ +      -0      * (normalized) C3=13
+ +      -0      * (normalized) S4=1
+ +      -0      * (normalized) S4=2
+ +      -0      * (normalized) S4=3
+ +       0.0001 * (normalized) S4=4
+ +       0.0001 * (normalized) C4=1
+ +      -0      * (normalized) C4=2
+ +       0.0002 * (normalized) C4=3
+ +      -0.0001 * (normalized) C4=4
+ +      -0      * (normalized) C4=5
+ +      -0.0001 * (normalized) C4=6
+ +       0      * (normalized) C4=7
+ +      -0.0001 * (normalized) C4=8
+ +       0      * (normalized) C4=9
+ +       0.0001 * (normalized) C4=10
+ +       0.0001 * (normalized) C4=11
+ +      -0      * (normalized) C4=12
+ +      -0.0001 * (normalized) C4=13
+ +      -0      * (normalized) S5=1
+ +      -0      * (normalized) S5=2
+ +       0.0001 * (normalized) S5=3
+ +      -0      * (normalized) S5=4
+ +      -0      * (normalized) C5=1
+ +       0      * (normalized) C5=2
+ +       0.0001 * (normalized) C5=3
+ +      -0.0001 * (normalized) C5=4
+ +       0      * (normalized) C5=5
+ +       0      * (normalized) C5=6
+ +       0.0001 * (normalized) C5=7
+ +      -0      * (normalized) C5=8
+ +      -0.0001 * (normalized) C5=9
+ +       0      * (normalized) C5=10
+ +      -0      * (normalized) C5=11
+ +      -0.0001 * (normalized) C5=12
+ +      -0      * (normalized) C5=13
+ -       1.0001
+
+Number of kernel evaluations: 76866347 (25.473% cached)
+
+Classifier for classes: 1, 3
+
+BinarySMO
+
+Machine linear: showing attribute weights, not support vectors.
+
+         0      * (normalized) S1=1
+ +       0      * (normalized) S1=2
+ +      -0      * (normalized) S1=3
+ +      -0      * (normalized) S1=4
+ +       0      * (normalized) C1=1
+ +       0      * (normalized) C1=2
+ +       0      * (normalized) C1=3
+ +      -0.0001 * (normalized) C1=4
+ +       0.0001 * (normalized) C1=5
+ +       0      * (normalized) C1=6
+ +      -0.0001 * (normalized) C1=7
+ +       0.0001 * (normalized) C1=8
+ +      -0      * (normalized) C1=9
+ +      -0.0001 * (normalized) C1=10
+ +      -0      * (normalized) C1=11
+ +       0.0001 * (normalized) C1=12
+ +      -0.0001 * (normalized) C1=13
+ +       0      * (normalized) S2=1
+ +      -0      * (normalized) S2=2
+ +      -0      * (normalized) S2=3
+ +      -0      * (normalized) S2=4
+ +      -0.0001 * (normalized) C2=1
+ +      -0.0001 * (normalized) C2=2
+ +       0.0001 * (normalized) C2=3
+ +       0.0001 * (normalized) C2=4
+ +      -0.0001 * (normalized) C2=5
+ +      -0.0001 * (normalized) C2=6
+ +       0.0001 * (normalized) C2=7
+ +       0      * (normalized) C2=8
+ +       0.0001 * (normalized) C2=9
+ +      -0.0001 * (normalized) C2=10
+ +      -0.0001 * (normalized) C2=11
+ +       0.0002 * (normalized) C2=12
+ +       0      * (normalized) C2=13
+ +      -0      * (normalized) S3=1
+ +       0      * (normalized) S3=2
+ +       0      * (normalized) S3=3
+ +      -0.0001 * (normalized) S3=4
+ +       0.0003 * (normalized) C3=1
+ +      -0.0001 * (normalized) C3=2
+ +      -0.0001 * (normalized) C3=3
+ +       0      * (normalized) C3=4
+ +       0      * (normalized) C3=5
+ +      -0      * (normalized) C3=6
+ +      -0.0001 * (normalized) C3=7
+ +      -0.0001 * (normalized) C3=8
+ +       0.0003 * (normalized) C3=9
+ +      -0.0001 * (normalized) C3=10
+ +      -0      * (normalized) C3=11
+ +      -0      * (normalized) C3=12
+ +      -0.0002 * (normalized) C3=13
+ +       0.0001 * (normalized) S4=1
+ +      -0.0002 * (normalized) S4=2
+ +       0.0001 * (normalized) S4=3
+ +      -0      * (normalized) S4=4
+ +       0      * (normalized) C4=1
+ +       0      * (normalized) C4=2
+ +      -0.0001 * (normalized) C4=3
+ +      -0.0001 * (normalized) C4=4
+ +       0.0001 * (normalized) C4=5
+ +       0      * (normalized) C4=6
+ +       0      * (normalized) C4=7
+ +       0.0001 * (normalized) C4=8
+ +       0.0001 * (normalized) C4=9
+ +      -0.0001 * (normalized) C4=10
+ +       0      * (normalized) C4=11
+ +      -0.0001 * (normalized) C4=12
+ +      -0.0001 * (normalized) C4=13
+ +       0.0002 * (normalized) S5=1
+ +      -0.0001 * (normalized) S5=2
+ +      -0.0001 * (normalized) S5=3
+ +      -0      * (normalized) S5=4
+ +       0      * (normalized) C5=1
+ +       0      * (normalized) C5=2
+ +       0      * (normalized) C5=3
+ +       0.0001 * (normalized) C5=4
+ +      -0      * (normalized) C5=5
+ +      -0      * (normalized) C5=6
+ +      -0.0001 * (normalized) C5=7
+ +       0      * (normalized) C5=8
+ +      -0.0001 * (normalized) C5=9
+ +       0.0001 * (normalized) C5=10
+ +      -0.0001 * (normalized) C5=11
+ +      -0.0001 * (normalized) C5=12
+ +       0.0001 * (normalized) C5=13
+ -       1.0001
+
+Number of kernel evaluations: 52635795 (22.569% cached)
+
+Classifier for classes: 1, 4
+
+BinarySMO
+
+Machine linear: showing attribute weights, not support vectors.
+
+         0.0001 * (normalized) S1=1
+ +      -0.0001 * (normalized) S1=2
+ +       0      * (normalized) S1=3
+ +       0      * (normalized) S1=4
+ +      -0.0001 * (normalized) C1=1
+ +      -0.0001 * (normalized) C1=2
+ +      -0      * (normalized) C1=3
+ +      -0      * (normalized) C1=4
+ +       0.0002 * (normalized) C1=5
+ +       0.0001 * (normalized) C1=6
+ +      -0.0001 * (normalized) C1=7
+ +       0.0001 * (normalized) C1=8
+ +       0.0001 * (normalized) C1=9
+ +       0.0001 * (normalized) C1=10
+ +      -0.0001 * (normalized) C1=11
+ +      -0.0001 * (normalized) C1=12
+ +      -0.0001 * (normalized) C1=13
+ +       0.0001 * (normalized) S2=1
+ +      -0.0001 * (normalized) S2=2
+ +      -0.0001 * (normalized) S2=3
+ +       0      * (normalized) S2=4
+ +      -0.0001 * (normalized) C2=1
+ +       0      * (normalized) C2=2
+ +       0      * (normalized) C2=3
+ +      -0      * (normalized) C2=4
+ +       0      * (normalized) C2=5
+ +      -0      * (normalized) C2=6
+ +       0.0001 * (normalized) C2=7
+ +      -0      * (normalized) C2=8
+ +      -0.0001 * (normalized) C2=9
+ +       0.0001 * (normalized) C2=10
+ +      -0      * (normalized) C2=11
+ +       0.0001 * (normalized) C2=12
+ +      -0      * (normalized) C2=13
+ +      -0.0001 * (normalized) S3=1
+ +       0.0001 * (normalized) S3=2
+ +       0      * (normalized) S3=3
+ +      -0.0001 * (normalized) S3=4
+ +       0.0002 * (normalized) C3=1
+ +      -0.0017 * (normalized) C3=2
+ +       0.0002 * (normalized) C3=3
+ +       0.0001 * (normalized) C3=4
+ +       0.0001 * (normalized) C3=5
+ +       0.0001 * (normalized) C3=6
+ +       0.0002 * (normalized) C3=7
+ +       0.0001 * (normalized) C3=8
+ +      -0      * (normalized) C3=9
+ +       0.0002 * (normalized) C3=10
+ +       0.0002 * (normalized) C3=11
+ +       0.0003 * (normalized) C3=12
+ +       0      * (normalized) C3=13
+ +       0.0001 * (normalized) S4=1
+ +       0      * (normalized) S4=2
+ +      -0.0001 * (normalized) S4=3
+ +      -0      * (normalized) S4=4
+ +       0.0003 * (normalized) C4=1
+ +      -0.0017 * (normalized) C4=2
+ +       0.0002 * (normalized) C4=3
+ +       0.0002 * (normalized) C4=4
+ +       0.0002 * (normalized) C4=5
+ +       0.0001 * (normalized) C4=6
+ +      -0      * (normalized) C4=7
+ +       0.0002 * (normalized) C4=8
+ +       0.0002 * (normalized) C4=9
+ +       0.0001 * (normalized) C4=10
+ +       0.0001 * (normalized) C4=11
+ +       0.0001 * (normalized) C4=12
+ +       0.0001 * (normalized) C4=13
+ +      -0      * (normalized) S5=1
+ +      -0      * (normalized) S5=2
+ +       0.0001 * (normalized) S5=3
+ +       0      * (normalized) S5=4
+ +       0.0001 * (normalized) C5=1
+ +      -0.0001 * (normalized) C5=2
+ +      -0      * (normalized) C5=3
+ +       0.0001 * (normalized) C5=4
+ +       0.0001 * (normalized) C5=5
+ +      -0      * (normalized) C5=6
+ +      -0      * (normalized) C5=7
+ +       0.0001 * (normalized) C5=8
+ +      -0.0001 * (normalized) C5=9
+ +      -0      * (normalized) C5=10
+ +       0      * (normalized) C5=11
+ +      -0      * (normalized) C5=12
+ +      -0.0002 * (normalized) C5=13
+ -       1.0002
+
+Number of kernel evaluations: 17272387 (34.432% cached)
+
+Classifier for classes: 1, 5
+
+BinarySMO
+
+Machine linear: showing attribute weights, not support vectors.
+
+         0      * (normalized) S1=1
+ +      -0.0001 * (normalized) S1=2
+ +       0      * (normalized) S1=3
+ +       0      * (normalized) S1=4
+ +       0.0003 * (normalized) C1=1
+ +       0.0002 * (normalized) C1=2
+ +      -0.0018 * (normalized) C1=3
+ +       0.0001 * (normalized) C1=4
+ +       0      * (normalized) C1=5
+ +       0.0001 * (normalized) C1=6
+ +       0.0002 * (normalized) C1=7
+ +       0.0001 * (normalized) C1=8
+ +       0.0003 * (normalized) C1=9
+ +       0.0001 * (normalized) C1=10
+ +       0.0002 * (normalized) C1=11
+ +       0.0001 * (normalized) C1=12
+ +       0.0001 * (normalized) C1=13
+ +      -0.0002 * (normalized) S2=1
+ +       0.0001 * (normalized) S2=2
+ +       0      * (normalized) S2=3
+ +       0      * (normalized) S2=4
+ +       0.0001 * (normalized) C2=1
+ +      -0.0001 * (normalized) C2=2
+ +       0.0004 * (normalized) C2=3
+ +      -0      * (normalized) C2=4
+ +      -0.0001 * (normalized) C2=5
+ +      -0.0001 * (normalized) C2=6
+ +       0.0001 * (normalized) C2=7
+ +       0.0001 * (normalized) C2=8
+ +      -0.0002 * (normalized) C2=9
+ +      -0.0001 * (normalized) C2=10
+ +       0      * (normalized) C2=11
+ +      -0.0001 * (normalized) C2=12
+ +       0      * (normalized) C2=13
+ +       0      * (normalized) S3=1
+ +      -0.0001 * (normalized) S3=2
+ +      -0      * (normalized) S3=3
+ +       0.0001 * (normalized) S3=4
+ +      -0.0001 * (normalized) C3=1
+ +       0      * (normalized) C3=2
+ +      -0      * (normalized) C3=3
+ +      -0.0003 * (normalized) C3=4
+ +       0.0001 * (normalized) C3=5
+ +       0.0003 * (normalized) C3=6
+ +      -0.0001 * (normalized) C3=7
+ +       0.0001 * (normalized) C3=8
+ +       0.0001 * (normalized) C3=9
+ +      -0.0001 * (normalized) C3=10
+ +       0      * (normalized) C3=11
+ +       0      * (normalized) C3=12
+ +      -0.0001 * (normalized) C3=13
+ +      -0      * (normalized) S4=1
+ +       0      * (normalized) S4=2
+ +      -0.0001 * (normalized) S4=3
+ +       0.0001 * (normalized) S4=4
+ +       0.0001 * (normalized) C4=1
+ +       0      * (normalized) C4=2
+ +      -0.0001 * (normalized) C4=3
+ +       0.0002 * (normalized) C4=4
+ +      -0      * (normalized) C4=5
+ +      -0.0001 * (normalized) C4=6
+ +       0.0001 * (normalized) C4=7
+ +      -0      * (normalized) C4=8
+ +      -0.0001 * (normalized) C4=9
+ +      -0      * (normalized) C4=10
+ +       0      * (normalized) C4=11
+ +       0      * (normalized) C4=12
+ +      -0.0002 * (normalized) C4=13
+ +       0      * (normalized) S5=1
+ +      -0      * (normalized) S5=2
+ +      -0      * (normalized) S5=3
+ +       0      * (normalized) S5=4
+ +       0.0002 * (normalized) C5=1
+ +      -0.0001 * (normalized) C5=2
+ +       0      * (normalized) C5=3
+ +      -0.0001 * (normalized) C5=4
+ +      -0      * (normalized) C5=5
+ +      -0.0001 * (normalized) C5=6
+ +      -0      * (normalized) C5=7
+ +       0      * (normalized) C5=8
+ +       0      * (normalized) C5=9
+ +      -0.0001 * (normalized) C5=10
+ +      -0.0001 * (normalized) C5=11
+ +       0.0003 * (normalized) C5=12
+ +      -0.0001 * (normalized) C5=13
+ -       1.0004
+
+Number of kernel evaluations: 12996115 (35.657% cached)
+
+Classifier for classes: 1, 6
+
+BinarySMO
+
+Machine linear: showing attribute weights, not support vectors.
+
+         0.0001 * (normalized) S1=1
+ +      -0.0001 * (normalized) S1=2
+ +       0      * (normalized) S1=3
+ +      -0      * (normalized) S1=4
+ +      -0      * (normalized) C1=1
+ +       0.0001 * (normalized) C1=2
+ +       0.0001 * (normalized) C1=3
+ +       0.0001 * (normalized) C1=4
+ +       0      * (normalized) C1=5
+ +      -0      * (normalized) C1=6
+ +       0.0001 * (normalized) C1=7
+ +       0.0002 * (normalized) C1=8
+ +       0.0002 * (normalized) C1=9
+ +       0.0002 * (normalized) C1=10
+ +       0.0001 * (normalized) C1=11
+ +      -0.0012 * (normalized) C1=12
+ +       0.0002 * (normalized) C1=13
+ +       0.0001 * (normalized) S2=1
+ +       0.0001 * (normalized) S2=2
+ +      -0.0001 * (normalized) S2=3
+ +      -0.0001 * (normalized) S2=4
+ +       0.0001 * (normalized) C2=1
+ +       0.0003 * (normalized) C2=2
+ +       0.0002 * (normalized) C2=3
+ +       0.0001 * (normalized) C2=4
+ +       0.0001 * (normalized) C2=5
+ +       0.0001 * (normalized) C2=6
+ +      -0.0001 * (normalized) C2=7
+ +       0.0001 * (normalized) C2=8
+ +       0      * (normalized) C2=9
+ +       0.0001 * (normalized) C2=10
+ +       0.0001 * (normalized) C2=11
+ +      -0.0013 * (normalized) C2=12
+ +       0.0003 * (normalized) C2=13
+ +       0.0001 * (normalized) S3=1
+ +      -0      * (normalized) S3=2
+ +       0.0001 * (normalized) S3=3
+ +      -0.0001 * (normalized) S3=4
+ +      -0      * (normalized) C3=1
+ +       0.0001 * (normalized) C3=2
+ +       0.0002 * (normalized) C3=3
+ +       0.0001 * (normalized) C3=4
+ +       0      * (normalized) C3=5
+ +       0.0001 * (normalized) C3=6
+ +      -0      * (normalized) C3=7
+ +       0.0004 * (normalized) C3=8
+ +      -0      * (normalized) C3=9
+ +       0.0002 * (normalized) C3=10
+ +       0.0001 * (normalized) C3=11
+ +       0.0002 * (normalized) C3=12
+ +      -0.0013 * (normalized) C3=13
+ +      -0.0001 * (normalized) S4=1
+ +       0.0001 * (normalized) S4=2
+ +       0.0001 * (normalized) S4=3
+ +      -0.0001 * (normalized) S4=4
+ +       0.0002 * (normalized) C4=1
+ +      -0.0008 * (normalized) C4=2
+ +       0.0001 * (normalized) C4=3
+ +       0.0001 * (normalized) C4=4
+ +       0.0001 * (normalized) C4=5
+ +       0.0002 * (normalized) C4=6
+ +       0.0001 * (normalized) C4=7
+ +       0.0001 * (normalized) C4=8
+ +      -0      * (normalized) C4=9
+ +       0.0001 * (normalized) C4=10
+ +       0.0001 * (normalized) C4=11
+ +      -0.0006 * (normalized) C4=12
+ +       0.0003 * (normalized) C4=13
+ +      -0.0001 * (normalized) S5=1
+ +       0.0001 * (normalized) S5=2
+ +       0.0001 * (normalized) S5=3
+ +      -0.0001 * (normalized) S5=4
+ +      -0.0001 * (normalized) C5=1
+ +       0      * (normalized) C5=2
+ +       0      * (normalized) C5=3
+ +       0.0001 * (normalized) C5=4
+ +       0.0001 * (normalized) C5=5
+ +       0.0002 * (normalized) C5=6
+ +      -0.0011 * (normalized) C5=7
+ +       0      * (normalized) C5=8
+ +       0.0003 * (normalized) C5=9
+ +      -0      * (normalized) C5=10
+ +       0.0002 * (normalized) C5=11
+ +       0.0001 * (normalized) C5=12
+ +       0.0001 * (normalized) C5=13
+ -       1.0006
+
+Number of kernel evaluations: 7970783 (44.871% cached)
+
+Classifier for classes: 1, 7
+
+BinarySMO
+
+Machine linear: showing attribute weights, not support vectors.
+
+        -0.2376 * (normalized) S1=1
+ +      -0.0265 * (normalized) S1=2
+ +       0.1309 * (normalized) S1=3
+ +       0.1332 * (normalized) S1=4
+ +      -0.1003 * (normalized) C1=1
+ +       0.1407 * (normalized) C1=2
+ +       0.2485 * (normalized) C1=3
+ +      -0.0322 * (normalized) C1=4
+ +       0      * (normalized) C1=5
+ +      -0.1284 * (normalized) C1=6
+ +      -0.1021 * (normalized) C1=7
+ +       0.2823 * (normalized) C1=8
+ +      -0.0651 * (normalized) C1=9
+ +      -0.1782 * (normalized) C1=10
+ +       0.174  * (normalized) C1=11
+ +      -0.1838 * (normalized) C1=12
+ +      -0.0554 * (normalized) C1=13
+ +      -0.3332 * (normalized) S2=1
+ +       0.1545 * (normalized) S2=2
+ +       0.0144 * (normalized) S2=3
+ +       0.1644 * (normalized) S2=4
+ +      -0      * (normalized) C2=1
+ +       0.2297 * (normalized) C2=2
+ +       0.1868 * (normalized) C2=3
+ +      -0.0362 * (normalized) C2=4
+ +      -0.2357 * (normalized) C2=5
+ +      -0.0794 * (normalized) C2=6
+ +       0.1773 * (normalized) C2=7
+ +       0.3084 * (normalized) C2=8
+ +      -0.2745 * (normalized) C2=9
+ +      -0.0203 * (normalized) C2=10
+ +       0.0378 * (normalized) C2=11
+ +      -0.163  * (normalized) C2=12
+ +      -0.1309 * (normalized) C2=13
+ +       0.0192 * (normalized) S3=1
+ +      -0.0264 * (normalized) S3=2
+ +       0.0184 * (normalized) S3=3
+ +      -0.0112 * (normalized) S3=4
+ +       0      * (normalized) C3=1
+ +       0.2048 * (normalized) C3=2
+ +       0.2286 * (normalized) C3=3
+ +      -0.017  * (normalized) C3=4
+ +      -0.171  * (normalized) C3=5
+ +      -0.0198 * (normalized) C3=6
+ +       0.0499 * (normalized) C3=7
+ +       0.1443 * (normalized) C3=8
+ +      -0.2132 * (normalized) C3=9
+ +      -0.032  * (normalized) C3=10
+ +       0.1046 * (normalized) C3=11
+ +      -0.0881 * (normalized) C3=12
+ +      -0.191  * (normalized) C3=13
+ +       0.2451 * (normalized) S4=1
+ +      -0.1588 * (normalized) S4=2
+ +      -0.0034 * (normalized) S4=3
+ +      -0.0828 * (normalized) S4=4
+ +      -0.3366 * (normalized) C4=1
+ +       0.0676 * (normalized) C4=2
+ +       0.1135 * (normalized) C4=3
+ +      -0.0025 * (normalized) C4=4
+ +      -0.1892 * (normalized) C4=5
+ +       0      * (normalized) C4=6
+ +       0.1268 * (normalized) C4=7
+ +       0.2688 * (normalized) C4=8
+ +      -0.0889 * (normalized) C4=9
+ +      -0.139  * (normalized) C4=10
+ +       0.1576 * (normalized) C4=11
+ +       0.1363 * (normalized) C4=12
+ +      -0.1145 * (normalized) C4=13
+ +      -0.0809 * (normalized) S5=1
+ +       0.033  * (normalized) S5=2
+ +      -0.1583 * (normalized) S5=3
+ +       0.2061 * (normalized) S5=4
+ +      -0.1054 * (normalized) C5=1
+ +      -0.1208 * (normalized) C5=2
+ +      -0.0474 * (normalized) C5=3
+ +      -0.0995 * (normalized) C5=4
+ +       0.1494 * (normalized) C5=5
+ +      -0.1145 * (normalized) C5=6
+ +       0.1041 * (normalized) C5=7
+ +       0.2012 * (normalized) C5=8
+ +      -0.1613 * (normalized) C5=9
+ +       0.1347 * (normalized) C5=10
+ +      -0.1454 * (normalized) C5=11
+ +      -0.1077 * (normalized) C5=12
+ +       0.3128 * (normalized) C5=13
+ -       2.1996
+
+Number of kernel evaluations: 365681 (70.188% cached)
+
+Classifier for classes: 1, 8
+
+BinarySMO
+
+Machine linear: showing attribute weights, not support vectors.
+
+         0.0509 * (normalized) S1=1
+ +      -0.0612 * (normalized) S1=2
+ +       0.0049 * (normalized) S1=3
+ +       0.0054 * (normalized) S1=4
+ +       0.1488 * (normalized) C1=1
+ +       0.1132 * (normalized) C1=2
+ +      -0.0339 * (normalized) C1=3
+ +      -0.0338 * (normalized) C1=4
+ +       0.0733 * (normalized) C1=5
+ +      -0.0503 * (normalized) C1=6
+ +      -0.0676 * (normalized) C1=7
+ +      -0.0726 * (normalized) C1=8
+ +       0.0928 * (normalized) C1=9
+ +      -0.0076 * (normalized) C1=10
+ +      -0.0523 * (normalized) C1=11
+ +      -0.0141 * (normalized) C1=12
+ +      -0.0958 * (normalized) C1=13
+ +       0.065  * (normalized) S2=1
+ +      -0.0695 * (normalized) S2=2
+ +       0.005  * (normalized) S2=3
+ +      -0.0005 * (normalized) S2=4
+ +      -0.0495 * (normalized) C2=1
+ +       0.1072 * (normalized) C2=2
+ +      -0.0556 * (normalized) C2=3
+ +       0.1749 * (normalized) C2=4
+ +      -0.0759 * (normalized) C2=5
+ +       0.1387 * (normalized) C2=6
+ +      -0.0609 * (normalized) C2=7
+ +      -0.0375 * (normalized) C2=8
+ +      -0.0608 * (normalized) C2=9
+ +      -0.061  * (normalized) C2=10
+ +      -0.0223 * (normalized) C2=11
+ +       0.1264 * (normalized) C2=12
+ +      -0.1237 * (normalized) C2=13
+ +       0.0225 * (normalized) S3=1
+ +      -0.0243 * (normalized) S3=2
+ +      -0.0379 * (normalized) S3=3
+ +       0.0397 * (normalized) S3=4
+ +      -0.0917 * (normalized) C3=1
+ +       0.1027 * (normalized) C3=2
+ +       0.1441 * (normalized) C3=3
+ +      -0.0513 * (normalized) C3=4
+ +       0.0889 * (normalized) C3=5
+ +      -0.0574 * (normalized) C3=6
+ +      -0.0128 * (normalized) C3=7
+ +      -0.0525 * (normalized) C3=8
+ +       0.0365 * (normalized) C3=9
+ +       0.1086 * (normalized) C3=10
+ +      -0.0518 * (normalized) C3=11
+ +      -0.0782 * (normalized) C3=12
+ +      -0.085  * (normalized) C3=13
+ +       0.0201 * (normalized) S4=1
+ +       0.016  * (normalized) S4=2
+ +      -0.0177 * (normalized) S4=3
+ +      -0.0185 * (normalized) S4=4
+ +      -0.0822 * (normalized) C4=1
+ +      -0.0546 * (normalized) C4=2
+ +       0.1273 * (normalized) C4=3
+ +       0.0827 * (normalized) C4=4
+ +      -0.0498 * (normalized) C4=5
+ +      -0      * (normalized) C4=6
+ +       0.149  * (normalized) C4=7
+ +      -0.0518 * (normalized) C4=8
+ +      -0      * (normalized) C4=9
+ +      -0.0829 * (normalized) C4=10
+ +       0.1095 * (normalized) C4=11
+ +      -0.1218 * (normalized) C4=12
+ +      -0.0255 * (normalized) C4=13
+ +       0.0421 * (normalized) S5=1
+ +      -0.0291 * (normalized) S5=2
+ +      -0.0159 * (normalized) S5=3
+ +       0.0029 * (normalized) S5=4
+ +      -0.0762 * (normalized) C5=1
+ +      -0.0267 * (normalized) C5=2
+ +      -0.075  * (normalized) C5=3
+ +      -0.0077 * (normalized) C5=4
+ +       0.1258 * (normalized) C5=5
+ +       0.0732 * (normalized) C5=6
+ +      -0      * (normalized) C5=7
+ +       0.1337 * (normalized) C5=8
+ +      -0.0546 * (normalized) C5=9
+ +      -0.1226 * (normalized) C5=10
+ +      -0.0717 * (normalized) C5=11
+ +      -0.0072 * (normalized) C5=12
+ +       0.1089 * (normalized) C5=13
+ -       1.5322
+
+Number of kernel evaluations: 462883 (73.641% cached)
+
+Classifier for classes: 1, 9
+
+BinarySMO
+
+Machine linear: showing attribute weights, not support vectors.
+
+        -0.0114 * (normalized) S1=1
+ +      -0.1209 * (normalized) S1=2
+ +       0.0166 * (normalized) S1=3
+ +       0.1158 * (normalized) S1=4
+ +       0.1234 * (normalized) C1=1
+ +      -0.1079 * (normalized) C1=2
+ +      -0.0192 * (normalized) C1=3
+ +      -0.162  * (normalized) C1=4
+ +      -0.129  * (normalized) C1=5
+ +      -0.0932 * (normalized) C1=6
+ +      -0.1385 * (normalized) C1=7
+ +      -0.044  * (normalized) C1=8
+ +      -0.0272 * (normalized) C1=9
+ +       0.2637 * (normalized) C1=10
+ +       0.1429 * (normalized) C1=11
+ +       0.2282 * (normalized) C1=12
+ +      -0.0371 * (normalized) C1=13
+ +      -0.0095 * (normalized) S2=1
+ +      -0.0252 * (normalized) S2=2
+ +      -0.0814 * (normalized) S2=3
+ +       0.1161 * (normalized) S2=4
+ +      -0      * (normalized) C2=1
+ +      -0.1339 * (normalized) C2=2
+ +      -0.0085 * (normalized) C2=3
+ +      -0.1094 * (normalized) C2=4
+ +      -0.0772 * (normalized) C2=5
+ +      -0.0253 * (normalized) C2=6
+ +      -0.0584 * (normalized) C2=7
+ +       0      * (normalized) C2=8
+ +      -0.069  * (normalized) C2=9
+ +      -0.0054 * (normalized) C2=10
+ +       0.2965 * (normalized) C2=11
+ +      -0.0938 * (normalized) C2=12
+ +       0.2845 * (normalized) C2=13
+ +      -0.0332 * (normalized) S3=1
+ +      -0.0164 * (normalized) S3=2
+ +      -0.1404 * (normalized) S3=3
+ +       0.19   * (normalized) S3=4
+ +       0.2767 * (normalized) C3=1
+ +      -0.0876 * (normalized) C3=2
+ +      -0.0647 * (normalized) C3=3
+ +      -0.1851 * (normalized) C3=4
+ +      -0.0361 * (normalized) C3=5
+ +      -0.0272 * (normalized) C3=6
+ +      -0.0624 * (normalized) C3=7
+ +      -0.0498 * (normalized) C3=8
+ +      -0.2058 * (normalized) C3=9
+ +       0.1228 * (normalized) C3=10
+ +      -0.0152 * (normalized) C3=11
+ +       0.1693 * (normalized) C3=12
+ +       0.1651 * (normalized) C3=13
+ +      -0.0561 * (normalized) S4=1
+ +      -0.0681 * (normalized) S4=2
+ +      -0.0051 * (normalized) S4=3
+ +       0.1293 * (normalized) S4=4
+ +      -0.0207 * (normalized) C4=1
+ +      -0.0152 * (normalized) C4=2
+ +      -0.1902 * (normalized) C4=3
+ +      -0.1345 * (normalized) C4=4
+ +      -0.0632 * (normalized) C4=5
+ +      -0.0504 * (normalized) C4=6
+ +      -0.1152 * (normalized) C4=7
+ +      -0.0526 * (normalized) C4=8
+ +      -0.1956 * (normalized) C4=9
+ +       0.1688 * (normalized) C4=10
+ +       0.2973 * (normalized) C4=11
+ +       0.2762 * (normalized) C4=12
+ +       0.0952 * (normalized) C4=13
+ +      -0.0869 * (normalized) S5=1
+ +      -0.0131 * (normalized) S5=2
+ +       0.0196 * (normalized) S5=3
+ +       0.0803 * (normalized) S5=4
+ +       0.3024 * (normalized) C5=1
+ +      -0.1308 * (normalized) C5=2
+ +      -0.0272 * (normalized) C5=3
+ +      -0.0348 * (normalized) C5=4
+ +       0      * (normalized) C5=5
+ +      -0.1382 * (normalized) C5=6
+ +      -0.0272 * (normalized) C5=7
+ +      -0.044  * (normalized) C5=8
+ +      -0.1299 * (normalized) C5=9
+ +       0.1774 * (normalized) C5=10
+ +      -0.0504 * (normalized) C5=11
+ +       0.1959 * (normalized) C5=12
+ +      -0.0931 * (normalized) C5=13
+ -       1.9998
+
+Number of kernel evaluations: 383307 (67.898% cached)
+
+Classifier for classes: 2, 3
+
+BinarySMO
+
+Machine linear: showing attribute weights, not support vectors.
+
+        -0.0001 * (normalized) S1=1
+ +      -0.0001 * (normalized) S1=2
+ +       0.0001 * (normalized) S1=3
+ +       0.0001 * (normalized) S1=4
+ +       0.0002 * (normalized) C1=1
+ +      -0.0001 * (normalized) C1=2
+ +       0      * (normalized) C1=3
+ +       0.0003 * (normalized) C1=4
+ +       0      * (normalized) C1=5
+ +      -0.0003 * (normalized) C1=6
+ +      -0.0001 * (normalized) C1=7
+ +       0      * (normalized) C1=8
+ +       0.0002 * (normalized) C1=9
+ +       0      * (normalized) C1=10
+ +      -0      * (normalized) C1=11
+ +      -0.0001 * (normalized) C1=12
+ +      -0.0001 * (normalized) C1=13
+ +      -0.0001 * (normalized) S2=1
+ +      -0      * (normalized) S2=2
+ +       0      * (normalized) S2=3
+ +       0      * (normalized) S2=4
+ +      -0      * (normalized) C2=1
+ +       0.0002 * (normalized) C2=2
+ +       0      * (normalized) C2=3
+ +       0      * (normalized) C2=4
+ +      -0.0001 * (normalized) C2=5
+ +      -0      * (normalized) C2=6
+ +       0.0001 * (normalized) C2=7
+ +       0.0003 * (normalized) C2=8
+ +      -0.0001 * (normalized) C2=9
+ +      -0.0002 * (normalized) C2=10
+ +      -0.0002 * (normalized) C2=11
+ +      -0.0001 * (normalized) C2=12
+ +       0.0001 * (normalized) C2=13
+ +       0      * (normalized) S3=1
+ +      -0.0001 * (normalized) S3=2
+ +       0.0002 * (normalized) S3=3
+ +      -0.0001 * (normalized) S3=4
+ +       0      * (normalized) C3=1
+ +      -0.0001 * (normalized) C3=2
+ +      -0      * (normalized) C3=3
+ +      -0.0001 * (normalized) C3=4
+ +       0.0001 * (normalized) C3=5
+ +       0.0001 * (normalized) C3=6
+ +       0.0001 * (normalized) C3=7
+ +      -0      * (normalized) C3=8
+ +      -0.0001 * (normalized) C3=9
+ +      -0.0001 * (normalized) C3=10
+ +       0      * (normalized) C3=11
+ +       0.0001 * (normalized) C3=12
+ +      -0.0001 * (normalized) C3=13
+ +      -0.0001 * (normalized) S4=1
+ +       0.0001 * (normalized) S4=2
+ +      -0      * (normalized) S4=3
+ +       0      * (normalized) S4=4
+ +       0.0003 * (normalized) C4=1
+ +      -0.0002 * (normalized) C4=2
+ +       0.0001 * (normalized) C4=3
+ +      -0.0002 * (normalized) C4=4
+ +       0      * (normalized) C4=5
+ +      -0      * (normalized) C4=6
+ +      -0.0003 * (normalized) C4=7
+ +       0.0001 * (normalized) C4=8
+ +      -0.0001 * (normalized) C4=9
+ +      -0.0001 * (normalized) C4=10
+ +      -0      * (normalized) C4=11
+ +       0.0001 * (normalized) C4=12
+ +       0.0003 * (normalized) C4=13
+ +       0.0001 * (normalized) S5=1
+ +      -0      * (normalized) S5=2
+ +      -0      * (normalized) S5=3
+ +      -0      * (normalized) S5=4
+ +      -0.0001 * (normalized) C5=1
+ +       0      * (normalized) C5=2
+ +      -0.0001 * (normalized) C5=3
+ +       0.0001 * (normalized) C5=4
+ +       0.0001 * (normalized) C5=5
+ +       0.0002 * (normalized) C5=6
+ +      -0      * (normalized) C5=7
+ +      -0.0002 * (normalized) C5=8
+ +      -0.0001 * (normalized) C5=9
+ +      -0      * (normalized) C5=10
+ +       0.0003 * (normalized) C5=11
+ +       0.0002 * (normalized) C5=12
+ +      -0.0003 * (normalized) C5=13
+ -       1     
+
+Number of kernel evaluations: 2227869 (70.932% cached)
+
+Classifier for classes: 2, 4
+
+BinarySMO
+
+Machine linear: showing attribute weights, not support vectors.
+
+         0.0001 * (normalized) S1=1
+ +      -0.0001 * (normalized) S1=2
+ +       0.0001 * (normalized) S1=3
+ +      -0      * (normalized) S1=4
+ +      -0.0001 * (normalized) C1=1
+ +      -0.0002 * (normalized) C1=2
+ +      -0      * (normalized) C1=3
+ +       0.0002 * (normalized) C1=4
+ +       0.0001 * (normalized) C1=5
+ +      -0.0002 * (normalized) C1=6
+ +      -0.0002 * (normalized) C1=7
+ +       0.0002 * (normalized) C1=8
+ +      -0.0001 * (normalized) C1=9
+ +       0.0002 * (normalized) C1=10
+ +      -0.0001 * (normalized) C1=11
+ +      -0.0001 * (normalized) C1=12
+ +       0.0004 * (normalized) C1=13
+ +       0.0002 * (normalized) S2=1
+ +       0.0001 * (normalized) S2=2
+ +      -0.0001 * (normalized) S2=3
+ +      -0.0002 * (normalized) S2=4
+ +      -0.0003 * (normalized) C2=1
+ +       0.0003 * (normalized) C2=2
+ +      -0.0001 * (normalized) C2=3
+ +      -0.0001 * (normalized) C2=4
+ +       0.0005 * (normalized) C2=5
+ +       0.0001 * (normalized) C2=6
+ +       0.0001 * (normalized) C2=7
+ +      -0      * (normalized) C2=8
+ +      -0.0002 * (normalized) C2=9
+ +       0      * (normalized) C2=10
+ +      -0.0002 * (normalized) C2=11
+ +       0.0002 * (normalized) C2=12
+ +      -0.0003 * (normalized) C2=13
+ +       0.0001 * (normalized) S3=1
+ +      -0      * (normalized) S3=2
+ +      -0      * (normalized) S3=3
+ +      -0.0001 * (normalized) S3=4
+ +      -0.0001 * (normalized) C3=1
+ +      -0.0023 * (normalized) C3=2
+ +       0.0001 * (normalized) C3=3
+ +       0.0001 * (normalized) C3=4
+ +       0.0001 * (normalized) C3=5
+ +       0.0002 * (normalized) C3=6
+ +       0.0004 * (normalized) C3=7
+ +      -0.0001 * (normalized) C3=8
+ +       0.0006 * (normalized) C3=9
+ +       0.0002 * (normalized) C3=10
+ +       0.0002 * (normalized) C3=11
+ +       0.0002 * (normalized) C3=12
+ +       0.0004 * (normalized) C3=13
+ +      -0      * (normalized) S4=1
+ +       0.0001 * (normalized) S4=2
+ +      -0.0002 * (normalized) S4=3
+ +       0.0002 * (normalized) S4=4
+ +       0.0004 * (normalized) C4=1
+ +      -0.0018 * (normalized) C4=2
+ +       0.0003 * (normalized) C4=3
+ +       0.0005 * (normalized) C4=4
+ +       0      * (normalized) C4=5
+ +       0.0001 * (normalized) C4=6
+ +       0.0003 * (normalized) C4=7
+ +       0.0001 * (normalized) C4=8
+ +       0.0001 * (normalized) C4=9
+ +       0      * (normalized) C4=10
+ +       0.0005 * (normalized) C4=11
+ +       0      * (normalized) C4=12
+ +      -0.0005 * (normalized) C4=13
+ +      -0.0001 * (normalized) S5=1
+ +       0      * (normalized) S5=2
+ +      -0.0001 * (normalized) S5=3
+ +       0.0001 * (normalized) S5=4
+ +      -0.0002 * (normalized) C5=1
+ +      -0.0001 * (normalized) C5=2
+ +      -0.0002 * (normalized) C5=3
+ +      -0.0003 * (normalized) C5=4
+ +       0.0003 * (normalized) C5=5
+ +      -0      * (normalized) C5=6
+ +       0      * (normalized) C5=7
+ +       0.0001 * (normalized) C5=8
+ +       0.0002 * (normalized) C5=9
+ +       0.0001 * (normalized) C5=10
+ +      -0      * (normalized) C5=11
+ +       0.0003 * (normalized) C5=12
+ +      -0.0003 * (normalized) C5=13
+ -       1.0005
+
+Number of kernel evaluations: 620198 (81.702% cached)
+
+Classifier for classes: 2, 5
+
+BinarySMO
+
+Machine linear: showing attribute weights, not support vectors.
+
+        -0.0001 * (normalized) S1=1
+ +      -0.0001 * (normalized) S1=2
+ +       0      * (normalized) S1=3
+ +       0.0002 * (normalized) S1=4
+ +       0.0002 * (normalized) C1=1
+ +       0.0002 * (normalized) C1=2
+ +      -0.0027 * (normalized) C1=3
+ +       0.0002 * (normalized) C1=4
+ +       0.0001 * (normalized) C1=5
+ +       0.0002 * (normalized) C1=6
+ +       0.0001 * (normalized) C1=7
+ +       0.0001 * (normalized) C1=8
+ +       0.0003 * (normalized) C1=9
+ +       0.0003 * (normalized) C1=10
+ +       0.0004 * (normalized) C1=11
+ +       0.0004 * (normalized) C1=12
+ +       0.0001 * (normalized) C1=13
+ +      -0.0001 * (normalized) S2=1
+ +      -0      * (normalized) S2=2
+ +      -0      * (normalized) S2=3
+ +       0.0001 * (normalized) S2=4
+ +      -0      * (normalized) C2=1
+ +       0.0001 * (normalized) C2=2
+ +      -0.0002 * (normalized) C2=3
+ +      -0.0001 * (normalized) C2=4
+ +       0      * (normalized) C2=5
+ +       0.0001 * (normalized) C2=6
+ +      -0.0001 * (normalized) C2=7
+ +      -0.0001 * (normalized) C2=8
+ +      -0.0001 * (normalized) C2=9
+ +      -0      * (normalized) C2=10
+ +       0.0003 * (normalized) C2=11
+ +       0.0001 * (normalized) C2=12
+ +       0.0001 * (normalized) C2=13
+ +      -0.0002 * (normalized) S3=1
+ +      -0.0001 * (normalized) S3=2
+ +       0      * (normalized) S3=3
+ +       0.0003 * (normalized) S3=4
+ +      -0      * (normalized) C3=1
+ +       0.0001 * (normalized) C3=2
+ +      -0.0002 * (normalized) C3=3
+ +      -0.0002 * (normalized) C3=4
+ +       0.0004 * (normalized) C3=5
+ +      -0.0001 * (normalized) C3=6
+ +       0.0002 * (normalized) C3=7
+ +       0.0002 * (normalized) C3=8
+ +      -0.0003 * (normalized) C3=9
+ +      -0.0001 * (normalized) C3=10
+ +       0      * (normalized) C3=11
+ +      -0.0002 * (normalized) C3=12
+ +       0      * (normalized) C3=13
+ +      -0.0001 * (normalized) S4=1
+ +       0.0001 * (normalized) S4=2
+ +      -0      * (normalized) S4=3
+ +       0      * (normalized) S4=4
+ +       0      * (normalized) C4=1
+ +       0      * (normalized) C4=2
+ +       0.0003 * (normalized) C4=3
+ +      -0.0002 * (normalized) C4=4
+ +       0.0001 * (normalized) C4=5
+ +      -0      * (normalized) C4=6
+ +      -0      * (normalized) C4=7
+ +      -0.0003 * (normalized) C4=8
+ +       0.0002 * (normalized) C4=9
+ +       0.0001 * (normalized) C4=10
+ +      -0.0002 * (normalized) C4=11
+ +       0.0001 * (normalized) C4=12
+ +      -0.0001 * (normalized) C4=13
+ +       0      * (normalized) S5=1
+ +      -0.0001 * (normalized) S5=2
+ +      -0      * (normalized) S5=3
+ +       0.0001 * (normalized) S5=4
+ +      -0.0001 * (normalized) C5=1
+ +      -0.0001 * (normalized) C5=2
+ +       0      * (normalized) C5=3
+ +      -0.0002 * (normalized) C5=4
+ +       0.0003 * (normalized) C5=5
+ +      -0.0001 * (normalized) C5=6
+ +       0.0002 * (normalized) C5=7
+ +      -0.0001 * (normalized) C5=8
+ +       0.0002 * (normalized) C5=9
+ +      -0.0002 * (normalized) C5=10
+ +       0.0001 * (normalized) C5=11
+ +       0.0001 * (normalized) C5=12
+ +      -0.0001 * (normalized) C5=13
+ -       1.0004
+
+Number of kernel evaluations: 566393 (79.86% cached)
+
+Classifier for classes: 2, 6
+
+BinarySMO
+
+Machine linear: showing attribute weights, not support vectors.
+
+         0      * (normalized) S1=1
+ +      -0      * (normalized) S1=2
+ +       0.0001 * (normalized) S1=3
+ +      -0      * (normalized) S1=4
+ +      -0.0001 * (normalized) C1=1
+ +       0.0001 * (normalized) C1=2
+ +       0      * (normalized) C1=3
+ +       0.0003 * (normalized) C1=4
+ +       0      * (normalized) C1=5
+ +       0.0003 * (normalized) C1=6
+ +       0.0001 * (normalized) C1=7
+ +       0.0002 * (normalized) C1=8
+ +       0.0005 * (normalized) C1=9
+ +       0.0005 * (normalized) C1=10
+ +      -0      * (normalized) C1=11
+ +      -0.0022 * (normalized) C1=12
+ +       0.0002 * (normalized) C1=13
+ +      -0      * (normalized) S2=1
+ +       0.0001 * (normalized) S2=2
+ +       0.0001 * (normalized) S2=3
+ +      -0.0002 * (normalized) S2=4
+ +       0.0003 * (normalized) C2=1
+ +       0.0006 * (normalized) C2=2
+ +       0.0001 * (normalized) C2=3
+ +       0.0002 * (normalized) C2=4
+ +       0.0004 * (normalized) C2=5
+ +       0.0001 * (normalized) C2=6
+ +       0.0002 * (normalized) C2=7
+ +       0.0001 * (normalized) C2=8
+ +       0.0002 * (normalized) C2=9
+ +       0.0002 * (normalized) C2=10
+ +      -0      * (normalized) C2=11
+ +      -0.0023 * (normalized) C2=12
+ +       0.0003 * (normalized) C2=13
+ +       0.0001 * (normalized) S3=1
+ +       0.0002 * (normalized) S3=2
+ +      -0.0002 * (normalized) S3=3
+ +      -0.0001 * (normalized) S3=4
+ +      -0.0001 * (normalized) C3=1
+ +       0      * (normalized) C3=2
+ +      -0.0001 * (normalized) C3=3
+ +      -0      * (normalized) C3=4
+ +      -0.0002 * (normalized) C3=5
+ +       0.0001 * (normalized) C3=6
+ +       0.0001 * (normalized) C3=7
+ +       0.0002 * (normalized) C3=8
+ +      -0      * (normalized) C3=9
+ +       0.0001 * (normalized) C3=10
+ +       0.0002 * (normalized) C3=11
+ +       0.0011 * (normalized) C3=12
+ +      -0.0013 * (normalized) C3=13
+ +       0.0001 * (normalized) S4=1
+ +       0.0001 * (normalized) S4=2
+ +      -0      * (normalized) S4=3
+ +      -0.0001 * (normalized) S4=4
+ +       0      * (normalized) C4=1
+ +      -0.0007 * (normalized) C4=2
+ +       0.0006 * (normalized) C4=3
+ +       0.0005 * (normalized) C4=4
+ +       0.0003 * (normalized) C4=5
+ +       0.0002 * (normalized) C4=6
+ +       0.0002 * (normalized) C4=7
+ +       0.0003 * (normalized) C4=8
+ +       0.0001 * (normalized) C4=9
+ +       0.0002 * (normalized) C4=10
+ +       0.0002 * (normalized) C4=11
+ +      -0.0026 * (normalized) C4=12
+ +       0.0005 * (normalized) C4=13
+ +       0      * (normalized) S5=1
+ +       0      * (normalized) S5=2
+ +       0      * (normalized) S5=3
+ +      -0.0001 * (normalized) S5=4
+ +      -0      * (normalized) C5=1
+ +       0.0003 * (normalized) C5=2
+ +      -0.0001 * (normalized) C5=3
+ +       0.0001 * (normalized) C5=4
+ +       0.0007 * (normalized) C5=5
+ +       0.0003 * (normalized) C5=6
+ +      -0.0007 * (normalized) C5=7
+ +       0.0001 * (normalized) C5=8
+ +      -0.0002 * (normalized) C5=9
+ +      -0      * (normalized) C5=10
+ +      -0      * (normalized) C5=11
+ +      -0.0008 * (normalized) C5=12
+ +       0.0003 * (normalized) C5=13
+ -       1.0011
+
+Number of kernel evaluations: 247642 (88.647% cached)
+
+Classifier for classes: 2, 7
+
+BinarySMO
+
+Machine linear: showing attribute weights, not support vectors.
+
+        -0.2276 * (normalized) S1=1
+ +      -0.1098 * (normalized) S1=2
+ +       0.0796 * (normalized) S1=3
+ +       0.2578 * (normalized) S1=4
+ +       0.1827 * (normalized) C1=2
+ +       0.2686 * (normalized) C1=3
+ +      -0.4356 * (normalized) C1=4
+ +      -0.2056 * (normalized) C1=5
+ +      -0.1717 * (normalized) C1=6
+ +      -0.1967 * (normalized) C1=7
+ +       0.7098 * (normalized) C1=8
+ +      -0      * (normalized) C1=9
+ +       0      * (normalized) C1=10
+ +       0.2168 * (normalized) C1=11
+ +      -0.2066 * (normalized) C1=12
+ +      -0.1617 * (normalized) C1=13
+ +      -0.2504 * (normalized) S2=1
+ +       0.3652 * (normalized) S2=2
+ +      -0.2538 * (normalized) S2=3
+ +       0.139  * (normalized) S2=4
+ +      -0.0442 * (normalized) C2=1
+ +       0.3226 * (normalized) C2=2
+ +       0.1849 * (normalized) C2=3
+ +      -0.1044 * (normalized) C2=4
+ +      -0.2003 * (normalized) C2=5
+ +      -0.0668 * (normalized) C2=6
+ +       0.1443 * (normalized) C2=7
+ +       0.4833 * (normalized) C2=8
+ +      -0      * (normalized) C2=9
+ +      -0.1967 * (normalized) C2=10
+ +       0.3371 * (normalized) C2=11
+ +      -0.3113 * (normalized) C2=12
+ +      -0.5486 * (normalized) C2=13
+ +       0.1447 * (normalized) S3=1
+ +      -0.0386 * (normalized) S3=2
+ +       0.121  * (normalized) S3=3
+ +      -0.2271 * (normalized) S3=4
+ +      -0.1902 * (normalized) C3=1
+ +       0.4627 * (normalized) C3=2
+ +       0.1042 * (normalized) C3=3
+ +      -0.1799 * (normalized) C3=4
+ +      -0.1868 * (normalized) C3=5
+ +      -0.0866 * (normalized) C3=6
+ +      -0.0341 * (normalized) C3=7
+ +       0.5476 * (normalized) C3=8
+ +      -0.0913 * (normalized) C3=9
+ +      -0      * (normalized) C3=10
+ +       0.2291 * (normalized) C3=11
+ +      -0.2634 * (normalized) C3=12
+ +      -0.3113 * (normalized) C3=13
+ +       0.5388 * (normalized) S4=1
+ +      -0.2383 * (normalized) S4=2
+ +      -0.043  * (normalized) S4=3
+ +      -0.2575 * (normalized) S4=4
+ +      -0.0606 * (normalized) C4=1
+ +       0.0259 * (normalized) C4=2
+ +       0.1632 * (normalized) C4=3
+ +       0      * (normalized) C4=4
+ +      -0.1799 * (normalized) C4=5
+ +      -0.0718 * (normalized) C4=6
+ +       0.3087 * (normalized) C4=7
+ +      -0.0303 * (normalized) C4=8
+ +      -0.0854 * (normalized) C4=9
+ +      -0.2316 * (normalized) C4=10
+ +       0.1582 * (normalized) C4=11
+ +       0.217  * (normalized) C4=12
+ +      -0.2132 * (normalized) C4=13
+ +      -0.408  * (normalized) S5=1
+ +       0.2111 * (normalized) S5=2
+ +      -0.3002 * (normalized) S5=3
+ +       0.4971 * (normalized) S5=4
+ +      -0.07   * (normalized) C5=1
+ +      -0.4158 * (normalized) C5=2
+ +      -0.2651 * (normalized) C5=3
+ +       0      * (normalized) C5=4
+ +       0.4142 * (normalized) C5=5
+ +      -0.1973 * (normalized) C5=6
+ +       0.2622 * (normalized) C5=7
+ +       0.2949 * (normalized) C5=8
+ +      -0.0854 * (normalized) C5=9
+ +       0.2604 * (normalized) C5=10
+ +      -0.4616 * (normalized) C5=11
+ +      -0.2634 * (normalized) C5=12
+ +       0.5269 * (normalized) C5=13
+ -       2.8129
+
+Number of kernel evaluations: 28594 (81.565% cached)
+
+Classifier for classes: 2, 8
+
+BinarySMO
+
+Machine linear: showing attribute weights, not support vectors.
+
+         0.2976 * (normalized) S1=1
+ +      -0.13   * (normalized) S1=2
+ +      -0.0515 * (normalized) S1=3
+ +      -0.1161 * (normalized) S1=4
+ +       0.5463 * (normalized) C1=1
+ +       0.2402 * (normalized) C1=2
+ +      -0.0187 * (normalized) C1=3
+ +      -0.2082 * (normalized) C1=4
+ +       0.1601 * (normalized) C1=5
+ +      -0.1918 * (normalized) C1=6
+ +      -0.1123 * (normalized) C1=7
+ +      -0.23   * (normalized) C1=8
+ +       0.3    * (normalized) C1=9
+ +      -0.1047 * (normalized) C1=10
+ +      -0.031  * (normalized) C1=11
+ +      -0.0532 * (normalized) C1=12
+ +      -0.2965 * (normalized) C1=13
+ +       0.2548 * (normalized) S2=1
+ +      -0.0141 * (normalized) S2=2
+ +      -0.2349 * (normalized) S2=3
+ +      -0.0059 * (normalized) S2=4
+ +      -0.021  * (normalized) C2=1
+ +       0.1462 * (normalized) C2=2
+ +      -0.1512 * (normalized) C2=3
+ +       0.5728 * (normalized) C2=4
+ +      -0.1862 * (normalized) C2=5
+ +       0.4107 * (normalized) C2=6
+ +      -0.5318 * (normalized) C2=7
+ +      -0.1127 * (normalized) C2=8
+ +      -0.0843 * (normalized) C2=9
+ +      -0.3217 * (normalized) C2=10
+ +      -0.041  * (normalized) C2=11
+ +       0.5142 * (normalized) C2=12
+ +      -0.1939 * (normalized) C2=13
+ +       0.1703 * (normalized) S3=1
+ +      -0.0607 * (normalized) S3=2
+ +      -0.0281 * (normalized) S3=3
+ +      -0.0816 * (normalized) S3=4
+ +      -0.2218 * (normalized) C3=1
+ +       0.0874 * (normalized) C3=2
+ +       0.2026 * (normalized) C3=3
+ +      -0.0907 * (normalized) C3=4
+ +       0.1409 * (normalized) C3=5
+ +      -0.1633 * (normalized) C3=6
+ +      -0.0631 * (normalized) C3=7
+ +      -0      * (normalized) C3=8
+ +       0.2307 * (normalized) C3=9
+ +       0.3039 * (normalized) C3=10
+ +      -0.0632 * (normalized) C3=11
+ +      -0.276  * (normalized) C3=12
+ +      -0.0875 * (normalized) C3=13
+ +       0.2511 * (normalized) S4=1
+ +      -0.1105 * (normalized) S4=2
+ +      -0.1646 * (normalized) S4=3
+ +       0.0241 * (normalized) S4=4
+ +      -0.1566 * (normalized) C4=1
+ +      -0.1769 * (normalized) C4=2
+ +       0.5597 * (normalized) C4=3
+ +       0.0504 * (normalized) C4=4
+ +      -0.1927 * (normalized) C4=5
+ +      -0.1207 * (normalized) C4=6
+ +       0.2995 * (normalized) C4=7
+ +      -0.01   * (normalized) C4=8
+ +      -0.1729 * (normalized) C4=9
+ +      -0.1526 * (normalized) C4=10
+ +       0.3184 * (normalized) C4=11
+ +      -0.227  * (normalized) C4=12
+ +      -0.0187 * (normalized) C4=13
+ +       0.0804 * (normalized) S5=1
+ +      -0.0764 * (normalized) S5=2
+ +       0.0574 * (normalized) S5=3
+ +      -0.0614 * (normalized) S5=4
+ +      -0.3237 * (normalized) C5=1
+ +       0      * (normalized) C5=2
+ +      -0.3213 * (normalized) C5=3
+ +      -0.1267 * (normalized) C5=4
+ +       0.3599 * (normalized) C5=5
+ +       0.2799 * (normalized) C5=6
+ +      -0      * (normalized) C5=7
+ +       0.4346 * (normalized) C5=8
+ +      -0.1507 * (normalized) C5=9
+ +      -0.0451 * (normalized) C5=10
+ +      -0.2233 * (normalized) C5=11
+ +      -0.2082 * (normalized) C5=12
+ +       0.3246 * (normalized) C5=13
+ -       2.0424
+
+Number of kernel evaluations: 68124 (74.713% cached)
+
+Classifier for classes: 2, 9
+
+BinarySMO
+
+Machine linear: showing attribute weights, not support vectors.
+
+         0.0964 * (normalized) S1=1
+ +      -0.183  * (normalized) S1=2
+ +      -0.27   * (normalized) S1=3
+ +       0.3566 * (normalized) S1=4
+ +       0.2915 * (normalized) C1=1
+ +       0      * (normalized) C1=2
+ +      -0.0132 * (normalized) C1=3
+ +      -0.0673 * (normalized) C1=4
+ +      -0.0693 * (normalized) C1=5
+ +      -0.149  * (normalized) C1=6
+ +      -0.0556 * (normalized) C1=7
+ +      -0.1451 * (normalized) C1=9
+ +       0.3823 * (normalized) C1=10
+ +       0.1462 * (normalized) C1=11
+ +      -0.0677 * (normalized) C1=12
+ +      -0.2528 * (normalized) C1=13
+ +      -0.0536 * (normalized) S2=1
+ +      -0.2093 * (normalized) S2=2
+ +      -0.0473 * (normalized) S2=3
+ +       0.3103 * (normalized) S2=4
+ +      -0.3223 * (normalized) C2=1
+ +      -0.1556 * (normalized) C2=2
+ +      -0.0878 * (normalized) C2=3
+ +      -0      * (normalized) C2=4
+ +      -0.006  * (normalized) C2=5
+ +      -0.3543 * (normalized) C2=6
+ +      -0      * (normalized) C2=7
+ +       0      * (normalized) C2=8
+ +      -0.0577 * (normalized) C2=9
+ +       0.6805 * (normalized) C2=11
+ +      -0.1559 * (normalized) C2=12
+ +       0.4592 * (normalized) C2=13
+ +      -0.0714 * (normalized) S3=1
+ +       0.0119 * (normalized) S3=2
+ +      -0.1964 * (normalized) S3=3
+ +       0.2559 * (normalized) S3=4
+ +       0.0242 * (normalized) C3=1
+ +      -0.0752 * (normalized) C3=2
+ +      -0      * (normalized) C3=3
+ +      -0.0564 * (normalized) C3=4
+ +      -0.2003 * (normalized) C3=5
+ +      -0.0556 * (normalized) C3=7
+ +      -0.0577 * (normalized) C3=8
+ +      -0.2474 * (normalized) C3=9
+ +       0.328  * (normalized) C3=10
+ +      -0.1334 * (normalized) C3=11
+ +       0.1245 * (normalized) C3=12
+ +       0.3493 * (normalized) C3=13
+ +       0.0281 * (normalized) S4=1
+ +      -0.1839 * (normalized) S4=2
+ +       0.0511 * (normalized) S4=3
+ +       0.1046 * (normalized) S4=4
+ +      -0.0574 * (normalized) C4=1
+ +      -0.1407 * (normalized) C4=2
+ +      -0      * (normalized) C4=3
+ +      -0.1577 * (normalized) C4=4
+ +      -0.006  * (normalized) C4=5
+ +      -0.3764 * (normalized) C4=6
+ +      -0      * (normalized) C4=7
+ +      -0.1044 * (normalized) C4=8
+ +      -0.2474 * (normalized) C4=9
+ +       0.254  * (normalized) C4=10
+ +      -0.1091 * (normalized) C4=11
+ +       0.4831 * (normalized) C4=12
+ +       0.4621 * (normalized) C4=13
+ +      -0.201  * (normalized) S5=1
+ +      -0.0258 * (normalized) S5=2
+ +       0.1051 * (normalized) S5=3
+ +       0.1217 * (normalized) S5=4
+ +       0.5164 * (normalized) C5=1
+ +      -0      * (normalized) C5=2
+ +      -0      * (normalized) C5=3
+ +      -0.0673 * (normalized) C5=4
+ +      -0      * (normalized) C5=5
+ +      -0.2022 * (normalized) C5=6
+ +      -0.1931 * (normalized) C5=7
+ +      -0.1044 * (normalized) C5=8
+ +      -0.091  * (normalized) C5=9
+ +       0.121  * (normalized) C5=10
+ +      -0.2108 * (normalized) C5=11
+ +       0.3178 * (normalized) C5=12
+ +      -0.0864 * (normalized) C5=13
+ -       2.2651
+
+Number of kernel evaluations: 54529 (73.341% cached)
+
+Classifier for classes: 3, 4
+
+BinarySMO
+
+Machine linear: showing attribute weights, not support vectors.
+
+         0.0015 * (normalized) S1=1
+ +      -0.0011 * (normalized) S1=2
+ +       0.0012 * (normalized) S1=3
+ +      -0.0016 * (normalized) S1=4
+ +      -0.001  * (normalized) C1=1
+ +       0      * (normalized) C1=2
+ +       0.0025 * (normalized) C1=3
+ +      -0.0021 * (normalized) C1=4
+ +      -0.0005 * (normalized) C1=5
+ +       0.0005 * (normalized) C1=6
+ +      -0.0026 * (normalized) C1=7
+ +       0.0037 * (normalized) C1=8
+ +       0.0002 * (normalized) C1=9
+ +      -0.0016 * (normalized) C1=10
+ +      -0.0019 * (normalized) C1=11
+ +       0.0005 * (normalized) C1=12
+ +       0.0025 * (normalized) C1=13
+ +       0.001  * (normalized) S2=1
+ +       0.0004 * (normalized) S2=2
+ +       0.0006 * (normalized) S2=3
+ +      -0.0019 * (normalized) S2=4
+ +      -0.0031 * (normalized) C2=1
+ +       0.0004 * (normalized) C2=2
+ +      -0.0017 * (normalized) C2=3
+ +      -0.0016 * (normalized) C2=4
+ +      -0      * (normalized) C2=5
+ +      -0.0016 * (normalized) C2=6
+ +       0.0001 * (normalized) C2=7
+ +       0.0011 * (normalized) C2=8
+ +      -0.0004 * (normalized) C2=9
+ +       0.0076 * (normalized) C2=10
+ +       0.0008 * (normalized) C2=11
+ +       0.0001 * (normalized) C2=12
+ +      -0.0016 * (normalized) C2=13
+ +      -0.0007 * (normalized) S3=1
+ +      -0.0006 * (normalized) S3=2
+ +       0.0015 * (normalized) S3=3
+ +      -0.0002 * (normalized) S3=4
+ +       0.0003 * (normalized) C3=1
+ +      -0.0017 * (normalized) C3=2
+ +      -0.0058 * (normalized) C3=3
+ +       0.0022 * (normalized) C3=4
+ +       0.0019 * (normalized) C3=5
+ +       0.0033 * (normalized) C3=6
+ +       0.0002 * (normalized) C3=7
+ +      -0.0013 * (normalized) C3=8
+ +       0.0026 * (normalized) C3=9
+ +      -0.0027 * (normalized) C3=10
+ +       0.0013 * (normalized) C3=11
+ +      -0.0022 * (normalized) C3=12
+ +       0.0018 * (normalized) C3=13
+ +       0.0014 * (normalized) S4=1
+ +       0.0001 * (normalized) S4=2
+ +      -0.0021 * (normalized) S4=3
+ +       0.0006 * (normalized) S4=4
+ +       0.002  * (normalized) C4=1
+ +      -0.0072 * (normalized) C4=2
+ +       0.0007 * (normalized) C4=3
+ +       0.0023 * (normalized) C4=4
+ +      -0.0019 * (normalized) C4=5
+ +      -0.0003 * (normalized) C4=6
+ +       0.0056 * (normalized) C4=7
+ +      -0.0006 * (normalized) C4=8
+ +      -0.0007 * (normalized) C4=9
+ +      -0.0011 * (normalized) C4=10
+ +       0.0052 * (normalized) C4=11
+ +       0.0014 * (normalized) C4=12
+ +      -0.0054 * (normalized) C4=13
+ +      -0.0006 * (normalized) S5=1
+ +      -0.001  * (normalized) S5=2
+ +       0.0002 * (normalized) S5=3
+ +       0.0014 * (normalized) S5=4
+ +      -0.0043 * (normalized) C5=1
+ +       0.0033 * (normalized) C5=2
+ +      -0.0017 * (normalized) C5=3
+ +       0.0001 * (normalized) C5=4
+ +       0.0027 * (normalized) C5=5
+ +       0.0014 * (normalized) C5=6
+ +      -0.0003 * (normalized) C5=7
+ +       0.0013 * (normalized) C5=8
+ +      -0.0016 * (normalized) C5=9
+ +      -0.0002 * (normalized) C5=10
+ +       0      * (normalized) C5=11
+ +      -0.0011 * (normalized) C5=12
+ +       0.0004 * (normalized) C5=13
+ -       1.004 
+
+Number of kernel evaluations: 146994 (95.845% cached)
+
+Classifier for classes: 3, 5
+
+BinarySMO
+
+Machine linear: showing attribute weights, not support vectors.
+
+        -0.0217 * (normalized) S1=1
+ +      -0.0208 * (normalized) S1=2
+ +       0.0039 * (normalized) S1=3
+ +       0.0387 * (normalized) S1=4
+ +      -0.0028 * (normalized) C1=1
+ +       0.0258 * (normalized) C1=2
+ +      -0.1288 * (normalized) C1=3
+ +       0.0065 * (normalized) C1=4
+ +       0.0158 * (normalized) C1=5
+ +       0.0293 * (normalized) C1=6
+ +      -0.0225 * (normalized) C1=7
+ +      -0.0066 * (normalized) C1=8
+ +       0.0345 * (normalized) C1=9
+ +       0.03   * (normalized) C1=10
+ +       0.0168 * (normalized) C1=11
+ +      -0.0101 * (normalized) C1=12
+ +       0.012  * (normalized) C1=13
+ +      -0.0026 * (normalized) S2=1
+ +      -0.0157 * (normalized) S2=2
+ +      -0.0065 * (normalized) S2=3
+ +       0.0248 * (normalized) S2=4
+ +      -0.0227 * (normalized) C2=1
+ +       0.042  * (normalized) C2=2
+ +       0.0006 * (normalized) C2=3
+ +       0.0248 * (normalized) C2=4
+ +      -0.0045 * (normalized) C2=5
+ +       0.0057 * (normalized) C2=6
+ +       0.0314 * (normalized) C2=7
+ +      -0.0575 * (normalized) C2=8
+ +      -0.0263 * (normalized) C2=9
+ +       0.0314 * (normalized) C2=10
+ +       0.0198 * (normalized) C2=11
+ +       0.0132 * (normalized) C2=12
+ +      -0.0579 * (normalized) C2=13
+ +      -0.0071 * (normalized) S3=1
+ +      -0.0036 * (normalized) S3=2
+ +      -0.0209 * (normalized) S3=3
+ +       0.0315 * (normalized) S3=4
+ +      -0.0416 * (normalized) C3=1
+ +       0.0363 * (normalized) C3=2
+ +       0.0828 * (normalized) C3=3
+ +      -0.0786 * (normalized) C3=4
+ +       0.032  * (normalized) C3=5
+ +      -0.0005 * (normalized) C3=6
+ +      -0.01   * (normalized) C3=7
+ +      -0.0059 * (normalized) C3=8
+ +      -0.0379 * (normalized) C3=9
+ +      -0.0422 * (normalized) C3=10
+ +       0.0012 * (normalized) C3=11
+ +      -0.0027 * (normalized) C3=12
+ +       0.067  * (normalized) C3=13
+ +      -0.0217 * (normalized) S4=1
+ +      -0.0126 * (normalized) S4=2
+ +      -0.0026 * (normalized) S4=3
+ +       0.0369 * (normalized) S4=4
+ +       0.0303 * (normalized) C4=1
+ +       0.0068 * (normalized) C4=2
+ +      -0.0269 * (normalized) C4=3
+ +      -0.0188 * (normalized) C4=4
+ +      -0.0488 * (normalized) C4=5
+ +      -0.0414 * (normalized) C4=6
+ +       0.0439 * (normalized) C4=7
+ +       0.0069 * (normalized) C4=8
+ +       0.0109 * (normalized) C4=9
+ +       0.0354 * (normalized) C4=10
+ +      -0.0155 * (normalized) C4=11
+ +       0.0556 * (normalized) C4=12
+ +      -0.0383 * (normalized) C4=13
+ +      -0.0137 * (normalized) S5=1
+ +      -0.0251 * (normalized) S5=2
+ +      -0.0045 * (normalized) S5=3
+ +       0.0434 * (normalized) S5=4
+ +       0.0309 * (normalized) C5=1
+ +      -0.0603 * (normalized) C5=2
+ +      -0.0508 * (normalized) C5=3
+ +       0.0095 * (normalized) C5=4
+ +      -0.0009 * (normalized) C5=5
+ +      -0.0129 * (normalized) C5=6
+ +      -0.023  * (normalized) C5=7
+ +       0.0391 * (normalized) C5=8
+ +       0.0455 * (normalized) C5=9
+ +      -0.012  * (normalized) C5=10
+ +      -0.0396 * (normalized) C5=11
+ +       0.0566 * (normalized) C5=12
+ +       0.0179 * (normalized) C5=13
+ -       1.0814
+
+Number of kernel evaluations: 110802 (97.945% cached)
+
+Classifier for classes: 3, 6
+
+BinarySMO
+
+Machine linear: showing attribute weights, not support vectors.
+
+         0.0165 * (normalized) S1=1
+ +      -0.0213 * (normalized) S1=2
+ +       0.0313 * (normalized) S1=3
+ +      -0.0265 * (normalized) S1=4
+ +      -0.0089 * (normalized) C1=1
+ +      -0.0265 * (normalized) C1=2
+ +      -0.0091 * (normalized) C1=3
+ +       0.0155 * (normalized) C1=4
+ +      -0.0453 * (normalized) C1=5
+ +       0.0118 * (normalized) C1=6
+ +      -0.0091 * (normalized) C1=7
+ +       0.0607 * (normalized) C1=8
+ +       0.0484 * (normalized) C1=9
+ +       0.0231 * (normalized) C1=10
+ +      -0.0206 * (normalized) C1=11
+ +      -0.035  * (normalized) C1=12
+ +      -0.005  * (normalized) C1=13
+ +       0.0106 * (normalized) S2=1
+ +       0.0095 * (normalized) S2=2
+ +       0.0108 * (normalized) S2=3
+ +      -0.0309 * (normalized) S2=4
+ +      -0.0129 * (normalized) C2=1
+ +       0.0921 * (normalized) C2=2
+ +      -0.0297 * (normalized) C2=3
+ +       0.0228 * (normalized) C2=4
+ +       0.0834 * (normalized) C2=5
+ +       0.0036 * (normalized) C2=6
+ +      -0.0422 * (normalized) C2=7
+ +      -0.0332 * (normalized) C2=8
+ +      -0.0646 * (normalized) C2=9
+ +       0.0167 * (normalized) C2=10
+ +       0.0124 * (normalized) C2=11
+ +      -0.0446 * (normalized) C2=12
+ +      -0.004  * (normalized) C2=13
+ +       0.0198 * (normalized) S3=1
+ +      -0.0294 * (normalized) S3=2
+ +       0.0236 * (normalized) S3=3
+ +      -0.014  * (normalized) S3=4
+ +      -0.0335 * (normalized) C3=1
+ +      -0.0227 * (normalized) C3=2
+ +       0.0289 * (normalized) C3=3
+ +       0.0065 * (normalized) C3=4
+ +      -0.0447 * (normalized) C3=5
+ +       0.0269 * (normalized) C3=6
+ +       0.0207 * (normalized) C3=7
+ +       0.02   * (normalized) C3=8
+ +       0.0454 * (normalized) C3=9
+ +      -0.0078 * (normalized) C3=10
+ +       0.0683 * (normalized) C3=11
+ +       0.0089 * (normalized) C3=12
+ +      -0.1167 * (normalized) C3=13
+ +      -0.0048 * (normalized) S4=1
+ +       0.0171 * (normalized) S4=2
+ +       0.0194 * (normalized) S4=3
+ +      -0.0317 * (normalized) S4=4
+ +       0.0224 * (normalized) C4=1
+ +      -0.096  * (normalized) C4=2
+ +       0.0109 * (normalized) C4=3
+ +       0.0341 * (normalized) C4=4
+ +      -0.027  * (normalized) C4=5
+ +       0.0272 * (normalized) C4=6
+ +       0.0196 * (normalized) C4=7
+ +      -0.0374 * (normalized) C4=8
+ +       0.0002 * (normalized) C4=9
+ +       0.0124 * (normalized) C4=10
+ +       0.0653 * (normalized) C4=11
+ +      -0.0669 * (normalized) C4=12
+ +       0.0352 * (normalized) C4=13
+ +      -0.0024 * (normalized) S5=1
+ +       0.0103 * (normalized) S5=2
+ +       0.0264 * (normalized) S5=3
+ +      -0.0343 * (normalized) S5=4
+ +       0.0092 * (normalized) C5=1
+ +      -0.0145 * (normalized) C5=2
+ +       0.0146 * (normalized) C5=3
+ +       0.0413 * (normalized) C5=4
+ +      -0.0053 * (normalized) C5=5
+ +      -0.0239 * (normalized) C5=6
+ +      -0.0549 * (normalized) C5=7
+ +       0.0722 * (normalized) C5=8
+ +      -0.0116 * (normalized) C5=9
+ +      -0.0127 * (normalized) C5=10
+ +      -0.0496 * (normalized) C5=11
+ +      -0.0177 * (normalized) C5=12
+ +       0.0528 * (normalized) C5=13
+ -       1.0939
+
+Number of kernel evaluations: 84428 (98.514% cached)
+
+Classifier for classes: 3, 7
+
+BinarySMO
+
+Machine linear: showing attribute weights, not support vectors.
+
+        -0.3978 * (normalized) S1=1
+ +      -0.0611 * (normalized) S1=2
+ +       0.2507 * (normalized) S1=3
+ +       0.2083 * (normalized) S1=4
+ +      -0.2283 * (normalized) C1=1
+ +       0.2778 * (normalized) C1=2
+ +       0.5202 * (normalized) C1=3
+ +      -0.2758 * (normalized) C1=4
+ +      -0.3001 * (normalized) C1=5
+ +      -0.036  * (normalized) C1=6
+ +      -0.1684 * (normalized) C1=7
+ +       0.9241 * (normalized) C1=8
+ +      -0.5678 * (normalized) C1=9
+ +      -0.1186 * (normalized) C1=10
+ +       0.3268 * (normalized) C1=11
+ +      -0.0287 * (normalized) C1=12
+ +      -0.3252 * (normalized) C1=13
+ +      -0.364  * (normalized) S2=1
+ +       0.4458 * (normalized) S2=2
+ +      -0.197  * (normalized) S2=3
+ +       0.1152 * (normalized) S2=4
+ +      -0.1496 * (normalized) C2=1
+ +       0.5203 * (normalized) C2=2
+ +       0.0335 * (normalized) C2=3
+ +      -0.2758 * (normalized) C2=4
+ +      -0.0212 * (normalized) C2=5
+ +      -0.0305 * (normalized) C2=6
+ +       0.1319 * (normalized) C2=7
+ +       0.4785 * (normalized) C2=8
+ +      -0.1759 * (normalized) C2=9
+ +      -0.2426 * (normalized) C2=10
+ +       0.3667 * (normalized) C2=11
+ +      -0.1254 * (normalized) C2=12
+ +      -0.5098 * (normalized) C2=13
+ +      -0.1513 * (normalized) S3=1
+ +      -0.0739 * (normalized) S3=2
+ +       0.1534 * (normalized) S3=3
+ +       0.0719 * (normalized) S3=4
+ +      -0.1097 * (normalized) C3=1
+ +       0.4573 * (normalized) C3=2
+ +       0.2442 * (normalized) C3=3
+ +      -0.0457 * (normalized) C3=5
+ +      -0.3794 * (normalized) C3=6
+ +       0.1908 * (normalized) C3=7
+ +       0.3627 * (normalized) C3=8
+ +      -0.2679 * (normalized) C3=9
+ +      -0.2142 * (normalized) C3=10
+ +       0.1866 * (normalized) C3=11
+ +      -0.098  * (normalized) C3=12
+ +      -0.3268 * (normalized) C3=13
+ +       0.6955 * (normalized) S4=1
+ +      -0.4654 * (normalized) S4=2
+ +      -0.0696 * (normalized) S4=3
+ +      -0.1605 * (normalized) S4=4
+ +      -0.2987 * (normalized) C4=1
+ +       0.4146 * (normalized) C4=2
+ +       0.106  * (normalized) C4=3
+ +      -0.22   * (normalized) C4=4
+ +      -0.2354 * (normalized) C4=6
+ +       0.344  * (normalized) C4=7
+ +      -0.1474 * (normalized) C4=8
+ +      -0.3371 * (normalized) C4=9
+ +      -0.2077 * (normalized) C4=10
+ +       0.4051 * (normalized) C4=11
+ +       0.495  * (normalized) C4=12
+ +      -0.3184 * (normalized) C4=13
+ +      -0.212  * (normalized) S5=1
+ +       0.3328 * (normalized) S5=2
+ +      -0.437  * (normalized) S5=3
+ +       0.3162 * (normalized) S5=4
+ +      -0.3143 * (normalized) C5=1
+ +      -0.3673 * (normalized) C5=2
+ +      -0.3404 * (normalized) C5=3
+ +      -0.3124 * (normalized) C5=4
+ +       0.5121 * (normalized) C5=5
+ +       0      * (normalized) C5=6
+ +       0.2153 * (normalized) C5=7
+ +       0.1295 * (normalized) C5=8
+ +      -0.2679 * (normalized) C5=9
+ +       0.5131 * (normalized) C5=10
+ +      -0.1826 * (normalized) C5=11
+ +      -0.3805 * (normalized) C5=12
+ +       0.7952 * (normalized) C5=13
+ -       2.6327
+
+Number of kernel evaluations: 14290 (90.153% cached)
+
+Classifier for classes: 3, 8
+
+BinarySMO
+
+Machine linear: showing attribute weights, not support vectors.
+
+         0.2076 * (normalized) S1=1
+ +      -0.2035 * (normalized) S1=2
+ +      -0.0298 * (normalized) S1=3
+ +       0.0257 * (normalized) S1=4
+ +       0.8459 * (normalized) C1=1
+ +       0.2643 * (normalized) C1=2
+ +      -0.091  * (normalized) C1=3
+ +      -0.4    * (normalized) C1=4
+ +       0.181  * (normalized) C1=5
+ +      -0.2151 * (normalized) C1=6
+ +       0      * (normalized) C1=7
+ +      -0.1392 * (normalized) C1=8
+ +       0.4645 * (normalized) C1=9
+ +      -0.3642 * (normalized) C1=10
+ +      -0.2599 * (normalized) C1=11
+ +      -0.0146 * (normalized) C1=12
+ +      -0.2718 * (normalized) C1=13
+ +       0.2517 * (normalized) S2=1
+ +      -0.0963 * (normalized) S2=2
+ +      -0.0784 * (normalized) S2=3
+ +      -0.077  * (normalized) S2=4
+ +      -0.2253 * (normalized) C2=1
+ +       0.6274 * (normalized) C2=2
+ +      -0.4182 * (normalized) C2=3
+ +       0.4565 * (normalized) C2=4
+ +      -0.3438 * (normalized) C2=5
+ +       0.3795 * (normalized) C2=6
+ +       0      * (normalized) C2=7
+ +      -0.2659 * (normalized) C2=8
+ +      -0.0964 * (normalized) C2=9
+ +      -0.3642 * (normalized) C2=10
+ +       0      * (normalized) C2=11
+ +       0.4355 * (normalized) C2=12
+ +      -0.185  * (normalized) C2=13
+ +       0.2136 * (normalized) S3=1
+ +      -0.0101 * (normalized) S3=2
+ +      -0.1842 * (normalized) S3=3
+ +      -0.0194 * (normalized) S3=4
+ +      -0.0971 * (normalized) C3=1
+ +       0.3708 * (normalized) C3=2
+ +       0.2265 * (normalized) C3=3
+ +      -0.2507 * (normalized) C3=4
+ +       0.1652 * (normalized) C3=5
+ +      -0.1458 * (normalized) C3=6
+ +      -0.29   * (normalized) C3=7
+ +      -0.137  * (normalized) C3=8
+ +       0.3269 * (normalized) C3=9
+ +       0.2258 * (normalized) C3=10
+ +      -0.1582 * (normalized) C3=11
+ +      -0.1919 * (normalized) C3=12
+ +      -0.0446 * (normalized) C3=13
+ +       0.1473 * (normalized) S4=1
+ +      -0.0352 * (normalized) S4=2
+ +      -0.0065 * (normalized) S4=3
+ +      -0.1056 * (normalized) S4=4
+ +      -0.1846 * (normalized) C4=1
+ +      -0.3974 * (normalized) C4=2
+ +       0.6877 * (normalized) C4=3
+ +       0.3754 * (normalized) C4=4
+ +      -0.4929 * (normalized) C4=5
+ +      -0.2031 * (normalized) C4=6
+ +       0.421  * (normalized) C4=7
+ +      -0      * (normalized) C4=8
+ +      -0.2659 * (normalized) C4=9
+ +      -0.1519 * (normalized) C4=10
+ +       0.55   * (normalized) C4=11
+ +      -0.2457 * (normalized) C4=12
+ +      -0.0928 * (normalized) C4=13
+ +       0.1766 * (normalized) S5=1
+ +      -0.084  * (normalized) S5=2
+ +      -0.1178 * (normalized) S5=3
+ +       0.0252 * (normalized) S5=4
+ +      -0.2342 * (normalized) C5=1
+ +      -0.4251 * (normalized) C5=2
+ +      -0.3359 * (normalized) C5=3
+ +      -0.1283 * (normalized) C5=4
+ +       0.7265 * (normalized) C5=5
+ +       0.271  * (normalized) C5=6
+ +      -0.29   * (normalized) C5=7
+ +       0.4407 * (normalized) C5=8
+ +      -0.0178 * (normalized) C5=9
+ +      -0      * (normalized) C5=10
+ +      -0.1582 * (normalized) C5=11
+ +      -0.2278 * (normalized) C5=12
+ +       0.3791 * (normalized) C5=13
+ -       2.059 
+
+Number of kernel evaluations: 31367 (79.171% cached)
+
+Classifier for classes: 3, 9
+
+BinarySMO
+
+Machine linear: showing attribute weights, not support vectors.
+
+        -0.0466 * (normalized) S1=1
+ +       0.0271 * (normalized) S1=2
+ +      -0.1709 * (normalized) S1=3
+ +       0.1904 * (normalized) S1=4
+ +       0.0771 * (normalized) C1=1
+ +      -0.0022 * (normalized) C1=2
+ +      -0.4229 * (normalized) C1=3
+ +      -0.0145 * (normalized) C1=4
+ +       0      * (normalized) C1=5
+ +       0      * (normalized) C1=6
+ +      -0.1469 * (normalized) C1=7
+ +      -0.1846 * (normalized) C1=8
+ +      -0      * (normalized) C1=9
+ +       0.6921 * (normalized) C1=10
+ +       0.1485 * (normalized) C1=11
+ +       0.002  * (normalized) C1=12
+ +      -0.1486 * (normalized) C1=13
+ +       0.1195 * (normalized) S2=1
+ +      -0.1483 * (normalized) S2=2
+ +      -0.1819 * (normalized) S2=3
+ +       0.2107 * (normalized) S2=4
+ +      -0.4951 * (normalized) C2=1
+ +      -0.2033 * (normalized) C2=2
+ +      -0.0096 * (normalized) C2=3
+ +      -0.0863 * (normalized) C2=5
+ +      -0      * (normalized) C2=6
+ +      -0.2342 * (normalized) C2=7
+ +      -0.0631 * (normalized) C2=8
+ +      -0.0134 * (normalized) C2=9
+ +      -0.3007 * (normalized) C2=10
+ +       0.8292 * (normalized) C2=11
+ +      -0.096  * (normalized) C2=12
+ +       0.6725 * (normalized) C2=13
+ +      -0.0686 * (normalized) S3=1
+ +      -0.0118 * (normalized) S3=2
+ +      -0.0186 * (normalized) S3=3
+ +       0.099  * (normalized) S3=4
+ +      -0.1003 * (normalized) C3=1
+ +      -0.4074 * (normalized) C3=2
+ +      -0      * (normalized) C3=3
+ +      -0.4528 * (normalized) C3=4
+ +       0      * (normalized) C3=5
+ +      -0      * (normalized) C3=6
+ +      -0.1469 * (normalized) C3=7
+ +      -0.0297 * (normalized) C3=8
+ +       0.4759 * (normalized) C3=10
+ +      -0.3434 * (normalized) C3=11
+ +       0.4281 * (normalized) C3=12
+ +       0.5766 * (normalized) C3=13
+ +      -0.1869 * (normalized) S4=1
+ +       0.0829 * (normalized) S4=2
+ +       0.0288 * (normalized) S4=3
+ +       0.0752 * (normalized) S4=4
+ +      -0.0096 * (normalized) C4=1
+ +      -0.0524 * (normalized) C4=2
+ +      -0.0022 * (normalized) C4=3
+ +      -0.2634 * (normalized) C4=4
+ +      -0.232  * (normalized) C4=5
+ +       0      * (normalized) C4=6
+ +      -0      * (normalized) C4=7
+ +      -0.292  * (normalized) C4=8
+ +      -0.4951 * (normalized) C4=9
+ +       0.1909 * (normalized) C4=10
+ +       0.4108 * (normalized) C4=11
+ +       0.579  * (normalized) C4=12
+ +       0.1659 * (normalized) C4=13
+ +      -0.399  * (normalized) S5=1
+ +       0.1079 * (normalized) S5=2
+ +      -0.0581 * (normalized) S5=3
+ +       0.3492 * (normalized) S5=4
+ +       1.261  * (normalized) C5=1
+ +      -0.1548 * (normalized) C5=2
+ +      -0.5082 * (normalized) C5=3
+ +      -0.0948 * (normalized) C5=4
+ +      -0.0006 * (normalized) C5=5
+ +       0      * (normalized) C5=6
+ +       0      * (normalized) C5=7
+ +       0      * (normalized) C5=8
+ +      -0.2794 * (normalized) C5=9
+ +       0.0393 * (normalized) C5=10
+ +      -0.0148 * (normalized) C5=11
+ +       0.1775 * (normalized) C5=12
+ +      -0.4251 * (normalized) C5=13
+ -       2.3783
+
+Number of kernel evaluations: 17819 (77.581% cached)
+
+Classifier for classes: 4, 5
+
+BinarySMO
+
+Machine linear: showing attribute weights, not support vectors.
+
+        -0.4195 * (normalized) S1=1
+ +       0.3826 * (normalized) S1=2
+ +      -0.4792 * (normalized) S1=3
+ +       0.5161 * (normalized) S1=4
+ +       0.4889 * (normalized) C1=1
+ +       0.0002 * (normalized) C1=2
+ +      -1.0504 * (normalized) C1=3
+ +      -0.3727 * (normalized) C1=4
+ +      -0.4351 * (normalized) C1=5
+ +      -0.0264 * (normalized) C1=6
+ +      -0.2667 * (normalized) C1=7
+ +      -0.2344 * (normalized) C1=8
+ +       1.4706 * (normalized) C1=9
+ +      -0.2226 * (normalized) C1=10
+ +       0.358  * (normalized) C1=11
+ +       0.2301 * (normalized) C1=12
+ +       0.0605 * (normalized) C1=13
+ +       0.5094 * (normalized) S2=1
+ +      -0.8435 * (normalized) S2=2
+ +       0.3561 * (normalized) S2=3
+ +      -0.022  * (normalized) S2=4
+ +       0.8456 * (normalized) C2=1
+ +       0.6562 * (normalized) C2=2
+ +       0.2844 * (normalized) C2=3
+ +       0.6091 * (normalized) C2=4
+ +       0.3083 * (normalized) C2=5
+ +      -0.2906 * (normalized) C2=6
+ +       0.5293 * (normalized) C2=7
+ +      -0.5214 * (normalized) C2=8
+ +      -0.3271 * (normalized) C2=9
+ +      -1.2162 * (normalized) C2=10
+ +      -1.2048 * (normalized) C2=11
+ +       0.702  * (normalized) C2=12
+ +      -0.3748 * (normalized) C2=13
+ +      -0.2137 * (normalized) S3=1
+ +       0.19   * (normalized) S3=2
+ +       0.0445 * (normalized) S3=3
+ +      -0.0208 * (normalized) S3=4
+ +      -0.0557 * (normalized) C3=1
+ +       1.5914 * (normalized) C3=2
+ +       0.9646 * (normalized) C3=3
+ +      -0.5438 * (normalized) C3=4
+ +      -0.0713 * (normalized) C3=5
+ +      -0.4478 * (normalized) C3=6
+ +       0.1026 * (normalized) C3=7
+ +       0.2346 * (normalized) C3=8
+ +      -0.8862 * (normalized) C3=9
+ +      -0.7698 * (normalized) C3=10
+ +      -0.5504 * (normalized) C3=11
+ +       0.0784 * (normalized) C3=12
+ +       0.3532 * (normalized) C3=13
+ +      -0.6486 * (normalized) S4=1
+ +       0.2654 * (normalized) S4=2
+ +       0.6715 * (normalized) S4=3
+ +      -0.2883 * (normalized) S4=4
+ +       0.059  * (normalized) C4=1
+ +       1.5043 * (normalized) C4=2
+ +      -0.3002 * (normalized) C4=3
+ +      -0.2673 * (normalized) C4=4
+ +      -0.1302 * (normalized) C4=5
+ +      -0.4579 * (normalized) C4=6
+ +      -0.367  * (normalized) C4=7
+ +      -0.2384 * (normalized) C4=8
+ +       0.0896 * (normalized) C4=9
+ +      -0.2524 * (normalized) C4=10
+ +      -1.2078 * (normalized) C4=11
+ +       0.5683 * (normalized) C4=12
+ +       1      * (normalized) C4=13
+ +       0.4373 * (normalized) S5=1
+ +      -0.4611 * (normalized) S5=2
+ +      -0.1151 * (normalized) S5=3
+ +       0.1389 * (normalized) S5=4
+ +       0.436  * (normalized) C5=1
+ +      -0.5076 * (normalized) C5=2
+ +       0.4981 * (normalized) C5=3
+ +       0.5897 * (normalized) C5=4
+ +      -0.1883 * (normalized) C5=5
+ +      -0.5804 * (normalized) C5=6
+ +      -0.3787 * (normalized) C5=7
+ +       0.4141 * (normalized) C5=8
+ +       0.5113 * (normalized) C5=9
+ +      -1.0229 * (normalized) C5=10
+ +      -0.5611 * (normalized) C5=11
+ +       1.2063 * (normalized) C5=12
+ +      -0.4167 * (normalized) C5=13
+ -       0.1963
+
+Number of kernel evaluations: 10008 (95.471% cached)
+
+Classifier for classes: 4, 6
+
+BinarySMO
+
+Machine linear: showing attribute weights, not support vectors.
+
+        -0.265  * (normalized) S1=1
+ +       0.3661 * (normalized) S1=2
+ +      -0.4561 * (normalized) S1=3
+ +       0.355  * (normalized) S1=4
+ +       0.1141 * (normalized) C1=1
+ +      -0.4203 * (normalized) C1=2
+ +      -0.1626 * (normalized) C1=3
+ +       0.9345 * (normalized) C1=4
+ +      -0.3379 * (normalized) C1=5
+ +       0.2614 * (normalized) C1=6
+ +      -0.0683 * (normalized) C1=7
+ +       0.2819 * (normalized) C1=8
+ +       0.3697 * (normalized) C1=9
+ +       0.2222 * (normalized) C1=10
+ +      -0.3013 * (normalized) C1=11
+ +      -1.071  * (normalized) C1=12
+ +       0.1777 * (normalized) C1=13
+ +       0.0426 * (normalized) S2=1
+ +      -0.0486 * (normalized) S2=2
+ +       0.3827 * (normalized) S2=3
+ +      -0.3767 * (normalized) S2=4
+ +       0.1141 * (normalized) C2=1
+ +       0.7466 * (normalized) C2=2
+ +       0.0236 * (normalized) C2=3
+ +       0.9102 * (normalized) C2=4
+ +       0.1735 * (normalized) C2=5
+ +       1.1148 * (normalized) C2=6
+ +      -0.141  * (normalized) C2=7
+ +      -0.3683 * (normalized) C2=8
+ +      -0.5656 * (normalized) C2=9
+ +      -0.4167 * (normalized) C2=10
+ +       0.1873 * (normalized) C2=11
+ +      -2.0545 * (normalized) C2=12
+ +       0.2758 * (normalized) C2=13
+ +       0.0637 * (normalized) S3=1
+ +       0.0433 * (normalized) S3=2
+ +      -0.2104 * (normalized) S3=3
+ +       0.1035 * (normalized) S3=4
+ +       0.4526 * (normalized) C3=1
+ +       1      * (normalized) C3=2
+ +       0.2872 * (normalized) C3=3
+ +      -0.7388 * (normalized) C3=4
+ +      -1.4297 * (normalized) C3=5
+ +       0.3449 * (normalized) C3=6
+ +      -0.2179 * (normalized) C3=7
+ +       0.2751 * (normalized) C3=8
+ +      -0.544  * (normalized) C3=9
+ +       0.3788 * (normalized) C3=10
+ +       0.7546 * (normalized) C3=11
+ +      -0.5007 * (normalized) C3=12
+ +      -0.0622 * (normalized) C3=13
+ +       0.1485 * (normalized) S4=1
+ +       0.5212 * (normalized) S4=2
+ +       0.1593 * (normalized) S4=3
+ +      -0.829  * (normalized) S4=4
+ +      -0.0961 * (normalized) C4=1
+ +       0.2528 * (normalized) C4=3
+ +       0.0285 * (normalized) C4=4
+ +      -0.4103 * (normalized) C4=5
+ +       0.8726 * (normalized) C4=6
+ +      -1.3281 * (normalized) C4=7
+ +       0.0544 * (normalized) C4=8
+ +      -0.3167 * (normalized) C4=9
+ +       0.0718 * (normalized) C4=10
+ +       0.0698 * (normalized) C4=11
+ +      -0.7141 * (normalized) C4=12
+ +       1.5153 * (normalized) C4=13
+ +       0.2411 * (normalized) S5=1
+ +       0.0891 * (normalized) S5=2
+ +      -0.3048 * (normalized) S5=3
+ +      -0.0254 * (normalized) S5=4
+ +       0.3063 * (normalized) C5=1
+ +      -0.3406 * (normalized) C5=2
+ +       0.4504 * (normalized) C5=3
+ +       0.8827 * (normalized) C5=4
+ +      -0.177  * (normalized) C5=5
+ +      -0.111  * (normalized) C5=6
+ +      -1.0772 * (normalized) C5=7
+ +       0.6064 * (normalized) C5=8
+ +       0.1569 * (normalized) C5=9
+ +       0.0744 * (normalized) C5=10
+ +       0.0928 * (normalized) C5=11
+ +      -1.2424 * (normalized) C5=12
+ +       0.3783 * (normalized) C5=13
+ -       0.8041
+
+Number of kernel evaluations: 7625 (97.833% cached)
+
+Classifier for classes: 4, 7
+
+BinarySMO
+
+Machine linear: showing attribute weights, not support vectors.
+
+        -0.2752 * (normalized) S1=1
+ +      -0.1509 * (normalized) S1=2
+ +       0.2244 * (normalized) S1=3
+ +       0.2016 * (normalized) S1=4
+ +       0.2959 * (normalized) C1=2
+ +       0.1793 * (normalized) C1=3
+ +      -0.1749 * (normalized) C1=4
+ +      -0.2076 * (normalized) C1=5
+ +      -0.1292 * (normalized) C1=6
+ +      -0.1698 * (normalized) C1=7
+ +       0.409  * (normalized) C1=8
+ +      -0.3521 * (normalized) C1=9
+ +      -0.2602 * (normalized) C1=10
+ +       0.5374 * (normalized) C1=11
+ +      -0.1003 * (normalized) C1=12
+ +      -0.0276 * (normalized) C1=13
+ +      -0.2098 * (normalized) S2=1
+ +       0.2206 * (normalized) S2=2
+ +       0.0823 * (normalized) S2=3
+ +      -0.0931 * (normalized) S2=4
+ +       0.4692 * (normalized) C2=2
+ +       0.172  * (normalized) C2=3
+ +      -0.1515 * (normalized) C2=4
+ +      -0.078  * (normalized) C2=5
+ +      -0.1441 * (normalized) C2=6
+ +       0.1349 * (normalized) C2=7
+ +       0.2431 * (normalized) C2=8
+ +      -0.4288 * (normalized) C2=9
+ +      -0.2808 * (normalized) C2=10
+ +       0.4583 * (normalized) C2=11
+ +      -0.3521 * (normalized) C2=12
+ +      -0.0422 * (normalized) C2=13
+ +       0.1122 * (normalized) S3=1
+ +       0.0932 * (normalized) S3=2
+ +       0.0289 * (normalized) S3=3
+ +      -0.2343 * (normalized) S3=4
+ +      -0.1055 * (normalized) C3=1
+ +       0.4692 * (normalized) C3=2
+ +       0.3308 * (normalized) C3=3
+ +      -0.1441 * (normalized) C3=4
+ +      -0.2468 * (normalized) C3=5
+ +      -0.2385 * (normalized) C3=6
+ +       0.206  * (normalized) C3=7
+ +       0.4556 * (normalized) C3=8
+ +      -0.5694 * (normalized) C3=9
+ +      -0.1427 * (normalized) C3=10
+ +       0.2348 * (normalized) C3=11
+ +      -0.0854 * (normalized) C3=12
+ +      -0.164  * (normalized) C3=13
+ +       0.3849 * (normalized) S4=1
+ +      -0.1792 * (normalized) S4=2
+ +       0.0164 * (normalized) S4=3
+ +      -0.222  * (normalized) S4=4
+ +      -0.2518 * (normalized) C4=1
+ +       0.4692 * (normalized) C4=2
+ +       0.2528 * (normalized) C4=3
+ +      -0.2245 * (normalized) C4=4
+ +      -0.4836 * (normalized) C4=6
+ +       0.1467 * (normalized) C4=7
+ +       0.2535 * (normalized) C4=8
+ +      -0.2801 * (normalized) C4=9
+ +      -0.3283 * (normalized) C4=10
+ +       0.283  * (normalized) C4=11
+ +       0.1631 * (normalized) C4=12
+ +      -0.1872 * (normalized) S5=1
+ +       0.1567 * (normalized) S5=2
+ +      -0.1943 * (normalized) S5=3
+ +       0.2249 * (normalized) S5=4
+ +      -0.2062 * (normalized) C5=1
+ +      -0.1515 * (normalized) C5=2
+ +      -0      * (normalized) C5=3
+ +      -0.1415 * (normalized) C5=4
+ +      -0.1222 * (normalized) C5=5
+ +      -0.238  * (normalized) C5=6
+ +       0.4772 * (normalized) C5=7
+ +       0.3271 * (normalized) C5=8
+ +      -0.0962 * (normalized) C5=9
+ +      -0.0959 * (normalized) C5=10
+ +      -0.2861 * (normalized) C5=11
+ +      -0.0947 * (normalized) C5=12
+ +       0.628  * (normalized) C5=13
+ -       1.3835
+
+Number of kernel evaluations: 2652 (88.738% cached)
+
+Classifier for classes: 4, 8
+
+BinarySMO
+
+Machine linear: showing attribute weights, not support vectors.
+
+        -0.2477 * (normalized) S1=1
+ +       0.1202 * (normalized) S1=2
+ +       0.2269 * (normalized) S1=3
+ +      -0.0994 * (normalized) S1=4
+ +       0.4311 * (normalized) C1=1
+ +       0.2344 * (normalized) C1=2
+ +      -0.2792 * (normalized) C1=3
+ +      -0.1943 * (normalized) C1=4
+ +       0.3902 * (normalized) C1=5
+ +      -0.3484 * (normalized) C1=6
+ +       0      * (normalized) C1=7
+ +      -0.4229 * (normalized) C1=8
+ +       0.5959 * (normalized) C1=9
+ +      -0.1152 * (normalized) C1=10
+ +      -0.0365 * (normalized) C1=11
+ +      -0.162  * (normalized) C1=12
+ +      -0.0931 * (normalized) C1=13
+ +       0.1517 * (normalized) S2=1
+ +      -0.0955 * (normalized) S2=2
+ +       0.0372 * (normalized) S2=3
+ +      -0.0934 * (normalized) S2=4
+ +      -0.1272 * (normalized) C2=1
+ +       0.1513 * (normalized) C2=2
+ +      -0.1789 * (normalized) C2=3
+ +       0.8644 * (normalized) C2=4
+ +      -0.0436 * (normalized) C2=5
+ +       0.2873 * (normalized) C2=6
+ +      -0.0727 * (normalized) C2=7
+ +      -0.2757 * (normalized) C2=8
+ +      -0.2447 * (normalized) C2=9
+ +      -0.3817 * (normalized) C2=10
+ +       0.1366 * (normalized) C2=12
+ +      -0.1152 * (normalized) C2=13
+ +       0.3346 * (normalized) S3=1
+ +      -0.0107 * (normalized) S3=2
+ +       0.0012 * (normalized) S3=3
+ +      -0.3252 * (normalized) S3=4
+ +      -0.0436 * (normalized) C3=1
+ +       0.7696 * (normalized) C3=2
+ +       0.8728 * (normalized) C3=3
+ +      -0.7702 * (normalized) C3=4
+ +      -0.1424 * (normalized) C3=5
+ +      -0.2782 * (normalized) C3=6
+ +      -0.4197 * (normalized) C3=7
+ +      -0.1323 * (normalized) C3=8
+ +       0.187  * (normalized) C3=9
+ +       0.4721 * (normalized) C3=10
+ +      -0.2308 * (normalized) C3=11
+ +      -0      * (normalized) C3=12
+ +      -0.2843 * (normalized) C3=13
+ +       0.2364 * (normalized) S4=1
+ +      -0.0424 * (normalized) S4=2
+ +       0.1511 * (normalized) S4=3
+ +      -0.3451 * (normalized) S4=4
+ +      -0.2424 * (normalized) C4=1
+ +       0.5829 * (normalized) C4=3
+ +       0.3165 * (normalized) C4=4
+ +      -0.1272 * (normalized) C4=5
+ +      -0.2633 * (normalized) C4=6
+ +      -0.1259 * (normalized) C4=7
+ +      -0.0365 * (normalized) C4=9
+ +      -0.2308 * (normalized) C4=10
+ +       0.1268 * (normalized) C4=11
+ +      -0      * (normalized) C4=12
+ +       0.1143 * (normalized) S5=1
+ +      -0.0598 * (normalized) S5=2
+ +      -0.0799 * (normalized) S5=3
+ +       0.0254 * (normalized) S5=4
+ +      -0.3965 * (normalized) C5=2
+ +      -0.3316 * (normalized) C5=3
+ +      -0.1098 * (normalized) C5=4
+ +       0.528  * (normalized) C5=5
+ +       0.2102 * (normalized) C5=6
+ +       0      * (normalized) C5=7
+ +       0.2403 * (normalized) C5=8
+ +      -0.0931 * (normalized) C5=9
+ +      -0.3494 * (normalized) C5=10
+ +       0      * (normalized) C5=11
+ +      -0.1152 * (normalized) C5=12
+ +       0.4171 * (normalized) C5=13
+ -       1.3381
+
+Number of kernel evaluations: 2782 (94.072% cached)
+
+Classifier for classes: 4, 9
+
+BinarySMO
+
+Machine linear: showing attribute weights, not support vectors.
+
+         0.1225 * (normalized) S1=1
+ +       0.1365 * (normalized) S1=2
+ +      -0.1828 * (normalized) S1=3
+ +      -0.0762 * (normalized) S1=4
+ +       0.4222 * (normalized) C1=1
+ +      -0      * (normalized) C1=2
+ +      -0      * (normalized) C1=3
+ +      -0      * (normalized) C1=4
+ +      -0.0371 * (normalized) C1=5
+ +      -0.0035 * (normalized) C1=6
+ +      -0.0433 * (normalized) C1=8
+ +      -0.0969 * (normalized) C1=9
+ +       0.1203 * (normalized) C1=10
+ +       0.1291 * (normalized) C1=11
+ +       0.0266 * (normalized) C1=12
+ +      -0.5175 * (normalized) C1=13
+ +      -0.0871 * (normalized) S2=1
+ +       0.1681 * (normalized) S2=2
+ +      -0.223  * (normalized) S2=3
+ +       0.1421 * (normalized) S2=4
+ +      -0.024  * (normalized) C2=1
+ +      -0.1393 * (normalized) C2=2
+ +      -0.0749 * (normalized) C2=3
+ +      -0.0035 * (normalized) C2=4
+ +      -0      * (normalized) C2=5
+ +      -0.0427 * (normalized) C2=6
+ +       0      * (normalized) C2=7
+ +       0      * (normalized) C2=8
+ +      -0.1852 * (normalized) C2=9
+ +      -0.3679 * (normalized) C2=10
+ +       0.5905 * (normalized) C2=11
+ +      -0.1354 * (normalized) C2=12
+ +       0.3824 * (normalized) C2=13
+ +       0.2691 * (normalized) S3=1
+ +      -0.1936 * (normalized) S3=2
+ +      -0.1757 * (normalized) S3=3
+ +       0.1002 * (normalized) S3=4
+ +       0.3696 * (normalized) C3=1
+ +      -0.1764 * (normalized) C3=4
+ +      -0.0805 * (normalized) C3=5
+ +      -0      * (normalized) C3=6
+ +      -0.0035 * (normalized) C3=7
+ +      -0.001  * (normalized) C3=8
+ +      -0.7467 * (normalized) C3=9
+ +       0.5373 * (normalized) C3=10
+ +      -0.0959 * (normalized) C3=11
+ +      -0.1109 * (normalized) C3=12
+ +       0.308  * (normalized) C3=13
+ +      -0.3614 * (normalized) S4=1
+ +      -0.0033 * (normalized) S4=2
+ +      -0.0257 * (normalized) S4=3
+ +       0.3904 * (normalized) S4=4
+ +      -0      * (normalized) C4=1
+ +      -0.1393 * (normalized) C4=3
+ +      -0.0749 * (normalized) C4=4
+ +      -0.0433 * (normalized) C4=7
+ +      -0.0406 * (normalized) C4=8
+ +      -0.2472 * (normalized) C4=9
+ +      -0.2841 * (normalized) C4=10
+ +       0.1073 * (normalized) C4=11
+ +       0.3525 * (normalized) C4=12
+ +       0.3696 * (normalized) C4=13
+ +       0.115  * (normalized) S5=1
+ +      -0.0802 * (normalized) S5=2
+ +      -0.29   * (normalized) S5=3
+ +       0.2552 * (normalized) S5=4
+ +       0.9979 * (normalized) C5=1
+ +      -0.0749 * (normalized) C5=2
+ +      -0.0056 * (normalized) C5=4
+ +      -0.1428 * (normalized) C5=5
+ +      -0.0377 * (normalized) C5=6
+ +      -0.0371 * (normalized) C5=7
+ +      -0.0959 * (normalized) C5=8
+ +      -0.4436 * (normalized) C5=9
+ +       0.2548 * (normalized) C5=10
+ +      -0.4329 * (normalized) C5=11
+ +       0.1652 * (normalized) C5=12
+ +      -0.1475 * (normalized) C5=13
+ -       1.4269
+
+Number of kernel evaluations: 2660 (85.327% cached)
+
+Classifier for classes: 5, 6
+
+BinarySMO
+
+Machine linear: showing attribute weights, not support vectors.
+
+        -0.232  * (normalized) S1=1
+ +      -0.0381 * (normalized) S1=2
+ +      -0.187  * (normalized) S1=3
+ +       0.4571 * (normalized) S1=4
+ +       0.0123 * (normalized) C1=1
+ +      -0.56   * (normalized) C1=2
+ +       0.2843 * (normalized) C1=3
+ +       0.8248 * (normalized) C1=4
+ +      -0.1959 * (normalized) C1=5
+ +       0.2455 * (normalized) C1=6
+ +       0.5163 * (normalized) C1=7
+ +       0.4565 * (normalized) C1=8
+ +      -0.1697 * (normalized) C1=9
+ +       0.3093 * (normalized) C1=10
+ +      -0.5334 * (normalized) C1=11
+ +      -0.9845 * (normalized) C1=12
+ +      -0.2053 * (normalized) C1=13
+ +      -0.3997 * (normalized) S2=1
+ +       0.0534 * (normalized) S2=2
+ +       0.543  * (normalized) S2=3
+ +      -0.1967 * (normalized) S2=4
+ +      -0.2414 * (normalized) C2=1
+ +       0.8847 * (normalized) C2=2
+ +      -0.2298 * (normalized) C2=3
+ +       0.4967 * (normalized) C2=4
+ +       0.878  * (normalized) C2=5
+ +       0.7548 * (normalized) C2=6
+ +      -0.8308 * (normalized) C2=7
+ +       0.1852 * (normalized) C2=8
+ +      -0.3768 * (normalized) C2=9
+ +      -0.1253 * (normalized) C2=10
+ +       0.4119 * (normalized) C2=11
+ +      -2.0002 * (normalized) C2=12
+ +       0.1931 * (normalized) C2=13
+ +       0.0255 * (normalized) S3=1
+ +      -0.2555 * (normalized) S3=2
+ +      -0.18   * (normalized) S3=3
+ +       0.41   * (normalized) S3=4
+ +      -0.2338 * (normalized) C3=1
+ +      -0.3168 * (normalized) C3=2
+ +      -0.1296 * (normalized) C3=3
+ +      -0.3655 * (normalized) C3=4
+ +      -1.3799 * (normalized) C3=5
+ +       0.4646 * (normalized) C3=6
+ +      -0.1888 * (normalized) C3=7
+ +       0.6181 * (normalized) C3=8
+ +       1.3884 * (normalized) C3=9
+ +       0.9162 * (normalized) C3=10
+ +       0.1318 * (normalized) C3=11
+ +       0.1103 * (normalized) C3=12
+ +      -1.015  * (normalized) C3=13
+ +       0.6102 * (normalized) S4=1
+ +       0.5662 * (normalized) S4=2
+ +       0.0683 * (normalized) S4=3
+ +      -1.2447 * (normalized) S4=4
+ +       0.1974 * (normalized) C4=1
+ +      -0.5639 * (normalized) C4=2
+ +       0.5838 * (normalized) C4=3
+ +      -0.0742 * (normalized) C4=4
+ +       0.2104 * (normalized) C4=5
+ +       0.8954 * (normalized) C4=6
+ +      -0.4998 * (normalized) C4=7
+ +      -0.4119 * (normalized) C4=8
+ +      -0.588  * (normalized) C4=9
+ +      -0.2667 * (normalized) C4=10
+ +       1.0227 * (normalized) C4=11
+ +      -1.0353 * (normalized) C4=12
+ +       0.5301 * (normalized) C4=13
+ +       0.1288 * (normalized) S5=1
+ +       0.1974 * (normalized) S5=2
+ +       0.0069 * (normalized) S5=3
+ +      -0.3331 * (normalized) S5=4
+ +      -0.3663 * (normalized) C5=1
+ +       0.2219 * (normalized) C5=2
+ +       0.4275 * (normalized) C5=3
+ +      -0.1324 * (normalized) C5=4
+ +      -0.7657 * (normalized) C5=5
+ +      -0.0613 * (normalized) C5=6
+ +      -0.4058 * (normalized) C5=7
+ +       0.2928 * (normalized) C5=8
+ +       0.5871 * (normalized) C5=9
+ +       0.4061 * (normalized) C5=10
+ +       0.1763 * (normalized) C5=11
+ +      -0.9136 * (normalized) C5=12
+ +       0.5333 * (normalized) C5=13
+ -       0.5205
+
+Number of kernel evaluations: 3770 (96.684% cached)
+
+Classifier for classes: 5, 7
+
+BinarySMO
+
+Machine linear: showing attribute weights, not support vectors.
+
+        -0.2994 * (normalized) S1=1
+ +      -0.1542 * (normalized) S1=2
+ +       0.3314 * (normalized) S1=3
+ +       0.1222 * (normalized) S1=4
+ +      -0.1006 * (normalized) C1=1
+ +       0.0421 * (normalized) C1=2
+ +       0.1816 * (normalized) C1=3
+ +      -0.0463 * (normalized) C1=4
+ +      -0.0777 * (normalized) C1=5
+ +      -0.0135 * (normalized) C1=6
+ +       0.2931 * (normalized) C1=8
+ +      -0.1268 * (normalized) C1=9
+ +      -0.0457 * (normalized) C1=10
+ +       0.1148 * (normalized) C1=11
+ +      -0.1115 * (normalized) C1=12
+ +      -0.1096 * (normalized) C1=13
+ +      -0.2994 * (normalized) S2=1
+ +       0.423  * (normalized) S2=2
+ +      -0.0486 * (normalized) S2=3
+ +      -0.075  * (normalized) S2=4
+ +      -0.0152 * (normalized) C2=1
+ +       0.1804 * (normalized) C2=2
+ +       0.0538 * (normalized) C2=3
+ +      -0.208  * (normalized) C2=4
+ +      -0.1199 * (normalized) C2=5
+ +      -0.043  * (normalized) C2=6
+ +       0.0964 * (normalized) C2=7
+ +       0.2304 * (normalized) C2=8
+ +      -0.0345 * (normalized) C2=9
+ +      -0.0447 * (normalized) C2=10
+ +       0.1714 * (normalized) C2=11
+ +      -0.2669 * (normalized) C2=12
+ +       0      * (normalized) C2=13
+ +       0.2457 * (normalized) S3=1
+ +      -0.0357 * (normalized) S3=2
+ +       0.0513 * (normalized) S3=3
+ +      -0.2612 * (normalized) S3=4
+ +       0.1733 * (normalized) C3=2
+ +      -0.0804 * (normalized) C3=3
+ +      -0.043  * (normalized) C3=4
+ +      -0.0749 * (normalized) C3=5
+ +      -0.065  * (normalized) C3=6
+ +       0.0211 * (normalized) C3=7
+ +       0.1472 * (normalized) C3=8
+ +       0.0842 * (normalized) C3=11
+ +      -0.0447 * (normalized) C3=12
+ +      -0.1175 * (normalized) C3=13
+ +       0.7565 * (normalized) S4=1
+ +      -0.3237 * (normalized) S4=2
+ +       0.0101 * (normalized) S4=3
+ +      -0.4429 * (normalized) S4=4
+ +      -0.1734 * (normalized) C4=1
+ +       0.2245 * (normalized) C4=2
+ +      -0.0853 * (normalized) C4=3
+ +      -0.0336 * (normalized) C4=4
+ +      -0.0756 * (normalized) C4=5
+ +       0.0152 * (normalized) C4=7
+ +       0.0701 * (normalized) C4=8
+ +      -0.0568 * (normalized) C4=9
+ +      -0.0301 * (normalized) C4=10
+ +       0.1883 * (normalized) C4=11
+ +      -0.0432 * (normalized) C4=12
+ +      -0.2994 * (normalized) S5=1
+ +       0.093  * (normalized) S5=2
+ +      -0.3366 * (normalized) S5=3
+ +       0.543  * (normalized) S5=4
+ +      -0.1228 * (normalized) C5=1
+ +      -0.0143 * (normalized) C5=2
+ +      -0.0843 * (normalized) C5=3
+ +      -0.0944 * (normalized) C5=4
+ +       0.0388 * (normalized) C5=5
+ +      -0.0201 * (normalized) C5=6
+ +       0.0723 * (normalized) C5=7
+ +       0.0644 * (normalized) C5=8
+ +      -0.0723 * (normalized) C5=9
+ +       0.0798 * (normalized) C5=10
+ +      -0.0293 * (normalized) C5=11
+ +       0.1821 * (normalized) C5=13
+ -       1.0436
+
+Number of kernel evaluations: 1506 (91.91% cached)
+
+Classifier for classes: 5, 8
+
+BinarySMO
+
+Machine linear: showing attribute weights, not support vectors.
+
+         0.0964 * (normalized) S1=1
+ +      -0.0169 * (normalized) S1=2
+ +       0.0118 * (normalized) S1=3
+ +      -0.0912 * (normalized) S1=4
+ +       0.7245 * (normalized) C1=1
+ +      -0.1725 * (normalized) C1=2
+ +       0      * (normalized) C1=4
+ +       0.8952 * (normalized) C1=5
+ +      -0.3376 * (normalized) C1=6
+ +      -0.2978 * (normalized) C1=8
+ +       0.1811 * (normalized) C1=9
+ +      -0.1343 * (normalized) C1=10
+ +      -0      * (normalized) C1=11
+ +      -0.2168 * (normalized) C1=12
+ +      -0.6418 * (normalized) C1=13
+ +       0.0964 * (normalized) S2=1
+ +      -0.0169 * (normalized) S2=2
+ +       0.0118 * (normalized) S2=3
+ +      -0.0912 * (normalized) S2=4
+ +      -0.007  * (normalized) C2=1
+ +       0.4892 * (normalized) C2=2
+ +      -0.5103 * (normalized) C2=3
+ +       0.2963 * (normalized) C2=4
+ +       0.4521 * (normalized) C2=6
+ +      -0.4263 * (normalized) C2=7
+ +       0      * (normalized) C2=8
+ +      -0.0636 * (normalized) C2=9
+ +      -0.306  * (normalized) C2=10
+ +      -0.165  * (normalized) C2=11
+ +       0.2837 * (normalized) C2=12
+ +      -0.0431 * (normalized) C2=13
+ +       0.0964 * (normalized) S3=1
+ +      -0.0169 * (normalized) S3=2
+ +       0.0118 * (normalized) S3=3
+ +      -0.0912 * (normalized) S3=4
+ +       0.1692 * (normalized) C3=2
+ +       0.2523 * (normalized) C3=3
+ +       0      * (normalized) C3=4
+ +      -0.0555 * (normalized) C3=5
+ +      -0.2978 * (normalized) C3=7
+ +      -0.6203 * (normalized) C3=8
+ +       0.5688 * (normalized) C3=9
+ +       0.7133 * (normalized) C3=10
+ +      -0.072  * (normalized) C3=11
+ +      -0.1892 * (normalized) C3=12
+ +      -0.4688 * (normalized) C3=13
+ +       0.0964 * (normalized) S4=1
+ +      -0.0169 * (normalized) S4=2
+ +       0.0118 * (normalized) S4=3
+ +      -0.0912 * (normalized) S4=4
+ +      -0.2037 * (normalized) C4=1
+ +      -0.1256 * (normalized) C4=2
+ +       0.9248 * (normalized) C4=3
+ +       0.2762 * (normalized) C4=4
+ +      -0.2168 * (normalized) C4=5
+ +       0.095  * (normalized) C4=7
+ +      -0.165  * (normalized) C4=8
+ +      -0.4086 * (normalized) C4=9
+ +      -0.3156 * (normalized) C4=10
+ +       0.3976 * (normalized) C4=11
+ +      -0.2583 * (normalized) C4=12
+ +       0.0964 * (normalized) S5=1
+ +      -0.0169 * (normalized) S5=2
+ +       0.0118 * (normalized) S5=3
+ +      -0.0912 * (normalized) S5=4
+ +      -0.5067 * (normalized) C5=1
+ +      -0.0431 * (normalized) C5=3
+ +      -0.3542 * (normalized) C5=4
+ +       0.5726 * (normalized) C5=5
+ +       0.7545 * (normalized) C5=6
+ +       0.1612 * (normalized) C5=8
+ +      -0.1377 * (normalized) C5=9
+ +      -0.2978 * (normalized) C5=10
+ +      -0.015  * (normalized) C5=11
+ +      -0.3066 * (normalized) C5=12
+ +       0.1729 * (normalized) C5=13
+ -       1.2304
+
+Number of kernel evaluations: 1222 (94.858% cached)
+
+Classifier for classes: 5, 9
+
+BinarySMO
+
+Machine linear: showing attribute weights, not support vectors.
+
+        -0.0422 * (normalized) S1=1
+ +       0.0025 * (normalized) S1=2
+ +       0.0324 * (normalized) S1=3
+ +       0.0073 * (normalized) S1=4
+ +       0.3271 * (normalized) C1=1
+ +      -0.2524 * (normalized) C1=2
+ +      -0.4    * (normalized) C1=5
+ +      -0.229  * (normalized) C1=6
+ +      -0.2344 * (normalized) C1=7
+ +      -0.3117 * (normalized) C1=9
+ +       0.6036 * (normalized) C1=10
+ +       0.0887 * (normalized) C1=11
+ +       0.408  * (normalized) C1=12
+ +       0      * (normalized) C1=13
+ +      -0.0422 * (normalized) S2=1
+ +       0.0025 * (normalized) S2=2
+ +       0.0324 * (normalized) S2=3
+ +       0.0073 * (normalized) S2=4
+ +      -0.1081 * (normalized) C2=1
+ +      -0.1693 * (normalized) C2=2
+ +      -0.2572 * (normalized) C2=3
+ +      -0.2344 * (normalized) C2=4
+ +      -0.0338 * (normalized) C2=5
+ +      -0.0885 * (normalized) C2=6
+ +      -0.1162 * (normalized) C2=7
+ +      -0.0219 * (normalized) C2=8
+ +      -0.0103 * (normalized) C2=9
+ +      -0.0526 * (normalized) C2=10
+ +       0.7206 * (normalized) C2=11
+ +      -0.2735 * (normalized) C2=12
+ +       0.6452 * (normalized) C2=13
+ +      -0.0422 * (normalized) S3=1
+ +       0.0025 * (normalized) S3=2
+ +       0.0324 * (normalized) S3=3
+ +       0.0073 * (normalized) S3=4
+ +      -0.0925 * (normalized) C3=1
+ +      -0.3896 * (normalized) C3=2
+ +      -0.2509 * (normalized) C3=3
+ +      -0.0885 * (normalized) C3=4
+ +      -0.1015 * (normalized) C3=5
+ +      -0.0814 * (normalized) C3=7
+ +      -0.0678 * (normalized) C3=8
+ +      -0.0493 * (normalized) C3=9
+ +       0.5661 * (normalized) C3=10
+ +      -0.1162 * (normalized) C3=11
+ +       0.4717 * (normalized) C3=12
+ +       0.2    * (normalized) C3=13
+ +      -0.0422 * (normalized) S4=1
+ +       0.0025 * (normalized) S4=2
+ +       0.0324 * (normalized) S4=3
+ +       0.0073 * (normalized) S4=4
+ +      -0.0445 * (normalized) C4=1
+ +      -0.1411 * (normalized) C4=2
+ +       0      * (normalized) C4=3
+ +      -0.0267 * (normalized) C4=4
+ +      -0.3896 * (normalized) C4=6
+ +      -0.2743 * (normalized) C4=7
+ +      -0.1015 * (normalized) C4=8
+ +      -0.2682 * (normalized) C4=9
+ +       0.0882 * (normalized) C4=10
+ +       0.2952 * (normalized) C4=11
+ +       0.265  * (normalized) C4=12
+ +       0.5974 * (normalized) C4=13
+ +      -0.0422 * (normalized) S5=1
+ +       0.0025 * (normalized) S5=2
+ +       0.0324 * (normalized) S5=3
+ +       0.0073 * (normalized) S5=4
+ +       0.6506 * (normalized) C5=1
+ +      -0.1162 * (normalized) C5=2
+ +      -0.2569 * (normalized) C5=3
+ +      -0.1644 * (normalized) C5=4
+ +       0      * (normalized) C5=5
+ +      -0.0338 * (normalized) C5=7
+ +      -0.0933 * (normalized) C5=8
+ +      -0.6899 * (normalized) C5=9
+ +       0.4532 * (normalized) C5=10
+ +      -0.0678 * (normalized) C5=11
+ +       0.363  * (normalized) C5=12
+ +      -0.0445 * (normalized) C5=13
+ -       1.2287
+
+Number of kernel evaluations: 1386 (93.207% cached)
+
+Classifier for classes: 6, 7
+
+BinarySMO
+
+Machine linear: showing attribute weights, not support vectors.
+
+        -0.324  * (normalized) S1=1
+ +       0.3764 * (normalized) S1=2
+ +      -0.1041 * (normalized) S1=3
+ +       0.0516 * (normalized) S1=4
+ +      -0.0763 * (normalized) C1=2
+ +       0.5743 * (normalized) C1=3
+ +      -0.1413 * (normalized) C1=4
+ +      -0.0191 * (normalized) C1=5
+ +      -0.2023 * (normalized) C1=6
+ +      -0.1085 * (normalized) C1=7
+ +       0.0977 * (normalized) C1=8
+ +      -0.0313 * (normalized) C1=9
+ +      -0.1176 * (normalized) C1=10
+ +       0.2071 * (normalized) C1=11
+ +      -0.1827 * (normalized) C1=13
+ +      -0.3211 * (normalized) S2=1
+ +       0.3854 * (normalized) S2=2
+ +      -0.3803 * (normalized) S2=3
+ +       0.316  * (normalized) S2=4
+ +      -0.0744 * (normalized) C2=1
+ +      -0.0763 * (normalized) C2=2
+ +       0.5786 * (normalized) C2=3
+ +      -0      * (normalized) C2=4
+ +      -0.1471 * (normalized) C2=5
+ +      -0.5012 * (normalized) C2=6
+ +       0.1979 * (normalized) C2=7
+ +       0.4009 * (normalized) C2=8
+ +      -0.0712 * (normalized) C2=10
+ +      -0.1246 * (normalized) C2=11
+ +      -0.1827 * (normalized) C2=13
+ +       0.1022 * (normalized) S3=1
+ +       0.1979 * (normalized) S3=2
+ +       0.0775 * (normalized) S3=3
+ +      -0.3776 * (normalized) S3=4
+ +      -0.0744 * (normalized) C3=1
+ +       0.2448 * (normalized) C3=2
+ +       0.2105 * (normalized) C3=3
+ +      -0.0701 * (normalized) C3=4
+ +      -0.0195 * (normalized) C3=5
+ +      -0.5012 * (normalized) C3=6
+ +       0.4601 * (normalized) C3=7
+ +       0.0303 * (normalized) C3=8
+ +      -0.1827 * (normalized) C3=9
+ +      -0.0712 * (normalized) C3=10
+ +      -0.0266 * (normalized) C3=11
+ +       0.4217 * (normalized) S4=1
+ +      -0.3852 * (normalized) S4=2
+ +      -0.0365 * (normalized) S4=3
+ +       0      * (normalized) C4=1
+ +       0.59   * (normalized) C4=2
+ +       0.066  * (normalized) C4=3
+ +      -0.0712 * (normalized) C4=4
+ +      -0.1085 * (normalized) C4=5
+ +       0.1979 * (normalized) C4=7
+ +       0.0341 * (normalized) C4=8
+ +      -0.214  * (normalized) C4=9
+ +      -0.1176 * (normalized) C4=10
+ +       0.1027 * (normalized) C4=11
+ +       0.6194 * (normalized) C4=12
+ +      -1.0989 * (normalized) C4=13
+ +      -0.5772 * (normalized) S5=1
+ +       0.3546 * (normalized) S5=2
+ +      -0.1057 * (normalized) S5=3
+ +       0.3283 * (normalized) S5=4
+ +      -0.0744 * (normalized) C5=1
+ +      -0.4382 * (normalized) C5=3
+ +      -0.1413 * (normalized) C5=4
+ +       0.5368 * (normalized) C5=5
+ +      -0.2023 * (normalized) C5=6
+ +       0.5686 * (normalized) C5=7
+ +      -0.2524 * (normalized) C5=8
+ +      -0.0313 * (normalized) C5=9
+ +       0.4724 * (normalized) C5=10
+ +      -0.3402 * (normalized) C5=11
+ +      -0.0977 * (normalized) C5=13
+ -       0.9858
+
+Number of kernel evaluations: 729 (93.873% cached)
+
+Classifier for classes: 6, 8
+
+BinarySMO
+
+Machine linear: showing attribute weights, not support vectors.
+
+         0.1326 * (normalized) S1=1
+ +       0.1113 * (normalized) S1=2
+ +       0.0225 * (normalized) S1=3
+ +      -0.2664 * (normalized) S1=4
+ +       0.9513 * (normalized) C1=1
+ +       0.1463 * (normalized) C1=2
+ +      -0.1673 * (normalized) C1=4
+ +       0.2289 * (normalized) C1=5
+ +      -0.3441 * (normalized) C1=6
+ +      -0.066  * (normalized) C1=7
+ +      -0.378  * (normalized) C1=8
+ +       0.0412 * (normalized) C1=9
+ +      -0.0709 * (normalized) C1=10
+ +      -0.1831 * (normalized) C1=11
+ +      -0.1582 * (normalized) C1=13
+ +      -0.0638 * (normalized) S2=1
+ +       0.1202 * (normalized) S2=2
+ +       0.0638 * (normalized) S2=3
+ +      -0.1202 * (normalized) S2=4
+ +      -0.0982 * (normalized) C2=1
+ +       0.0046 * (normalized) C2=2
+ +      -0.0709 * (normalized) C2=3
+ +       0.3622 * (normalized) C2=4
+ +      -0.3119 * (normalized) C2=5
+ +       0.1362 * (normalized) C2=6
+ +      -0.2853 * (normalized) C2=7
+ +      -0.1422 * (normalized) C2=10
+ +      -0.1831 * (normalized) C2=11
+ +       0.7468 * (normalized) C2=12
+ +      -0.1582 * (normalized) C2=13
+ +      -0.0605 * (normalized) S3=1
+ +       0.1374 * (normalized) S3=2
+ +       0.1395 * (normalized) S3=3
+ +      -0.2165 * (normalized) S3=4
+ +      -0.0046 * (normalized) C3=2
+ +       0.3002 * (normalized) C3=3
+ +      -0.0251 * (normalized) C3=4
+ +       0.4808 * (normalized) C3=5
+ +      -0.499  * (normalized) C3=6
+ +      -0.066  * (normalized) C3=7
+ +      -0.3835 * (normalized) C3=8
+ +       0.1155 * (normalized) C3=9
+ +       0.5337 * (normalized) C3=10
+ +      -0.452  * (normalized) C3=11
+ +      -0.0495 * (normalized) S4=1
+ +      -0.1564 * (normalized) S4=2
+ +       0.2639 * (normalized) S4=3
+ +      -0.0581 * (normalized) S4=4
+ +      -0.4882 * (normalized) C4=1
+ +       0.5657 * (normalized) C4=3
+ +      -0.0204 * (normalized) C4=4
+ +      -0.4635 * (normalized) C4=6
+ +       0.628  * (normalized) C4=7
+ +      -0.0927 * (normalized) C4=8
+ +      -0.1582 * (normalized) C4=9
+ +      -0.0709 * (normalized) C4=10
+ +       0.2948 * (normalized) C4=11
+ +      -0.1945 * (normalized) C4=13
+ +       0.0582 * (normalized) S5=1
+ +      -0.1098 * (normalized) S5=2
+ +      -0.0738 * (normalized) S5=3
+ +       0.1253 * (normalized) S5=4
+ +      -0      * (normalized) C5=1
+ +      -0.4561 * (normalized) C5=2
+ +      -0.5981 * (normalized) C5=3
+ +      -0.5218 * (normalized) C5=4
+ +       0.6891 * (normalized) C5=5
+ +       0.4557 * (normalized) C5=6
+ +       0.5032 * (normalized) C5=8
+ +      -0.326  * (normalized) C5=9
+ +      -0.1401 * (normalized) C5=11
+ +       0.3941 * (normalized) C5=13
+ -       1.0276
+
+Number of kernel evaluations: 776 (94.708% cached)
+
+Classifier for classes: 6, 9
+
+BinarySMO
+
+Machine linear: showing attribute weights, not support vectors.
+
+        -0.0827 * (normalized) S1=1
+ +       0.1134 * (normalized) S1=2
+ +       0.0136 * (normalized) S1=3
+ +      -0.0443 * (normalized) S1=4
+ +       0.2089 * (normalized) C1=1
+ +      -0.0431 * (normalized) C1=2
+ +      -0.143  * (normalized) C1=3
+ +      -0.0455 * (normalized) C1=4
+ +      -0.1509 * (normalized) C1=6
+ +      -0.0212 * (normalized) C1=7
+ +      -0.017  * (normalized) C1=8
+ +      -0.0831 * (normalized) C1=9
+ +       0.0621 * (normalized) C1=10
+ +       0.138  * (normalized) C1=11
+ +       0.3498 * (normalized) C1=12
+ +      -0.2549 * (normalized) C1=13
+ +      -0.0123 * (normalized) S2=1
+ +      -0.129  * (normalized) S2=2
+ +      -0.0441 * (normalized) S2=3
+ +       0.1855 * (normalized) S2=4
+ +      -0.143  * (normalized) C2=1
+ +      -0.1084 * (normalized) C2=2
+ +      -0.076  * (normalized) C2=3
+ +      -0.1286 * (normalized) C2=4
+ +      -0.1207 * (normalized) C2=5
+ +      -0.0342 * (normalized) C2=6
+ +      -0.088  * (normalized) C2=8
+ +      -0.0734 * (normalized) C2=10
+ +       0.4303 * (normalized) C2=11
+ +       0.3419 * (normalized) C2=13
+ +      -0.1484 * (normalized) S3=1
+ +       0.1807 * (normalized) S3=2
+ +      -0.02   * (normalized) S3=3
+ +      -0.0122 * (normalized) S3=4
+ +       0.1298 * (normalized) C3=1
+ +      -0.0653 * (normalized) C3=2
+ +      -0.1451 * (normalized) C3=3
+ +      -0.0455 * (normalized) C3=4
+ +      -0.0995 * (normalized) C3=5
+ +      -0.137  * (normalized) C3=6
+ +      -0.0212 * (normalized) C3=7
+ +      -0.088  * (normalized) C3=8
+ +      -0.1614 * (normalized) C3=9
+ +       0.1337 * (normalized) C3=10
+ +      -0.3008 * (normalized) C3=11
+ +       0.24   * (normalized) C3=12
+ +       0.5603 * (normalized) C3=13
+ +      -0.0983 * (normalized) S4=1
+ +      -0.2214 * (normalized) S4=2
+ +      -0.1441 * (normalized) S4=3
+ +       0.4638 * (normalized) S4=4
+ +      -0.1108 * (normalized) C4=1
+ +      -0.2881 * (normalized) C4=3
+ +      -0.1565 * (normalized) C4=4
+ +      -0.0212 * (normalized) C4=5
+ +      -0.0656 * (normalized) C4=6
+ +      -0.0783 * (normalized) C4=9
+ +       0.0019 * (normalized) C4=10
+ +       0.1458 * (normalized) C4=11
+ +       0.4936 * (normalized) C4=12
+ +       0.0791 * (normalized) C4=13
+ +      -0.1338 * (normalized) S5=1
+ +       0.02   * (normalized) S5=2
+ +      -0.0786 * (normalized) S5=3
+ +       0.1924 * (normalized) S5=4
+ +       0.6549 * (normalized) C5=1
+ +      -0.0653 * (normalized) C5=2
+ +      -0.2211 * (normalized) C5=3
+ +      -0.0734 * (normalized) C5=4
+ +      -0.0212 * (normalized) C5=5
+ +      -0.1909 * (normalized) C5=6
+ +      -0.071  * (normalized) C5=8
+ +      -0.0831 * (normalized) C5=9
+ +       0.0023 * (normalized) C5=10
+ +      -0.0431 * (normalized) C5=11
+ +       0.2385 * (normalized) C5=12
+ +      -0.1267 * (normalized) C5=13
+ -       0.725 
+
+Number of kernel evaluations: 687 (92.847% cached)
+
+Classifier for classes: 7, 8
+
+BinarySMO
+
+Machine linear: showing attribute weights, not support vectors.
+
+         0.2306 * (normalized) S1=1
+ +       0.1145 * (normalized) S1=2
+ +      -0.1815 * (normalized) S1=3
+ +      -0.1635 * (normalized) S1=4
+ +       0.3589 * (normalized) C1=1
+ +      -0.1053 * (normalized) C1=2
+ +      -0.1414 * (normalized) C1=3
+ +       0.1802 * (normalized) C1=5
+ +      -0.2811 * (normalized) C1=8
+ +       0.1568 * (normalized) C1=9
+ +      -0.1681 * (normalized) C1=11
+ +       0.2306 * (normalized) S2=1
+ +      -0.3132 * (normalized) S2=2
+ +       0.063  * (normalized) S2=3
+ +       0.0196 * (normalized) S2=4
+ +      -0.0037 * (normalized) C2=2
+ +      -0.1414 * (normalized) C2=3
+ +       0.2573 * (normalized) C2=4
+ +       0.1802 * (normalized) C2=6
+ +      -0.1171 * (normalized) C2=7
+ +      -0.164  * (normalized) C2=8
+ +      -0.1681 * (normalized) C2=11
+ +       0.1568 * (normalized) C2=12
+ +      -0.0516 * (normalized) S3=1
+ +       0.0582 * (normalized) S3=2
+ +      -0.0488 * (normalized) S3=3
+ +       0.0422 * (normalized) S3=4
+ +       0.0046 * (normalized) C3=2
+ +       0.0339 * (normalized) C3=3
+ +       0.0737 * (normalized) C3=5
+ +      -0.1171 * (normalized) C3=7
+ +      -0.164  * (normalized) C3=8
+ +       0.1802 * (normalized) C3=9
+ +       0.1568 * (normalized) C3=10
+ +      -0.1681 * (normalized) C3=11
+ +      -0.36   * (normalized) S4=1
+ +       0.1753 * (normalized) S4=2
+ +       0.0011 * (normalized) S4=3
+ +       0.1836 * (normalized) S4=4
+ +      -0.179  * (normalized) C4=2
+ +       0.1159 * (normalized) C4=3
+ +       0.1753 * (normalized) C4=4
+ +       0.063  * (normalized) C4=7
+ +      -0.0608 * (normalized) C4=8
+ +      -0.0113 * (normalized) C4=11
+ +      -0.1031 * (normalized) C4=12
+ +       0.2306 * (normalized) S5=1
+ +      -0.0959 * (normalized) S5=2
+ +       0.1802 * (normalized) S5=3
+ +      -0.3148 * (normalized) S5=4
+ +       0.1908 * (normalized) C5=5
+ +       0.0737 * (normalized) C5=6
+ +      -0.1171 * (normalized) C5=7
+ +       0.077  * (normalized) C5=8
+ +      -0.179  * (normalized) C5=10
+ +      -0.0454 * (normalized) C5=13
+ +       0.3053
+
+Number of kernel evaluations: 66 (91.44% cached)
+
+Classifier for classes: 7, 9
+
+BinarySMO
+
+Machine linear: showing attribute weights, not support vectors.
+
+         0.1029 * (normalized) S1=1
+ +       0.0922 * (normalized) S1=2
+ +      -0.128  * (normalized) S1=3
+ +      -0.0671 * (normalized) S1=4
+ +       0.1506 * (normalized) C1=1
+ +      -0.1381 * (normalized) C1=2
+ +      -0.0727 * (normalized) C1=3
+ +      -0.2314 * (normalized) C1=8
+ +       0.1892 * (normalized) C1=10
+ +      -0.0201 * (normalized) C1=11
+ +       0.1226 * (normalized) C1=12
+ +       0.1029 * (normalized) S2=1
+ +      -0.2309 * (normalized) S2=2
+ +       0.0357 * (normalized) S2=3
+ +       0.0923 * (normalized) S2=4
+ +      -0.1381 * (normalized) C2=2
+ +      -0.0727 * (normalized) C2=3
+ +      -0.0869 * (normalized) C2=7
+ +      -0.1446 * (normalized) C2=8
+ +       0.146  * (normalized) C2=11
+ +       0.2963 * (normalized) C2=13
+ +      -0.1262 * (normalized) S3=1
+ +       0.0588 * (normalized) S3=2
+ +      -0.0968 * (normalized) S3=3
+ +       0.1642 * (normalized) S3=4
+ +       0.0863 * (normalized) C3=1
+ +      -0.1381 * (normalized) C3=2
+ +      -0.0727 * (normalized) C3=3
+ +      -0.0869 * (normalized) C3=7
+ +      -0.1446 * (normalized) C3=8
+ +       0.1457 * (normalized) C3=10
+ +      -0.1658 * (normalized) C3=11
+ +       0.1506 * (normalized) C3=12
+ +       0.2255 * (normalized) C3=13
+ +      -0.367  * (normalized) S4=1
+ +       0.1457 * (normalized) S4=2
+ +      -0.0156 * (normalized) S4=3
+ +       0.2369 * (normalized) S4=4
+ +      -0.1381 * (normalized) C4=2
+ +      -0.0727 * (normalized) C4=3
+ +      -0.0869 * (normalized) C4=7
+ +      -0.0536 * (normalized) C4=8
+ +       0.1226 * (normalized) C4=10
+ +      -0.0152 * (normalized) C4=11
+ +       0.1577 * (normalized) C4=12
+ +       0.0863 * (normalized) C4=13
+ +       0.1029 * (normalized) S5=1
+ +      -0.1111 * (normalized) S5=2
+ +       0.1226 * (normalized) S5=3
+ +      -0.1144 * (normalized) S5=4
+ +       0.3712 * (normalized) C5=1
+ +      -0.1658 * (normalized) C5=5
+ +      -0.0869 * (normalized) C5=7
+ +      -0.091  * (normalized) C5=8
+ +       0.0125 * (normalized) C5=10
+ +       0.0863 * (normalized) C5=12
+ +      -0.1263 * (normalized) C5=13
+ +       0.0942
+
+Number of kernel evaluations: 66 (90.678% cached)
+
+Classifier for classes: 8, 9
+
+BinarySMO
+
+Machine linear: showing attribute weights, not support vectors.
+
+        -0.0626 * (normalized) S1=1
+ +       0.0063 * (normalized) S1=2
+ +      -0.0199 * (normalized) S1=3
+ +       0.0761 * (normalized) S1=4
+ +      -0.1287 * (normalized) C1=1
+ +      -0.0123 * (normalized) C1=2
+ +      -0.1496 * (normalized) C1=5
+ +      -0.181  * (normalized) C1=9
+ +       0.207  * (normalized) C1=10
+ +       0.1349 * (normalized) C1=11
+ +       0.1297 * (normalized) C1=12
+ +      -0.0626 * (normalized) S2=1
+ +       0.0063 * (normalized) S2=2
+ +      -0.0199 * (normalized) S2=3
+ +       0.0761 * (normalized) S2=4
+ +      -0.1286 * (normalized) C2=2
+ +      -0.2489 * (normalized) C2=4
+ +      -0.1496 * (normalized) C2=6
+ +       0.3367 * (normalized) C2=11
+ +      -0.181  * (normalized) C2=12
+ +       0.3714 * (normalized) C2=13
+ +      -0.0626 * (normalized) S3=1
+ +       0.0063 * (normalized) S3=2
+ +      -0.0199 * (normalized) S3=3
+ +       0.0761 * (normalized) S3=4
+ +       0.0763 * (normalized) C3=1
+ +      -0.2366 * (normalized) C3=2
+ +      -0.1286 * (normalized) C3=3
+ +      -0.0123 * (normalized) C3=5
+ +      -0.1496 * (normalized) C3=9
+ +      -0.0461 * (normalized) C3=10
+ +       0.2365 * (normalized) C3=12
+ +       0.2604 * (normalized) C3=13
+ +      -0.0626 * (normalized) S4=1
+ +       0.0063 * (normalized) S4=2
+ +      -0.0199 * (normalized) S4=3
+ +       0.0761 * (normalized) S4=4
+ +      -0.2489 * (normalized) C4=3
+ +      -0.1286 * (normalized) C4=4
+ +      -0.1496 * (normalized) C4=7
+ +       0.1297 * (normalized) C4=10
+ +       0.0555 * (normalized) C4=11
+ +       0.2657 * (normalized) C4=12
+ +       0.0763 * (normalized) C4=13
+ +      -0.0626 * (normalized) S5=1
+ +       0.0063 * (normalized) S5=2
+ +      -0.0199 * (normalized) S5=3
+ +       0.0761 * (normalized) S5=4
+ +       0.3953 * (normalized) C5=1
+ +      -0.3652 * (normalized) C5=5
+ +      -0.0123 * (normalized) C5=6
+ +      -0.1496 * (normalized) C5=8
+ +       0.2365 * (normalized) C5=10
+ +       0.0763 * (normalized) C5=12
+ +      -0.181  * (normalized) C5=13
+ -       0.1526
+
+Number of kernel evaluations: 55 (94.639% cached)
+
+
+
+Time taken to build model: 502.82 seconds
+
+=== Evaluation on test split ===
+
+Time taken to test model on test split: 0.16 seconds
+
+=== Summary ===
+
+Correctly Classified Instances        2290               45.7817 %
+Incorrectly Classified Instances      2712               54.2183 %
+Kappa statistic                         -0.0121
+Mean absolute error                      0.163 
+Root mean squared error                  0.2775
+Relative absolute error                143.2611 %
+Root relative squared error            116.2952 %
+Total Number of Instances             5002     
+
+=== Detailed Accuracy By Class ===
+
+                 TP Rate  FP Rate  Precision  Recall   F-Measure  MCC      ROC Area  PRC Area  Class
+                 0.537    0.553    0.490      0.537    0.513      -0.016   0.492     0.494     0
+                 0.449    0.459    0.419      0.449    0.433      -0.011   0.495     0.422     1
+                 0.000    0.000    ?          0.000    ?          ?        0.499     0.050     2
+                 0.000    0.000    ?          0.000    ?          ?        0.504     0.019     3
+                 0.000    0.000    ?          0.000    ?          ?        0.643     0.006     4
+                 0.000    0.000    ?          0.000    ?          ?        0.512     0.003     5
+                 0.000    0.000    ?          0.000    ?          ?        0.479     0.001     6
+                 0.000    0.000    ?          0.000    ?          ?        0.608     0.005     7
+                 0.000    0.000    ?          0.000    ?          ?        0.275     0.000     8
+                 ?        0.000    ?          ?        ?          ?        ?         ?         9
+Weighted Avg.    0.458    0.470    ?          0.458    ?          ?        0.494     0.428     
+
+=== Confusion Matrix ===
+
+    a    b    c    d    e    f    g    h    i    j   <-- classified as
+ 1337 1151    0    0    0    0    0    0    0    0 |    a = 0
+ 1171  953    0    0    0    0    0    0    0    0 |    b = 1
+  137  116    0    0    0    0    0    0    0    0 |    c = 2
+   64   31    0    0    0    0    0    0    0    0 |    d = 3
+   10   10    0    0    0    0    0    0    0    0 |    e = 4
+    4    8    0    0    0    0    0    0    0    0 |    f = 5
+    4    2    0    0    0    0    0    0    0    0 |    g = 6
+    0    3    0    0    0    0    0    0    0    0 |    h = 7
+    0    1    0    0    0    0    0    0    0    0 |    i = 8
+    0    0    0    0    0    0    0    0    0    0 |    j = 9
+
