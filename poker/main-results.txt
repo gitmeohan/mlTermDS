@@ -1,0 +1,439 @@
+Microsoft Windows [Version 10.0.16299.371]
+(c) 2017 Microsoft Corporation. All rights reserved.
+
+C:\Users\dnyan>cd C:\Dnyanada - Important\ML\Term Project - Machine Learning\MLGIT
+
+C:\Dnyanada - Important\ML\Term Project - Machine Learning\MLGIT>git status
+On branch dnyanada
+Your branch is up to date with 'origin/dnyanada'.
+
+Untracked files:
+  (use "git add <file>..." to include in what will be committed)
+
+        poker/Figure_1-1.png
+        poker/Figure_1.png
+        poker/catboost_info/
+        poker/kaggle_dny.py
+        poker/results/kmeans result.txt
+        poker/results/result2.txt
+
+nothing added to commit but untracked files present (use "git add" to track)
+
+C:\Dnyanada - Important\ML\Term Project - Machine Learning\MLGIT>git add .
+warning: LF will be replaced by CRLF in poker/catboost_info/catboost_training.json.
+The file will have its original line endings in your working directory.
+warning: LF will be replaced by CRLF in poker/catboost_info/learn_error.tsv.
+The file will have its original line endings in your working directory.
+warning: LF will be replaced by CRLF in poker/catboost_info/meta.tsv.
+The file will have its original line endings in your working directory.
+warning: LF will be replaced by CRLF in poker/catboost_info/time_left.tsv.
+The file will have its original line endings in your working directory.
+
+C:\Dnyanada - Important\ML\Term Project - Machine Learning\MLGIT>git commit -m
+error: switch `m' requires a value
+usage: git commit [<options>] [--] <pathspec>...
+
+    -q, --quiet           suppress summary after successful commit
+    -v, --verbose         show diff in commit message template
+
+Commit message options
+    -F, --file <file>     read message from file
+    --author <author>     override author for commit
+    --date <date>         override date for commit
+    -m, --message <message>
+                          commit message
+    -c, --reedit-message <commit>
+                          reuse and edit message from specified commit
+    -C, --reuse-message <commit>
+                          reuse message from specified commit
+    --fixup <commit>      use autosquash formatted message to fixup specified commit
+    --squash <commit>     use autosquash formatted message to squash specified commit
+    --reset-author        the commit is authored by me now (used with -C/-c/--amend)
+    -s, --signoff         add Signed-off-by:
+    -t, --template <file>
+                          use specified template file
+    -e, --edit            force edit of commit
+    --cleanup <default>   how to strip spaces and #comments from message
+    --status              include status in commit message template
+    -S, --gpg-sign[=<key-id>]
+                          GPG sign commit
+
+Commit contents options
+    -a, --all             commit all changed files
+    -i, --include         add specified files to index for commit
+    --interactive         interactively add files
+    -p, --patch           interactively add changes
+    -o, --only            commit only specified files
+    -n, --no-verify       bypass pre-commit and commit-msg hooks
+    --dry-run             show what would be committed
+    --short               show status concisely
+    --branch              show branch information
+    --ahead-behind        compute full ahead/behind values (EXPERIMENTAL)
+    --porcelain           machine-readable output
+    --long                show status in long format (default)
+    -z, --null            terminate entries with NUL
+    --amend               amend previous commit
+    --no-post-rewrite     bypass post-rewrite hook
+    -u, --untracked-files[=<mode>]
+                          show untracked files, optional modes: all, normal, no. (Default: all)
+
+
+C:\Dnyanada - Important\ML\Term Project - Machine Learning\MLGIT>
+C:\Dnyanada - Important\ML\Term Project - Machine Learning\MLGIT>
+C:\Dnyanada - Important\ML\Term Project - Machine Learning\MLGIT>
+C:\Dnyanada - Important\ML\Term Project - Machine Learning\MLGIT>git commit -m "hh"
+[dnyanada 8ae3487] hh
+ 10 files changed, 7483 insertions(+)
+ create mode 100644 poker/Figure_1-1.png
+ create mode 100644 poker/Figure_1.png
+ create mode 100644 poker/catboost_info/catboost_training.json
+ create mode 100644 poker/catboost_info/learn/events.out.tfevents
+ create mode 100644 poker/catboost_info/learn_error.tsv
+ create mode 100644 poker/catboost_info/meta.tsv
+ create mode 100644 poker/catboost_info/time_left.tsv
+ create mode 100644 poker/kaggle_dny.py
+ create mode 100644 poker/results/kmeans result.txt
+ create mode 100644 poker/results/result2.txt
+
+C:\Dnyanada - Important\ML\Term Project - Machine Learning\MLGIT>git push -u origin dnyanada
+Counting objects: 16, done.
+Delta compression using up to 4 threads.
+Compressing objects: 100% (15/15), done.
+Writing objects: 100% (16/16), 89.02 KiB | 4.68 MiB/s, done.
+Total 16 (delta 3), reused 0 (delta 0)
+remote: Resolving deltas: 100% (3/3), completed with 3 local objects.
+To https://github.com/gitmeohan/mlTermDS.git
+   8bbd0f9..8ae3487  dnyanada -> dnyanada
+Branch 'dnyanada' set up to track remote branch 'dnyanada' from 'origin'.
+
+C:\Dnyanada - Important\ML\Term Project - Machine Learning\MLGIT>git pull origin master
+remote: Counting objects: 10, done.
+remote: Compressing objects: 100% (5/5), done.
+remote: Total 10 (delta 5), reused 9 (delta 5), pack-reused 0
+Unpacking objects: 100% (10/10), done.
+From https://github.com/gitmeohan/mlTermDS
+ * branch            master     -> FETCH_HEAD
+   8bbd0f9..80db045  master     -> origin/master
+Merge made by the 'recursive' strategy.
+ poker/kernels/acc51.model  | Bin 0 -> 1854576 bytes
+ poker/kernels/accu71.model | Bin 0 -> 38257361 bytes
+ poker/kernels/mlp.py       |  96 +++++++++++++++++++++++++++++++++++++++++++++
+ poker/orig_data/mlp.py     |  96 +++++++++++++++++++++++++++++++++++++++++++++
+ poker/poker-my-test.arff   |   2 +-
+ 5 files changed, 193 insertions(+), 1 deletion(-)
+ create mode 100644 poker/kernels/acc51.model
+ create mode 100644 poker/kernels/accu71.model
+ create mode 100644 poker/kernels/mlp.py
+ create mode 100644 poker/orig_data/mlp.py
+
+C:\Dnyanada - Important\ML\Term Project - Machine Learning\MLGIT>cd "C:\Dnyanada - Important\ML\Term Project - Machine Learning\MLGIT\poker\orig_data"
+
+C:\Dnyanada - Important\ML\Term Project - Machine Learning\MLGIT\poker\orig_data>python mlp.py
+(25010, 11)
+(1000000, 11)
+C:\Users\dnyan\AppData\Local\Programs\Python\Python36\lib\site-packages\sklearn\utils\validation.py:475: DataConversionWarning: Data with input dtype int64 was converted to float64 by StandardScaler.
+  warnings.warn(msg, DataConversionWarning)
+             precision    recall  f1-score   support
+
+          0       0.99      0.99      0.99    501209
+          1       0.99      1.00      0.99    422498
+          2       0.96      0.94      0.95     47622
+          3       0.86      0.95      0.90     21121
+          4       0.75      0.08      0.14      3885
+          5       0.46      0.06      0.11      1996
+          6       0.56      0.04      0.07      1424
+          7       0.00      0.00      0.00       230
+          8       0.00      0.00      0.00        12
+          9       0.00      0.00      0.00         3
+
+avg / total       0.98      0.98      0.98   1000000
+
+Accuracy using MLPClassifier and Random Seed: 1 : 0.983759
+[[497273   3725      0      0     98    104      0      0      9      0]
+ [   244 421142   1010     38      3     45      0      1     15      0]
+ [     0   1186  44850   1585      0      0      0      1      0      0]
+ [     0      0   1086  20007      0      0     28      0      0      0]
+ [  3460    113      0      0    307      2      0      0      2      1]
+ [  1829     28      0      0      3    128      0      1      6      1]
+ [     0      0      0   1372      0      0     52      0      0      0]
+ [     0      0      0    217      0      0     13      0      0      0]
+ [    10      1      0      0      1      0      0      0      0      0]
+ [     3      0      0      0      0      0      0      0      0      0]]
+C:\Users\dnyan\AppData\Local\Programs\Python\Python36\lib\site-packages\sklearn\metrics\classification.py:1135: UndefinedMetricWarning: Precision and F-score are ill-defined and being set to 0.0 in labels with no predicted samples.
+  'precision', 'predicted', average, warn_for)
+             precision    recall  f1-score   support
+
+          0       0.97      0.99      0.98    501209
+          1       0.98      0.97      0.97    422498
+          2       0.86      0.90      0.88     47622
+          3       0.88      0.76      0.82     21121
+          4       0.64      0.06      0.11      3885
+          5       0.16      0.04      0.06      1996
+          6       0.63      0.14      0.22      1424
+          7       0.18      0.20      0.19       230
+          8       0.00      0.00      0.00        12
+          9       0.00      0.00      0.00         3
+
+avg / total       0.96      0.97      0.96   1000000
+
+Accuracy using MLPClassifier and Random Seed: 2 : 0.965633
+[[495587   5217      1      0     63    315      0      0      0     26]
+ [  9566 410513   2246     53     68     49      0      0      0      3]
+ [     0   3956  42913    710      0      0      9     34      0      0]
+ [     0    220   4575  16076      0      0     84    166      0      0]
+ [  3385    262      0      0    236      1      0      0      0      1]
+ [  1899     23      0      0      0     70      0      0      0      4]
+ [     0      0     42   1182      0      0    193      7      0      0]
+ [     0      0      0    165      0      0     20     45      0      0]
+ [    10      1      0      0      1      0      0      0      0      0]
+ [     3      0      0      0      0      0      0      0      0      0]]
+             precision    recall  f1-score   support
+
+          0       0.98      0.98      0.98    501209
+          1       0.95      0.98      0.96    422498
+          2       0.85      0.72      0.78     47622
+          3       0.79      0.79      0.79     21121
+          4       0.39      0.05      0.08      3885
+          5       0.20      0.04      0.06      1996
+          6       0.82      0.02      0.03      1424
+          7       0.14      0.09      0.11       230
+          8       0.00      0.00      0.00        12
+          9       0.00      0.00      0.00         3
+
+avg / total       0.95      0.95      0.95   1000000
+
+Accuracy using MLPClassifier and Random Seed: 3 : 0.954508
+[[490104  10587      0      0    249    265      0      0      0      4]
+ [  7129 413092   1699    505     39     29      0      0      1      4]
+ [     9  10927  34253   2414      0      0      0     19      0      0]
+ [     0    236   4038  16757      0      0      1     89      0      0]
+ [  3342    356      0      0    185      0      0      0      0      2]
+ [  1885     36      0      0      0     73      0      0      0      2]
+ [     0      0    167   1211      0      0     23     23      0      0]
+ [     0      0      0    205      0      0      4     21      0      0]
+ [    10      2      0      0      0      0      0      0      0      0]
+ [     3      0      0      0      0      0      0      0      0      0]]
+             precision    recall  f1-score   support
+
+          0       0.97      0.99      0.98    501209
+          1       0.99      0.98      0.98    422498
+          2       0.93      0.84      0.88     47622
+          3       0.75      0.89      0.82     21121
+          4       0.44      0.07      0.12      3885
+          5       0.24      0.11      0.15      1996
+          6       0.50      0.01      0.02      1424
+          7       0.07      0.03      0.04       230
+          8       0.00      0.00      0.00        12
+          9       0.00      0.00      0.00         3
+
+avg / total       0.97      0.97      0.97   1000000
+
+Accuracy using MLPClassifier and Random Seed: 4 : 0.971211
+[[498591   1821      0      0    191    516      0      0      0     90]
+ [  8151 413235    619     52    151    165      0      6      2    117]
+ [     1   3025  40035   4536      0      0      0     23      0      2]
+ [     0     51   2166  18849      0      0     10     45      0      0]
+ [  3591     23      0      0    267      2      0      0      0      2]
+ [  1757      1      0      0      2    217      0      0      2     17]
+ [     0      0     53   1360      0      0     11      0      0      0]
+ [     0      0      0    223      0      0      1      6      0      0]
+ [     9      0      0      0      2      0      0      0      0      1]
+ [     3      0      0      0      0      0      0      0      0      0]]
+             precision    recall  f1-score   support
+
+          0       0.99      1.00      0.99    501209
+          1       1.00      1.00      1.00    422498
+          2       0.97      0.97      0.97     47622
+          3       0.91      0.95      0.93     21121
+          4       0.63      0.19      0.29      3885
+          5       0.32      0.09      0.14      1996
+          6       0.91      0.42      0.58      1424
+          7       0.81      0.17      0.27       230
+          8       0.00      0.00      0.00        12
+          9       0.00      0.00      0.00         3
+
+avg / total       0.99      0.99      0.99   1000000
+
+Accuracy using MLPClassifier and Random Seed: 5 : 0.990151
+[[500338     68      0      0    347    339      0      0     56     61]
+ [    11 422046     93      1     66     53      0      0    191     37]
+ [     0    324  46158   1138      0      0      1      0      1      0]
+ [     0      0   1012  20068      0      0     37      4      0      0]
+ [  3096     32      0      0    722      1      0      0     31      3]
+ [  1792      4      0      0      3    182      0      0      4     11]
+ [     0      0    128    692      0      0    599      5      0      0]
+ [     0      0      0    171      0      0     21     38      0      0]
+ [     7      0      0      0      3      1      0      0      0      1]
+ [     2      0      0      0      0      1      0      0      0      0]]
+Mean Accuracy using MLPClassifier Classifier:  0.9730524
+Accuracy Using Bagging with DT : 0.573645
+
+             precision    recall  f1-score   support
+
+          0       0.60      0.75      0.67    501209
+          1       0.53      0.47      0.50    422498
+          2       0.25      0.03      0.05     47622
+          3       0.26      0.02      0.03     21121
+          4       0.11      0.00      0.01      3885
+          5       0.42      0.01      0.01      1996
+          6       0.12      0.00      0.00      1424
+          7       0.00      0.00      0.00       230
+          8       0.00      0.00      0.00        12
+          9       0.00      0.00      0.00         3
+
+avg / total       0.55      0.57      0.55   1000000
+
+[0.05944819 0.1364605  0.06885544 0.14348981 0.06494575 0.13474322
+ 0.06817111 0.13163815 0.05655552 0.13569231]
+Accuracy Using Random Forest : 0.562096
+
+C:\Users\dnyan\AppData\Local\Programs\Python\Python36\lib\site-packages\sklearn\metrics\classification.py:1135: UndefinedMetricWarning: Precision and F-score are ill-defined and being set to 0.0 in labels with no predicted samples.
+  'precision', 'predicted', average, warn_for)
+             precision    recall  f1-score   support
+
+          0       0.59      0.74      0.66    501209
+          1       0.52      0.44      0.48    422498
+          2       0.21      0.01      0.03     47622
+          3       0.34      0.01      0.02     21121
+          4       0.13      0.00      0.00      3885
+          5       0.67      0.01      0.01      1996
+          6       0.12      0.00      0.00      1424
+          7       0.00      0.00      0.00       230
+          8       0.00      0.00      0.00        12
+          9       0.00      0.00      0.00         3
+
+avg / total       0.53      0.56      0.53   1000000
+
+Accuracy Using AdaBoost : 0.491576
+
+C:\Users\dnyan\AppData\Local\Programs\Python\Python36\lib\site-packages\sklearn\metrics\classification.py:1135: UndefinedMetricWarning: Precision and F-score are ill-defined and being set to 0.0 in labels with no predicted samples.
+  'precision', 'predicted', average, warn_for)
+             precision    recall  f1-score   support
+
+          0       0.50      0.98      0.66    501209
+          1       0.00      0.00      0.00    422498
+          2       0.00      0.00      0.00     47622
+          3       0.00      0.00      0.00     21121
+          4       0.00      0.00      0.00      3885
+          5       0.00      0.00      0.00      1996
+          6       0.00      0.00      0.00      1424
+          7       0.00      0.00      0.00       230
+          8       0.00      0.00      0.00        12
+          9       0.00      0.00      0.00         3
+
+avg / total       0.25      0.49      0.33   1000000
+
+Accuracy Using KNN : 0.511839
+
+             precision    recall  f1-score   support
+
+          0       0.55      0.66      0.60    501209
+          1       0.46      0.42      0.44    422498
+          2       0.16      0.01      0.02     47622
+          3       0.11      0.01      0.01     21121
+          4       0.04      0.00      0.00      3885
+          5       0.58      0.02      0.04      1996
+          6       0.00      0.00      0.00      1424
+          7       0.00      0.00      0.00       230
+          8       0.00      0.00      0.00        12
+          9       0.00      0.00      0.00         3
+
+avg / total       0.48      0.51      0.49   1000000
+
+Accuracy Using Naive Bayes : 0.501209
+
+             precision    recall  f1-score   support
+
+          0       0.50      1.00      0.67    501209
+          1       0.00      0.00      0.00    422498
+          2       0.00      0.00      0.00     47622
+          3       0.00      0.00      0.00     21121
+          4       0.00      0.00      0.00      3885
+          5       0.00      0.00      0.00      1996
+          6       0.00      0.00      0.00      1424
+          7       0.00      0.00      0.00       230
+          8       0.00      0.00      0.00        12
+          9       0.00      0.00      0.00         3
+
+avg / total       0.25      0.50      0.33   1000000
+
+Accuracy Using Decision Tree : 0.47879
+
+             precision    recall  f1-score   support
+
+          0       0.57      0.56      0.57    501209
+          1       0.46      0.45      0.46    422498
+          2       0.09      0.11      0.10     47622
+          3       0.07      0.08      0.07     21121
+          4       0.02      0.03      0.03      3885
+          5       0.17      0.20      0.18      1996
+          6       0.01      0.02      0.01      1424
+          7       0.00      0.00      0.00       230
+          8       0.00      0.00      0.00        12
+          9       0.00      0.00      0.00         3
+
+avg / total       0.49      0.48      0.48   1000000
+
+Accuracy Using Linear SVM : 0.501209
+
+             precision    recall  f1-score   support
+
+          0       0.50      1.00      0.67    501209
+          1       0.00      0.00      0.00    422498
+          2       0.00      0.00      0.00     47622
+          3       0.00      0.00      0.00     21121
+          4       0.00      0.00      0.00      3885
+          5       0.00      0.00      0.00      1996
+          6       0.00      0.00      0.00      1424
+          7       0.00      0.00      0.00       230
+          8       0.00      0.00      0.00        12
+          9       0.00      0.00      0.00         3
+
+avg / total       0.25      0.50      0.33   1000000
+
+Accuracy Using OutputCodeClassifier with Linear SVM : 0.636166
+
+             precision    recall  f1-score   support
+
+          0       0.67      0.80      0.73    501209
+          1       0.59      0.55      0.57    422498
+          2       0.37      0.02      0.03     47622
+          3       0.31      0.03      0.06     21121
+          4       0.04      0.02      0.03      3885
+          5       0.29      0.00      0.01      1996
+          6       0.00      0.00      0.00      1424
+          7       0.00      0.00      0.00       230
+          8       0.00      0.00      0.00        12
+          9       0.00      0.00      0.00         3
+
+avg / total       0.61      0.64      0.61   1000000
+
+Accuracy Using OneVsRestClassifier with Linear SVM : 0.456312
+
+             precision    recall  f1-score   support
+
+          0       0.50      0.89      0.64    501209
+          1       0.43      0.03      0.05    422498
+          2       0.05      0.00      0.00     47622
+          3       0.02      0.01      0.01     21121
+          4       0.00      0.06      0.01      3885
+          5       0.00      0.00      0.00      1996
+          6       0.00      0.00      0.00      1424
+          7       0.00      0.00      0.00       230
+          8       0.00      0.00      0.00        12
+          9       0.00      0.00      0.00         3
+
+avg / total       0.43      0.46      0.34   1000000
+
+[[444565  12921    393   3129  24767   8481    373    564   5987     29]
+ [373804  11356    319   2524  21527   6430    265    363   5863     47]
+ [ 41918   1393     35    251   2522    688     25     35    752      3]
+ [ 18482    686     15    110   1138    282     11      9    381      7]
+ [  3386    130      4     13    238     46      0      1     67      0]
+ [  1860      0      0      0    109      7      0      0     20      0]
+ [  1228     48      0     13     83     27      1      0     24      0]
+ [   202      7      0      0     16      2      0      0      3      0]
+ [    12      0      0      0      0      0      0      0      0      0]
+ [     3      0      0      0      0      0      0      0      0      0]]
+
+C:\Dnyanada - Important\ML\Term Project - Machine Learning\MLGIT\poker\orig_data>
